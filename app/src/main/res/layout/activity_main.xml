@@ -5,17 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grena"
-    tools:context="com.example.yago_.appdcedausp.MainActivity">
-
-
-    <!--<include layout="@layout/content_main" /> !-->
+    tools:context="com.example.appdcedausp.MainActivity">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/mudaCampus"
         android:layout_width="200px"
         android:layout_height="200px"
-        android:layout_gravity="left|top"
-        android:foreground="@drawable/btnCampus"
+        android:layout_gravity="start|top"
+        android:foreground="@drawable/btncampus"
         android:layout_margin="@dimen/fab_margin2"
         android:scaleType="centerCrop" />
 
@@ -26,6 +23,7 @@
 
         <ImageView
             android:layout_weight="1.4"
+            android:contentDescription="Logo do DCE Livre da USP"
             android:id="@+id/logoDCE"
             android:layout_width="match_parent"
             android:scaleType="centerInside"
@@ -38,6 +36,7 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:baselineAligned="false"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_weight="1"

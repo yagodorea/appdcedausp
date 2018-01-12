@@ -1,45 +1,78 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\e381bfde37898d6f7c14b2783c0f2936\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2c0fc6d3456b28e3091e256dcb105368\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cadb7b30d7af5312d6eba5c5cc09d326\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\d24f726870280a7d83bd3f485e9962f4\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\8c36246bd027b12c522d8cde494367cd\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\ca961c26dac0e822717b9b7b027addba\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\b01c8dbf7937101fd5214fa19422b411\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\33992354e0f175ccab9380323c1c68ee\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\1896f52b8730428aa88c842277fbedca\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\193a9449dc7463ad687e5c69f2cbe765\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\496d455752ab308ac68bfe900ef83c20\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\420a96f9b35347c456b4df390d0409fe\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:3:5-44
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 application
 ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:5:5-22:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.android\build-cache\56e7fb5f3e5c35e9d2492700089f52f33b5ae078\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\yago_\.android\build-cache\625700e002c9d944014c37431bbca88f85d8d142\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.android\build-cache\6ef85ca3cba23668e8be93a998a221c9bdf63bd5\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.android\build-cache\21192e925ef74dc3dd21e425e7dbaf974284017d\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.android\build-cache\9a814cd667f7b587001f3d519f57241334dcab35\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.android\build-cache\0d584a13b2cfd7881d53d035217b17be790b626e\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.android\build-cache\a8be43a25082ae0d0d2cac65a4fbfccca10ddc6f\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.android\build-cache\8d3b6d4242b83d861a3d28e53cfab8536aef1d23\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.android\build-cache\03de55b4b9bce53a3299f693edd9e546c8cbef2e\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.android\build-cache\34e0ba082239246e7ae4d2b92994da84cccd9472\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.android\build-cache\3c9d86bc406a93c4a8ead3e6f3561251a3689302\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.android\build-cache\82e0e77598bc82971a6b7a2e336b4ff009146266\output\AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:8:9-41
+MERGED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\e381bfde37898d6f7c14b2783c0f2936\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\e381bfde37898d6f7c14b2783c0f2936\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2c0fc6d3456b28e3091e256dcb105368\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2c0fc6d3456b28e3091e256dcb105368\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cadb7b30d7af5312d6eba5c5cc09d326\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cadb7b30d7af5312d6eba5c5cc09d326\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\d24f726870280a7d83bd3f485e9962f4\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\d24f726870280a7d83bd3f485e9962f4\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\ca961c26dac0e822717b9b7b027addba\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\ca961c26dac0e822717b9b7b027addba\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\b01c8dbf7937101fd5214fa19422b411\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\b01c8dbf7937101fd5214fa19422b411\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\33992354e0f175ccab9380323c1c68ee\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\33992354e0f175ccab9380323c1c68ee\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\1896f52b8730428aa88c842277fbedca\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\1896f52b8730428aa88c842277fbedca\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\193a9449dc7463ad687e5c69f2cbe765\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\193a9449dc7463ad687e5c69f2cbe765\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\496d455752ab308ac68bfe900ef83c20\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\496d455752ab308ac68bfe900ef83c20\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\420a96f9b35347c456b4df390d0409fe\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\420a96f9b35347c456b4df390d0409fe\AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:9:9-54
-	android:allowBackup
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.example.yago_.appdcedausp.MainActivity
+activity#com.example.appdcedausp.MainActivity
 ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:12:9-21:20
 	android:label
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:14:13-45
@@ -59,41 +92,71 @@ ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.android\build-cache\56e7fb5f3e5c35e9d2492700089f52f33b5ae078\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.3.1] C:\Users\yago_\.android\build-cache\625700e002c9d944014c37431bbca88f85d8d142\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.android\build-cache\6ef85ca3cba23668e8be93a998a221c9bdf63bd5\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.android\build-cache\21192e925ef74dc3dd21e425e7dbaf974284017d\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.android\build-cache\9a814cd667f7b587001f3d519f57241334dcab35\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\yago_\.android\build-cache\d5d1ae1a2ede0a0e3da49705ff17a87b23331c0f\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.android\build-cache\0d584a13b2cfd7881d53d035217b17be790b626e\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.android\build-cache\a8be43a25082ae0d0d2cac65a4fbfccca10ddc6f\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.android\build-cache\8d3b6d4242b83d861a3d28e53cfab8536aef1d23\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.android\build-cache\03de55b4b9bce53a3299f693edd9e546c8cbef2e\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.android\build-cache\34e0ba082239246e7ae4d2b92994da84cccd9472\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.android\build-cache\3c9d86bc406a93c4a8ead3e6f3561251a3689302\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.android\build-cache\82e0e77598bc82971a6b7a2e336b4ff009146266\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\e381bfde37898d6f7c14b2783c0f2936\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\e381bfde37898d6f7c14b2783c0f2936\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2c0fc6d3456b28e3091e256dcb105368\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\2c0fc6d3456b28e3091e256dcb105368\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cadb7b30d7af5312d6eba5c5cc09d326\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cadb7b30d7af5312d6eba5c5cc09d326\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\d24f726870280a7d83bd3f485e9962f4\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\d24f726870280a7d83bd3f485e9962f4\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\8c36246bd027b12c522d8cde494367cd\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\8c36246bd027b12c522d8cde494367cd\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\ca961c26dac0e822717b9b7b027addba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\ca961c26dac0e822717b9b7b027addba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\b01c8dbf7937101fd5214fa19422b411\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\b01c8dbf7937101fd5214fa19422b411\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\33992354e0f175ccab9380323c1c68ee\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\33992354e0f175ccab9380323c1c68ee\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\1896f52b8730428aa88c842277fbedca\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\1896f52b8730428aa88c842277fbedca\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\193a9449dc7463ad687e5c69f2cbe765\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\193a9449dc7463ad687e5c69f2cbe765\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\496d455752ab308ac68bfe900ef83c20\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\496d455752ab308ac68bfe900ef83c20\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\420a96f9b35347c456b4df390d0409fe\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\420a96f9b35347c456b4df390d0409fe\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.android\build-cache\625700e002c9d944014c37431bbca88f85d8d142\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.android\build-cache\625700e002c9d944014c37431bbca88f85d8d142\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.android\build-cache\6ef85ca3cba23668e8be93a998a221c9bdf63bd5\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.android\build-cache\21192e925ef74dc3dd21e425e7dbaf974284017d\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.android\build-cache\9a814cd667f7b587001f3d519f57241334dcab35\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\yago_\.android\build-cache\d5d1ae1a2ede0a0e3da49705ff17a87b23331c0f\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.android\build-cache\0d584a13b2cfd7881d53d035217b17be790b626e\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.android\build-cache\a8be43a25082ae0d0d2cac65a4fbfccca10ddc6f\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.android\build-cache\8d3b6d4242b83d861a3d28e53cfab8536aef1d23\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.android\build-cache\03de55b4b9bce53a3299f693edd9e546c8cbef2e\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.android\build-cache\34e0ba082239246e7ae4d2b92994da84cccd9472\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.android\build-cache\3c9d86bc406a93c4a8ead3e6f3561251a3689302\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.android\build-cache\82e0e77598bc82971a6b7a2e336b4ff009146266\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\e381bfde37898d6f7c14b2783c0f2936\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\e381bfde37898d6f7c14b2783c0f2936\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cadb7b30d7af5312d6eba5c5cc09d326\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cadb7b30d7af5312d6eba5c5cc09d326\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\d24f726870280a7d83bd3f485e9962f4\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\d24f726870280a7d83bd3f485e9962f4\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\8c36246bd027b12c522d8cde494367cd\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\8c36246bd027b12c522d8cde494367cd\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\ca961c26dac0e822717b9b7b027addba\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\ca961c26dac0e822717b9b7b027addba\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\b01c8dbf7937101fd5214fa19422b411\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\b01c8dbf7937101fd5214fa19422b411\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\33992354e0f175ccab9380323c1c68ee\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\33992354e0f175ccab9380323c1c68ee\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\1896f52b8730428aa88c842277fbedca\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\1896f52b8730428aa88c842277fbedca\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\193a9449dc7463ad687e5c69f2cbe765\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\193a9449dc7463ad687e5c69f2cbe765\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\496d455752ab308ac68bfe900ef83c20\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\496d455752ab308ac68bfe900ef83c20\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\420a96f9b35347c456b4df390d0409fe\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\420a96f9b35347c456b4df390d0409fe\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.android\build-cache\625700e002c9d944014c37431bbca88f85d8d142\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.android\build-cache\625700e002c9d944014c37431bbca88f85d8d142\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\80a955e7ad46e0228ac94d329ca05a07\AndroidManifest.xml:26:9-47
