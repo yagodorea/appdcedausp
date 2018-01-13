@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="grena">#A90135</color>
     <color name="creme">#F9FFCA</color>
+    <color name="preto">#000000</color>
+    <color name="branco">#FFFFFF</color>
 </resources>

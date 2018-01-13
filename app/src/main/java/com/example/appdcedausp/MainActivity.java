@@ -1,5 +1,7 @@
 package com.example.appdcedausp;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -13,8 +15,14 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 
 public class MainActivity extends AppCompatActivity {
+
+    // Código de erro para conexão com API da Google (para uso do Maps)
+    private static final int ERROR_DIALOG_REQUEST = 9001;
 
     // Declaracao dos elementos
     ImageView btnMapa;
@@ -47,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.startAnimation(animAlpha);
+                if (isServicesOK()) {
+                    Intent intent = new Intent(MainActivity.this,MapActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -121,4 +133,35 @@ public class MainActivity extends AppCompatActivity {
     public void makeSnack(String text, View view) {
         Snackbar.make(view, text, Snackbar.LENGTH_LONG).show();
     }
+
+    public void makeToast(String text) {
+        Toast.makeText(this, text,Toast.LENGTH_LONG).show();
+    }
+
+    // Checagem do Google Services
+    public boolean isServicesOK() {
+        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MainActivity.this);
+        if (available == ConnectionResult.SUCCESS) {
+            // Tudo ok, pode requisitar o mapa
+            return true;
+        } else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)){
+            // Se for um erro resolvivel, mostrar
+            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(MainActivity.this,available,ERROR_DIALOG_REQUEST);
+            dialog.show();
+        } else {
+            makeToast("Erro no Google Services!");
+        }
+        return false;
+    }
 }
+
+/**
+ * TODO: Atividade do bandejão
+ * TODO: Atividade da permanência
+ * TODO: Atividade dos links
+ * TODO: Atividade da denúncia
+ * TODO: Fragmento inicial para o mural de eventos e informes
+ * TODO: Configuração para escolha do campus
+ * TODO: Ajustes das atividades de acordo com a configuração de campus
+ * TODO: Mecanismo que retorna ao fragmento inicial dos informes e eventos
+ */

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@color/grena">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Descrição"
+        android:id="@+id/descTitle"
+        android:textColor="@color/creme"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAlignment="textStart"
+        android:text="Exemplo de descrição. Lorem ipsum dolor sit amet, consect
+        etur adipiscing elit. Sed vel finibus mauris, in tincidunt dui. Morbi id faucibus risus, a vehicula eros. In vehicula felis vitae tincidunt volutpat. Donec sit amet placerat justo.
+        In non ipsum ante. Nam sagittis nunc augue, eu egestas nisi"
+        android:id="@+id/descContent"
+        android:fadeScrollbars="true"
+        android:textColor="@color/creme"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Ver no Google Maps"
+        android:background="@color/preto"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+</LinearLayout>
