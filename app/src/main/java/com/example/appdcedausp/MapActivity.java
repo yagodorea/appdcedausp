@@ -3,11 +3,15 @@ package com.example.appdcedausp;
 import android.*;
 import android.Manifest;
 import android.app.Fragment;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -53,6 +57,7 @@ public class MapActivity extends AppCompatActivity
     private Boolean mLocationPermissionGranted = false;
 
     // Marcadores do mapa
+    private Marker mark;
     private Marker mark1;
     private Marker mark2;
     private Marker mark3;
@@ -68,6 +73,14 @@ public class MapActivity extends AppCompatActivity
     private float fis1 = -22.0094621f;
     private float fis2 = -47.8963324f;
 
+    // Descrições
+
+    private static final String[] mCAASO = new String[]{"CAASO","Centro Acadêmico Armando de Salles Oliveira.\nEsse é o CA mais TOP da USP!"};
+    private static final String[] mArq = new String[]{"IAU","Instituto de Arquitetura e Urbanismo.\nOnde vc faz arquitetura, duh!"};
+    private static final String[] mObservatorio = new String[]{"Observatório","Observatório na saída da produção.\nAqui vc pode ver as estrelas. :)"};
+    private static final String[] mFisica = new String[]{"IFSC","Instituto de Física de São Carlos.\nAqui é tipo um buraco negro, tente evitar entrar nesse prédio."};
+
+
     // Fragmentos
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
@@ -78,6 +91,7 @@ public class MapActivity extends AppCompatActivity
     TextView descriptionTitle;
     TextView descriptionContent;
     FloatingActionButton fabDesc;
+    FloatingActionButton fabGo;
 
     private GoogleMap mMap;
     private FusedLocationProviderClient mFusedLocationProviderClient;
@@ -102,11 +116,11 @@ public class MapActivity extends AppCompatActivity
                     @Override
                     public void onComplete(@NonNull Task task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(MapActivity.this,"Localização encontrada!",Toast.LENGTH_LONG).show();
 
                             currLocation = (Location)task.getResult();
 
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currLocation.getLatitude(),currLocation.getLongitude()),DEFAULT_ZOOM));
+                            moveCamera(new LatLng(-22.0076031f,-47.8965129f),16.11f);
                         } else {
                             Toast.makeText(MapActivity.this,"Erro na localização!",Toast.LENGTH_LONG).show();
                         }
@@ -131,7 +145,6 @@ public class MapActivity extends AppCompatActivity
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
-                Toast.makeText(MapActivity.this,"Mapa está pronto!",Toast.LENGTH_LONG).show();
                 mMap = googleMap;
                 mMap.setOnMarkerClickListener(MapActivity.this);
 
@@ -146,12 +159,6 @@ public class MapActivity extends AppCompatActivity
                         }
                     }
                     setMarkers();
-                    fragmentManager = getFragmentManager();
-                    fragmentTransaction = fragmentManager.beginTransaction();
-                    descriptionFragment = new DescriptionFragment();
-                    fragmentTransaction.add(R.id.description_fragment_container,descriptionFragment);
-                    fragmentTransaction.hide(descriptionFragment);
-                    fragmentTransaction.commit();
                 }
             }
         });
@@ -160,40 +167,49 @@ public class MapActivity extends AppCompatActivity
     private void setMarkers() {
         BitmapDrawable icon1 = (BitmapDrawable) getResources().getDrawable(R.drawable.caaso);
         Bitmap small1 = Bitmap.createScaledBitmap(icon1.getBitmap(),100,100,false);
+        BitmapDrawable icon2 = (BitmapDrawable) getResources().getDrawable(R.drawable.iau);
+        Bitmap small2 = Bitmap.createScaledBitmap(icon2.getBitmap(),100,100,false);
+        BitmapDrawable icon3 = (BitmapDrawable) getResources().getDrawable(R.drawable.observatorio);
+        Bitmap small3 = Bitmap.createScaledBitmap(icon3.getBitmap(),100,100,false);
+        BitmapDrawable icon4 = (BitmapDrawable) getResources().getDrawable(R.drawable.ifsc);
+        Bitmap small4 = Bitmap.createScaledBitmap(icon4.getBitmap(),100,100,false);
 
         mark1 = mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(caaso1,caaso2))
                 .title("CAASO")
-                .snippet("Centro Acadêmico da USP São Carlos")
                 .icon(BitmapDescriptorFactory.fromBitmap(small1)));
 
         mark2 = mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(arq1,arq2))
-                .title("Arquitetura"));
+                .title("Arquitetura")
+                .icon(BitmapDescriptorFactory.fromBitmap(small2)));
 
         mark3 = mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(obs1,obs2))
-                .title("Observatório"));
+                .title("Observatório")
+                .icon(BitmapDescriptorFactory.fromBitmap(small3)));
 
         mark4 = mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(fis1,fis2))
-                .title("Física"));
+                .title("Física")
+                .icon(BitmapDescriptorFactory.fromBitmap(small4)));
     }
 
     // Inflar fragmentos e dar zoom quando clicarem nos markers
     @Override
     public boolean onMarkerClick(Marker marker) {
+        mark = marker;
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
-        descriptionTitle = (TextView)findViewById(R.id.descTitle);
-        descriptionContent = (TextView)findViewById(R.id.descContent);
-        fabDesc = (FloatingActionButton)findViewById(R.id.fabDesc);
+        descriptionTitle = (TextView) findViewById(R.id.descTitle);
+        descriptionContent = (TextView) findViewById(R.id.descContent);
 
         fabDesc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 fabDesc.setVisibility(View.GONE);
+                fabGo.setVisibility(View.GONE);
 
                 fragmentManager = getFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
@@ -202,48 +218,45 @@ public class MapActivity extends AppCompatActivity
             }
         });
 
-        if (marker.equals(mark1)) { // CAASO
-            moveCamera(mark1.getPosition(),FOCUS_ZOOM);
-            if (fabDesc.getVisibility() == View.GONE) { // Daí precisamos mostrar o fragmento da descrição
-                fabDesc.setVisibility(View.VISIBLE);
-                fragmentTransaction.show(descriptionFragment);
-                fragmentTransaction.commit();
+        fabGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // fazer ligação com o aplicativo maps pra mostrar as direções
+                double lat = mark.getPosition().latitude;
+                double lon = mark.getPosition().longitude;
+                Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/dir/?api=1&destination="+lat+","+lon+"&travelmode=walking");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
             }
-            descriptionTitle.setText("CAASO");
-            descriptionContent.setText("Centro Acadêmico Armando de Salles Oliveira.\nEsse é o CA mais TOP da USP!");
+        });
+
+        if (marker.equals(mark1)) { // CAASO
+            focusMarker(mark1,mCAASO);
             return true;
         } else if (marker.equals(mark2)) {  // Arq
-            moveCamera(mark2.getPosition(),FOCUS_ZOOM);
-            if (fabDesc.getVisibility() == View.GONE) { // Daí precisamos mostrar o fragmento da descrição
-                fabDesc.setVisibility(View.VISIBLE);
-                fragmentTransaction.show(descriptionFragment);
-                fragmentTransaction.commit();
-            }
-            descriptionTitle.setText("IAU");
-            descriptionContent.setText("Instituto de Arquitetura e Urbanismo.\nOnde vc faz arquitetura, duh!");
+            focusMarker(mark2,mArq);
             return true;
         } else if (marker.equals(mark3)) {  // Observatório
-            moveCamera(mark3.getPosition(),FOCUS_ZOOM);
-            if (fabDesc.getVisibility() == View.GONE) { // Daí precisamos mostrar o fragmento da descrição
-                fabDesc.setVisibility(View.VISIBLE);
-                fragmentTransaction.show(descriptionFragment);
-                fragmentTransaction.commit();
-            }
-            descriptionTitle.setText("Observatório");
-            descriptionContent.setText("Observatório na saída da produção.\nAqui vc pode ver as estrelas. :)");
+            focusMarker(mark3,mObservatorio);
             return true;
         } else if (marker.equals(mark4)) {  // Física
-            moveCamera(mark4.getPosition(),FOCUS_ZOOM);
-            if (fabDesc.getVisibility() == View.GONE) { // Daí precisamos mostrar o fragmento da descrição
-                fabDesc.setVisibility(View.VISIBLE);
-                fragmentTransaction.show(descriptionFragment);
-                fragmentTransaction.commit();
-            }
-            descriptionTitle.setText("IFSC");
-            descriptionContent.setText("Instituto de Física de São Carlos.\nAqui é tipo um buraco negro, tente evitar entrar nesse prédio.");
+            focusMarker(mark4,mFisica);
             return true;
         }
+        Toast.makeText(MapActivity.this,"return false",Toast.LENGTH_SHORT).show();
         return false;
+    }
+
+    private void focusMarker(Marker m,String[] description) {
+        moveCamera(m.getPosition(),FOCUS_ZOOM);
+        descriptionFragment.setText(description[0],description[1]);
+        if (fabDesc.getVisibility() == View.GONE) { // Daí precisamos mostrar o fragmento da descrição
+            fabDesc.setVisibility(View.VISIBLE);
+            fabGo.setVisibility(View.VISIBLE);
+            fragmentTransaction.show(descriptionFragment);
+            fragmentTransaction.commit();
+        }
     }
 
     private void getLocationPermission() {
@@ -253,7 +266,6 @@ public class MapActivity extends AppCompatActivity
         if(ContextCompat.checkSelfPermission(this.getApplicationContext(),FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             if(ContextCompat.checkSelfPermission(this.getApplicationContext(),COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 mLocationPermissionGranted = true;
-                Toast.makeText(MapActivity.this,"Permissões OK",Toast.LENGTH_LONG).show();
                 initMap();
             }
         }
@@ -281,6 +293,32 @@ public class MapActivity extends AppCompatActivity
                 }
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        fabDesc.setVisibility(View.GONE);
+        fabGo.setVisibility(View.GONE);
+        fragmentManager = getFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.hide(descriptionFragment);
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        fabDesc = (FloatingActionButton)findViewById(R.id.fabDesc);
+        fabGo = (FloatingActionButton)findViewById(R.id.fabGo);
+        descriptionFragment = new DescriptionFragment();
+
+        fragmentManager = getFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.description_fragment_container,descriptionFragment);
+        fragmentTransaction.hide(descriptionFragment);
+        fragmentTransaction.commit();
     }
 }
 

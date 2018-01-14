@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">AppDCEdaUSP</string>
     <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">992935517526832</string>
+    <string name="fb_login_protocol_scheme">fb992935517526832</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string-array name="list_campus">
+        <item>Butantã</item>
+        <item>São Carlos</item>
+        <item>Ribeirão Preto</item>
+        <item>EACH</item>
+        <item>Sanfran</item>
+        <item>Piracicaba</item>
+        <item>Pirassununga</item>
+    </string-array>
+
 </resources>

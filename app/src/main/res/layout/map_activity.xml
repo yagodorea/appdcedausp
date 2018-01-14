@@ -13,18 +13,29 @@
         android:orientation="vertical"
         android:name="com.google.android.gms.maps.SupportMapFragment">
     </fragment>
-    <RelativeLayout
+    <android.support.design.widget.CoordinatorLayout
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/description_fragment_container">
 
         <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabGo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:visibility="gone"
+            android:layout_margin="@dimen/fab_margin2"
+            android:src="@drawable/ic_go"
+            app:fabSize="mini"
+            android:backgroundTint="@color/creme"
+            android:scaleType="fitCenter"/>
+
+        <android.support.design.widget.FloatingActionButton
             android:id="@+id/fabDesc"
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|end"
             android:visibility="gone"
             android:layout_margin="@dimen/fab_margin2"
             android:src="@drawable/ic_close"
@@ -32,5 +43,5 @@
             android:backgroundTint="@color/creme"
             android:scaleType="fitCenter" />
 
-    </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
 </RelativeLayout>

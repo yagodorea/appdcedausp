@@ -21,7 +21,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:textAlignment="textStart"
         android:text="Exemplo de descrição. Lorem ipsum dolor sit amet, consect
         etur adipiscing elit. Sed vel finibus mauris, in tincidunt dui. Morbi id faucibus risus, a vehicula eros. In vehicula felis vitae tincidunt volutpat. Donec sit amet placerat justo.
@@ -31,14 +31,6 @@
         android:textColor="@color/creme"
         android:layout_margin="20dp"
         android:textAppearance="?android:textAppearanceMedium"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Ver no Google Maps"
-        android:background="@color/preto"
-        android:textColor="@color/colorPrimary"/>
 
 
 
