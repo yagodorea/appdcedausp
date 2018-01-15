@@ -8,11 +8,14 @@
     <string-array name="list_campus">
         <item>Butantã</item>
         <item>São Carlos</item>
-        <item>Ribeirão Preto</item>
         <item>EACH</item>
         <item>Sanfran</item>
         <item>Piracicaba</item>
+        <item>Ribeirão Preto</item>
         <item>Pirassununga</item>
+        <item>Bauru</item>
+        <item>Santos</item>
+        <item>Lorena</item>
     </string-array>
 
 </resources>

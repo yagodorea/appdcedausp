@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webViewBandejao"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/closeBandejao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/webViewBandejao"
+        android:layout_alignStart="@id/webViewBandejao"
+        android:visibility="visible"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_close"
+        app:fabSize="mini"
+        android:backgroundTint="@color/creme"
+        android:scaleType="fitCenter" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/changeBandejao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/webViewBandejao"
+        android:layout_alignEnd="@id/webViewBandejao"
+        android:visibility="visible"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_change"
+        app:fabSize="mini"
+        android:backgroundTint="@color/creme"
+        android:scaleType="fitCenter" />
+</RelativeLayout>

@@ -1,15 +1,20 @@
 package com.example.appdcedausp;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +22,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -57,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseUser user;
 
     SharedPreferences pref;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,25 +76,34 @@ public class MainActivity extends AppCompatActivity {
         fabCampus = (FloatingActionButton) findViewById(R.id.mudaCampus);
 
         switch(pref.getInt("Campus",0)){
-            case R.id.campus1: { // Butantã
+            case 0: { // Butantã
                 fabCampus.setImageResource(R.drawable.txtbutanta);
                 break;
-            }case R.id.campus2: { // São Carlos
+            }case 1: { // São Carlos
                 fabCampus.setImageResource(R.drawable.txtsanca);
                 break;
-            }case R.id.campus3: { // EACH
+            }case 2: { // EACH
                 fabCampus.setImageResource(R.drawable.txteach);
                 break;
-            }case R.id.campus4: { // Sanfran
+            }case 3: { // Sanfran
                 fabCampus.setImageResource(R.drawable.txtsanfran);
                 break;
-            }case R.id.campus5: { // Piracicaba
+            }case 4: { // Piracicaba
                 fabCampus.setImageResource(R.drawable.txtpiracicaba);
                 break;
-            }case R.id.campus6: { // Ribeirão Preto
+            }case 5: { // Ribeirão Preto
                 fabCampus.setImageResource(R.drawable.txtribeirao);
                 break;
-            }case R.id.campus7: { // Pirassununga
+            }case 6: { // Pirassununga
+                fabCampus.setImageResource(R.drawable.txtpirassununga);
+                break;
+            }case 7: { // Bauru
+                fabCampus.setImageResource(R.drawable.txtpirassununga);
+                break;
+            }case 8: { // Santos
+                fabCampus.setImageResource(R.drawable.txtpirassununga);
+                break;
+            }case 9: { // Lorena
                 fabCampus.setImageResource(R.drawable.txtpirassununga);
                 break;
             } default: askForCampus();
@@ -97,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setReadPermissions("email","public_profile");
+        loginButton.setReadPermissions("email","public_profile","user_friends");
 
         // Callback registration
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
@@ -145,9 +162,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.startAnimation(animAlpha);
-                user = FirebaseAuth.getInstance().getCurrentUser();
-                //Intent intent = new Intent(MainActivity.this,SettingsActivity.class);
-                //startActivity(intent);
             }
         });
 
@@ -155,6 +169,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.startAnimation(animAlpha);
+                Intent intent = new Intent(MainActivity.this,BandejaoActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -271,8 +287,85 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void askForCampus() {
-        Intent i = new Intent(MainActivity.this,CampusSelectPreference.class);
-        startActivity(i);
+        pref = getApplicationContext().getSharedPreferences("myConfig", 0); // 0 - for private mode
+        editor = pref.edit();
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+        TextView title = new TextView(this);
+        title.setText("Escolha seu Campus");
+        title.setGravity(Gravity.CENTER_HORIZONTAL);
+        title.setPadding(50,50,50,50);
+        title.setTextColor(getResources().getColor(R.color.grena));
+        title.setTextSize(24f);
+
+        builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialogInterface) {
+                editor.putInt("Campus", 1); // default: butantã
+                editor.apply();
+                fabCampus.setImageResource(R.drawable.txtbutanta);
+            }
+        });
+        builder.setCustomTitle(title)
+                .setItems(R.array.list_campus, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        switch(i) {
+                            case 0: { // Butantã
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtbutanta);
+                                break;
+                            }case 1: { // São Carlos
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtsanca);
+                                break;
+                            }case 2: { // EACH
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txteach);
+                                break;
+                            }case 3: { // Sanfran
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtsanfran);
+                                break;
+                            }case 4: { // Piracicaba
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtpiracicaba);
+                                break;
+                            }case 5: { // Ribeirão Preto
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtribeirao);
+                                break;
+                            }case 6: { // Pirassununga
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtpirassununga);
+                                break;
+                            }case 7: { // Bauru
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtbauru
+                                break;
+                            }case 8: { // Santos
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtsantos
+                                break;
+                            }case 9: { // Lorena
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtlorena
+                                break;
+                            } default: break;
+                        }
+                    }
+                })
+                .show();
     }
 }
 
