@@ -1,21 +1,12 @@
 package com.example.appdcedausp;
 
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
-
-import com.google.android.gms.ads.internal.gmsg.HttpClient;
-
-import java.util.Scanner;
 
 /**
  * Created by yago_ on 14/01/2018.
@@ -61,10 +52,8 @@ public class BandejaoActivity extends AppCompatActivity {
 
         wBandejao = (WebView)findViewById(R.id.webViewBandejao);
         wBandejao.getSettings().setJavaScriptEnabled(true);
-        wBandejao.addJavascriptInterface(new WebInterface(this),"HTMLOUT");
         wBandejao.setWebViewClient(new WebViewClient() {
             @Override
-            @JavascriptInterface
             public void onPageFinished(WebView view, String url) {
                 formatPage();
             }
@@ -72,7 +61,6 @@ public class BandejaoActivity extends AppCompatActivity {
         fabClose = (FloatingActionButton)findViewById(R.id.closeBandejao);
         fabClose.setOnClickListener(new View.OnClickListener() {
             @Override
-            @JavascriptInterface
             public void onClick(View view) {
                 finish();
             }
@@ -80,7 +68,6 @@ public class BandejaoActivity extends AppCompatActivity {
         fabChange = (FloatingActionButton)findViewById(R.id.changeBandejao);
         fabChange.setOnClickListener(new View.OnClickListener() {
             @Override
-            @JavascriptInterface
             public void onClick(View view) {
                 // TODO: Tratar lista de bandejoes para cada campus
                 bandex = (bandex+1)%22;

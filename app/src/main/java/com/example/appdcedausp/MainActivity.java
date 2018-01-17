@@ -161,7 +161,21 @@ public class MainActivity extends AppCompatActivity {
         btnEventos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.startAnimation(animAlpha);
+                Animation a = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim_translatelogo_maintofb);
+                findViewById(R.id.logoDCE).startAnimation(a);
+                a.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {}
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent i = new Intent(MainActivity.this,FacebookFeedActivity.class);
+                        startActivity(i);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {}
+                });
             }
         });
 
@@ -370,11 +384,9 @@ public class MainActivity extends AppCompatActivity {
 }
 
 /**
- * TODO: Atividade do bandejão
  * TODO: Atividade da permanência
  * TODO: Atividade dos links
  * TODO: Atividade da denúncia
  * TODO: Fragmento inicial para o mural de eventos e informes
- * TODO: Ajustes das atividades de acordo com a configuração de campus
  * TODO: Mecanismo que retorna ao fragmento inicial dos informes e eventos
  */

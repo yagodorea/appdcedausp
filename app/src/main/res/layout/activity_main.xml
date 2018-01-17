@@ -16,29 +16,27 @@
         android:backgroundTint="@color/creme"
         android:scaleType="fitCenter" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="3">
+        android:layout_height="match_parent">
 
         <ImageView
-            android:layout_weight="1.5"
-            android:contentDescription="Logo do DCE Livre da USP"
             android:id="@+id/logoDCE"
-            android:layout_width="match_parent"
-            android:scaleType="centerInside"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/fab_margin"
-            android:src="@drawable/logo" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:elevation="2dp"/>
 
 
         <LinearLayout
-            android:layout_weight="1.5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoDCE"
+            android:id="@+id/buttonsContainer"
+            android:layout_above="@id/fbButton">
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -104,10 +102,11 @@
 
         </LinearLayout>
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:id="@+id/fbButton">
 
             <com.facebook.login.widget.LoginButton
                 android:id="@+id/login_button"
@@ -119,6 +118,6 @@
                 android:layout_marginBottom="10dp" />
 
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

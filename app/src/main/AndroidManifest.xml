@@ -55,6 +55,8 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".BandejaoActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".FacebookFeedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

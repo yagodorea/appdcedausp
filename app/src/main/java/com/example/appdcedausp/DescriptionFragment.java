@@ -21,8 +21,8 @@ public class DescriptionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.description_fragment,container,false);
-        tTitle = (TextView)v.findViewById(R.id.descTitle);
-        tDesc = (TextView)v.findViewById(R.id.descContent);
+        tTitle = v.findViewById(R.id.descTitle);
+        tDesc = v.findViewById(R.id.descContent);
         return v;
     }
 

@@ -1,26 +1,26 @@
 package com.example.appdcedausp;
 
-import android.*;
 import android.Manifest;
-import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,7 +30,6 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
@@ -38,8 +37,6 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-
-import java.util.Map;
 
 /**
  * Created by yago_ on 12/01/2018.
@@ -49,42 +46,31 @@ public class MapActivity extends AppCompatActivity
     implements GoogleMap.OnMarkerClickListener
 {
 
+    private static final String TAG = MapActivity.class.getName();
+
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1307;
     private static final float DEFAULT_ZOOM = 15f;
-    private static final float FOCUS_ZOOM = 17f;
+    private static final float FOCUS_ZOOM = 18.5f;
+    private static final LatLng butantaInicio = new LatLng(-23.560919f,-46.7365807f);
+    private static final LatLng sancaInicio = new LatLng(-22.0062709f,-47.8967704f);
+    private static final LatLng eachInicio = new LatLng(-23.4824907f,-46.5007256f);
+    private static final LatLng sanfranInicio = new LatLng(-23.5497903f,-46.637328f);
+    private static final LatLng piracicInicio = new LatLng(-22.7111494f,-47.6306825f);
+    private static final LatLng ribeiraoInicio = new LatLng(-21.168679f,-47.8622834f);
+    private static final LatLng pirassuInicio = new LatLng(-21.9674265f,-47.467445f);
+    private static final LatLng bauruInicio = new LatLng(-22.3345195f,-49.0671509f);
+    private static final LatLng santosInicio = new LatLng(-22.0050875f,-47.9102792f);
+    private static final LatLng lorenaInicio = new LatLng(-23.9424612f,-46.3327931f);
     private Boolean mLocationPermissionGranted = false;
 
-    // Marcadores do mapa
+    // Marcador
     private Marker mark;
-    private Marker mark1;
-    private Marker mark2;
-    private Marker mark3;
-    private Marker mark4;
-
-    // Coordenadas dos marcadores
-    private float caaso1 = -22.006875f;
-    private float caaso2 = -47.8968879f;
-    private float arq1 = -22.0043909f;
-    private float arq2 = -47.8975817f;
-    private float obs1 = -22.0113144f;
-    private float obs2 = -47.8953311f;
-    private float fis1 = -22.0094621f;
-    private float fis2 = -47.8963324f;
-
-    // Descrições
-
-    private static final String[] mCAASO = new String[]{"CAASO","Centro Acadêmico Armando de Salles Oliveira.\nEsse é o CA mais TOP da USP!"};
-    private static final String[] mArq = new String[]{"IAU","Instituto de Arquitetura e Urbanismo.\nOnde vc faz arquitetura, duh!"};
-    private static final String[] mObservatorio = new String[]{"Observatório","Observatório na saída da produção.\nAqui vc pode ver as estrelas. :)"};
-    private static final String[] mFisica = new String[]{"IFSC","Instituto de Física de São Carlos.\nAqui é tipo um buraco negro, tente evitar entrar nesse prédio."};
-
 
     // Fragmentos
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
-    EmptyFragment emptyFragment;
     DescriptionFragment descriptionFragment;
 
     // Elementos
@@ -93,14 +79,22 @@ public class MapActivity extends AppCompatActivity
     FloatingActionButton fabDesc;
     FloatingActionButton fabGo;
 
+    // Mapa e localização
     private GoogleMap mMap;
-    private FusedLocationProviderClient mFusedLocationProviderClient;
+    FusedLocationProviderClient mFusedLocationProviderClient;
     private Location currLocation;
+
+    // Settings
+    SharedPreferences pref;
+    private int campus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.map_activity);
+
+        pref = getApplicationContext().getSharedPreferences("myConfig",0);
+        campus = pref.getInt("Campus",0);
 
         getLocationPermission();
     }
@@ -120,7 +114,39 @@ public class MapActivity extends AppCompatActivity
                             currLocation = (Location)task.getResult();
 
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currLocation.getLatitude(),currLocation.getLongitude()),DEFAULT_ZOOM));
-                            moveCamera(new LatLng(-22.0076031f,-47.8965129f),16.11f);
+                            switch (campus) {
+                                case 0: {
+                                    moveCamera(butantaInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 1: {
+                                    moveCamera(sancaInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 2: {
+                                    moveCamera(eachInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 3: {
+                                    moveCamera(sanfranInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 4: {
+                                    moveCamera(piracicInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 5: {
+                                    moveCamera(ribeiraoInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 6: {
+                                    moveCamera(pirassuInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 7: {
+                                    moveCamera(bauruInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 8: {
+                                    moveCamera(santosInicio, DEFAULT_ZOOM);
+                                    break;
+                                }case 9: {
+                                    moveCamera(lorenaInicio, DEFAULT_ZOOM);
+                                    break;
+                                }default : { moveCamera(new LatLng(currLocation.getLatitude(),currLocation.getLongitude()), DEFAULT_ZOOM); break; }
+                            }
                         } else {
                             Toast.makeText(MapActivity.this,"Erro na localização!",Toast.LENGTH_LONG).show();
                         }
@@ -128,7 +154,7 @@ public class MapActivity extends AppCompatActivity
                 });
             }
         } catch (SecurityException e) {
-
+            e.printStackTrace();
         }
     }
 
@@ -165,56 +191,148 @@ public class MapActivity extends AppCompatActivity
     }
 
     private void setMarkers() {
-        BitmapDrawable icon1 = (BitmapDrawable) getResources().getDrawable(R.drawable.caaso);
-        Bitmap small1 = Bitmap.createScaledBitmap(icon1.getBitmap(),100,100,false);
-        BitmapDrawable icon2 = (BitmapDrawable) getResources().getDrawable(R.drawable.iau);
-        Bitmap small2 = Bitmap.createScaledBitmap(icon2.getBitmap(),100,100,false);
-        BitmapDrawable icon3 = (BitmapDrawable) getResources().getDrawable(R.drawable.observatorio);
-        Bitmap small3 = Bitmap.createScaledBitmap(icon3.getBitmap(),100,100,false);
-        BitmapDrawable icon4 = (BitmapDrawable) getResources().getDrawable(R.drawable.ifsc);
-        Bitmap small4 = Bitmap.createScaledBitmap(icon4.getBitmap(),100,100,false);
+        Resources res = getResources();
+        TypedArray lats, lons, icons;
+        String[] titles,desc;
+        switch(campus) {
+            case 0: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 1: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 2: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 3: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 4: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 5: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 6: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 7: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 8: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 9: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }
+            default:
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+        }
 
-        mark1 = mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(caaso1,caaso2))
-                .title("CAASO")
-                .icon(BitmapDescriptorFactory.fromBitmap(small1)));
-
-        mark2 = mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(arq1,arq2))
-                .title("Arquitetura")
-                .icon(BitmapDescriptorFactory.fromBitmap(small2)));
-
-        mark3 = mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(obs1,obs2))
-                .title("Observatório")
-                .icon(BitmapDescriptorFactory.fromBitmap(small3)));
-
-        mark4 = mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(fis1,fis2))
-                .title("Física")
-                .icon(BitmapDescriptorFactory.fromBitmap(small4)));
+        for(int i=0;i<res.getIntArray(R.array.markerNumber)[campus];i++)
+        {
+            Log.d(TAG, "Shazam! -> setMarkers: setando marcador " + titles[i]);
+            //Bitmap small1 = Bitmap.createScaledBitmap(icon1.getBitmap(),100,100,false);
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(lats.getFloat(i,0f),lons.getFloat(i,0f)))
+                    .title(titles[i])
+                    .snippet(desc[i])
+                    .icon(BitmapDescriptorFactory.fromResource(icons.getResourceId(i,-1))));
+        }
+        lats.recycle();
+        lons.recycle();
+        icons.recycle();
     }
 
     // Inflar fragmentos e dar zoom quando clicarem nos markers
     @Override
     public boolean onMarkerClick(Marker marker) {
         mark = marker;
+        moveCamera(mark.getPosition(),FOCUS_ZOOM);
+
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
-        descriptionTitle = (TextView) findViewById(R.id.descTitle);
-        descriptionContent = (TextView) findViewById(R.id.descContent);
+        descriptionTitle = findViewById(R.id.descTitle);
+        descriptionContent = findViewById(R.id.descContent);
 
         fabDesc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fabDesc.setVisibility(View.GONE);
-                fabGo.setVisibility(View.GONE);
+                Log.d(TAG, "Shazam! ->run: entering thread for animation");
 
-                fragmentManager = getFragmentManager();
-                fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.hide(descriptionFragment);
-                fragmentTransaction.commit();
+                Log.d(TAG, "Shazam! ->run: animating in different thread");
+                // Animate buttons
+                AnimationSet sets = new AnimationSet(false);
+                sets.addAnimation(AnimationUtils.loadAnimation(MapActivity.this,R.anim.anim_fadeout));
+                sets.addAnimation(AnimationUtils.loadAnimation(MapActivity.this,R.anim.anim_gotobottom));
+
+                View view = findViewById(R.id.description_fragment_container);
+                view.startAnimation(sets);
+                fabDesc.startAnimation(sets);
+
+                sets.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        fabDesc.setVisibility(View.GONE);
+                        fabGo.setVisibility(View.GONE);
+
+                        fragmentManager = getFragmentManager();
+                        fragmentTransaction = fragmentManager.beginTransaction();
+                        fragmentTransaction.hide(descriptionFragment);
+                        fragmentTransaction.commit();
+                    }
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {}
+                    @Override
+                    public void onAnimationStart(Animation animation) {}
+                });
             }
         });
 
@@ -231,31 +349,28 @@ public class MapActivity extends AppCompatActivity
             }
         });
 
-        if (marker.equals(mark1)) { // CAASO
-            focusMarker(mark1,mCAASO);
-            return true;
-        } else if (marker.equals(mark2)) {  // Arq
-            focusMarker(mark2,mArq);
-            return true;
-        } else if (marker.equals(mark3)) {  // Observatório
-            focusMarker(mark3,mObservatorio);
-            return true;
-        } else if (marker.equals(mark4)) {  // Física
-            focusMarker(mark4,mFisica);
-            return true;
-        }
-        Toast.makeText(MapActivity.this,"return false",Toast.LENGTH_SHORT).show();
-        return false;
+        focusMarker(mark);
+        return true;
     }
 
-    private void focusMarker(Marker m,String[] description) {
+    private void focusMarker(Marker m) {
         moveCamera(m.getPosition(),FOCUS_ZOOM);
-        descriptionFragment.setText(description[0],description[1]);
+        descriptionFragment.setText(m.getTitle(),m.getSnippet());
         if (fabDesc.getVisibility() == View.GONE) { // Daí precisamos mostrar o fragmento da descrição
+            // Animate fragment
+            AnimationSet sets = new AnimationSet(false);
+            sets.addAnimation(AnimationUtils.loadAnimation(MapActivity.this,R.anim.anim_fadein));
+            sets.addAnimation(AnimationUtils.loadAnimation(MapActivity.this,R.anim.anim_appearfrombottom));
+
             fabDesc.setVisibility(View.VISIBLE);
             fabGo.setVisibility(View.VISIBLE);
             fragmentTransaction.show(descriptionFragment);
             fragmentTransaction.commit();
+
+            View v = findViewById(R.id.description_fragment_container);
+            v.startAnimation(sets);
+            fabDesc.startAnimation(sets);
+            fabGo.startAnimation(sets);
         }
     }
 
@@ -310,8 +425,8 @@ public class MapActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
 
-        fabDesc = (FloatingActionButton)findViewById(R.id.fabDesc);
-        fabGo = (FloatingActionButton)findViewById(R.id.fabGo);
+        fabDesc = findViewById(R.id.fabDesc);
+        fabGo = findViewById(R.id.fabGo);
         descriptionFragment = new DescriptionFragment();
 
         fragmentManager = getFragmentManager();

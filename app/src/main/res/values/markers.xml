@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="markerNumber">
+        <item>0</item>
+        <item>54</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="titlesSaoCarlos">
+        <!--Representação Estudantil-->
+        <item>SAAU</item>
+        <item>CCQ</item>
+        <item>CAASO</item>
+        <item>Pró-Produção</item>
+        <item>SAPA</item>
+        <item>SAECOMP</item>
+        <item>SAAERO</item>
+        <item>CEFISC</item>
+        <item>SACEX</item>
+        <item>DCE</item>
+        <item>SAEMM</item>
+        <item>SADEM</item>
+        <item>SAMECA</item>
+
+        <!--CAASO-->
+        <item>Bar do Mario</item>
+        <item>Palquinho do CAASO</item>
+        <item>Diretoria do CAASO</item>
+        <item>Salão de Jogos do CAASO</item>
+        <item>Bandejão do CAASO</item>
+        <item>BiblioteCAASO</item>
+        <item>Salão Cultural do CAASO</item>
+        <item>Salão de Eventos do CAASO</item>
+        <item>Colégio CAASO</item>
+        <item>EESC'o'Bar</item>
+        <item>CAASO Campus 2</item>
+
+        <!--Graduação-->
+        <item>Graduação da EESC</item>
+        <item>Graduação ICMC</item>
+        <item>Graduação IAU</item>
+        <item>Graduação IQSC</item>
+        <item>Graduação IFSC</item>
+
+        <!--Esportes e Exercícios-->
+        <item>Campo de Futebol</item>
+        <item>Academia CEFER</item>
+        <item>Centro de Educação Física, Esportes e Recreação (CEFER)</item>
+        <item>Atlética CAASO</item>
+        <item>Kartódromo</item>
+        <item>Campus 2</item>
+        <item>UFSCar</item>
+
+        <!--Cultura e Entretenimento-->
+        <item>Grupo de Som do CAASO</item>
+        <item>Gaperia</item>
+        <item>Observatório e Centro Cultural</item>
+        <item>USPão</item>
+        <item>Local de Árvores</item>
+        <item>Agrofloresta</item>
+        <item>Barracão de Compostagem</item>
+        <item>Galpão de Aeronaves</item>
+
+        <!--Utilidades-->
+        <item>Nova Saída do Campus 2</item>
+        <item>Pão de Queijo</item>
+        <item>Prefeitura do Campus</item>
+        <item>Saída via cartão USP</item>
+
+        <!--Alojas-->
+        <item>Alojamento - Bloco A</item>
+        <item>Alojamento - Blocos B a E</item>
+
+        <!--Saídas-->
+        <item>Saída Arquitetura</item>
+        <item>Saída Matemática</item>
+        <item>Saída Física</item>
+        <item>Saída Produção</item>
+    </string-array>
+    <string-array name="descSaoCarlos">
+        <!--Representação Estudantil-->
+        <item>Secretaria Acadêmica de Arquitetura e Urbanismo.</item>
+        <item>Centro de Convivência da Química.</item>
+        <item>Centro Acadêmico Armando de Salles Oliveira</item>
+        <item>Secretaria Acadêmica Pró-Produção</item>
+        <item>Secretaria Acadêmica Pró Ambiental</item>
+        <item>Secretaria Acadêmica da Engenharia de Computação</item>
+        <item>Secretaria Acadêmica da Engenharia Aeronáutica</item>
+        <item>Centro de Estudos de Física de São Carlos</item>
+        <item>Secretaria Acadêmica da Licenciaturas em Ciências Exatas</item>
+        <item>Sala do Diretório Central dos Estudantes da USP</item>
+        <item>Secretaria Acadêmica da Engenharia de Materiais. </item>
+        <item>Secretaria Acadêmica da Engenharia Mecatrônica</item>
+        <item>Secretaria Acadêmica da Engenharia Mecânica.</item>
+
+        <!--CAASO-->
+        <item>Lanchonete do CAASO</item>
+        <item>Local de eventos importantes e esporádicas integrações.</item>
+        <item>Secretaria e Diretoria do CAASO</item>
+        <item>Espaço para entretenimento e descanso.</item>
+        <item>Restaurante Universitário do Campus 1.</item>
+        <item>Biblioteca aberta aos estudantes e comunidade. Venha conhecer a Tia Celly e a Neusa.</item>
+        <item>Atividades culturais abertas para a comunidade. Danças, teatro, dentre outros. Consulte o cronograma.</item>
+        <item>Grande espaço para festas de eventos em geral.</item>
+        <item>Colégio de Ensino Médio e Cursinho gerido pelos estudantes do CAASO.</item>
+        <item>Lanchonete do CAASO.</item>
+        <item>Futura Instalações do CAASO no Campus 2</item>
+
+        <!--Graduação-->
+        <item>Serviço de graduação.</item>
+        <item>Serviço de graduação.</item>
+        <item>Serviço de graduação.</item>
+        <item>Serviço de graduação.</item>
+        <item>Serviço de graduação.</item>
+
+        <!--Esportes e Exercícios-->
+        <item>Bom para exercícios físicos e treinamentos com times da Atlética CAASO.</item>
+        <item>Todo aluno da USP pode desfrutar da acadêmica do CEFER, busque maiores informações com a administração do CEFER.</item>
+        <item>Possui piscinas, quadras, ginásio de esportes, mesas de ping pong, dentre outros. Converse com a administração para maiores informações.</item>
+        <item>Organiza competições, times, torneios. Faça parte da atlética ou treine em um de seus times.</item>
+        <item>Excelente espaço para prática de exercícios como corrida, alongamentos e treinos em geral.</item>
+        <item>Possui espaço amplo e livre para prática de exercícios em geral.</item>
+        <item>Campus da Universidade Federal de São Carlos, com excelentes áreas para práticas de exercícios, um grande lago e uma área de cerrado boa para passeios. (Xupa Federal)</item>
+
+        <!--Cultura e Entretenimento-->
+        <item>Um grupo que se organiza para trabalhos de som e entretenimento cultural em geral.</item>
+        <item>Bateria universitária do CAASO</item>
+        <item>É possível observar as estrelas e planetas no observatório da USP e também assistir filmes e outros atividades culturais como exposição no Centro Cultural.</item>
+        <item>Local de observação interessante aos estudantes. Um grande logo da USP desenhado no chão, bom lugar para se ver o por do sol.</item>
+        <item>Local interessante para prática de Slack-Line e outras atividades abaixo das árvores como um pique-nique.</item>
+        <item>Espaço de reflorestamento Agroflorestal organizado pelo Grupo de Estudos e Intervenções Sócio Ambientais (GEISA)</item>
+        <item>Centro de aplicação de tecnologias sociais do Grupo de Estudos e Intervenções Sócio Ambientais (GEISA).</item>
+        <item>Espaço onde são armazenadas as Aeronaves para o curso de Engenharia Aeronáutica.</item>
+
+        <!--Utilidades-->
+        <item>Saída recém construída do campus 2</item>
+        <item>Lanchonete, o famoso PQ.</item>
+        <item>Prefeitura do Campus de São Carlos, já foi ocupada algumas vezes pelos estudantes na luta por seus direitos.</item>
+        <item>Portão para pedestres. Só se abre com cartão USP.</item>
+
+        <!--Alojas-->
+        <item>Bloco A do Aloja, ou "o Velho".</item>
+        <item>Blocos B a E: Manicômio, ??, Novo, Novíssimo e Novérrimo. Mas não são tão novos, na real, já deviam ter construído outros!</item>
+
+        <!--Saídas-->
+        <item>Saída Norte do campus, na Av. Trabalhador Sancarlense, acesso ao Kartódromo e bairro Cidade Jardim.</item>
+        <item>Saída Leste do campus, na Rua Dr. Carlos de Camargo Salles, acesso ao bairro Jardim Lutfalla.</item>
+        <item>Saída Oeste do campus, na Rua Miguel Petroni e bairro Jardim Paraíso.</item>
+        <item>Saída Sul do campus, na Av. Dr. Carlos Botelho, acesso à praça XV.</item>
+
+    </string-array>
+    <array name="latSaoCarlos">
+        <!--Representação Estudantil-->
+        <item>-22.00367</item>
+        <item>-22.00493</item>
+        <item>-22.00679</item>
+        <item>-22.00973</item>
+        <item>-22.00306</item>
+        <item>-22.00253</item>
+        <item>-22.00502</item>
+        <item>-22.00821</item>
+        <item>-22.00823</item>
+        <item>-22.00684</item>
+        <item>-22.00454</item>
+        <item>-22.00746</item>
+        <item>-22.00783</item>
+
+        <!--CAASO-->
+        <item>-22.00684</item>
+        <item>-22.00697</item>
+        <item>-22.00678</item>
+        <item>-22.00681</item>
+        <item>-22.00656</item>
+        <item>-22.00671</item>
+        <item>-22.00691</item>
+        <item>-22.00487</item>
+        <item>-22.00612</item>
+        <item>-22.00795</item>
+        <item>-22.00105</item>
+
+        <!--Graduação-->
+        <item>-22.00845</item>
+        <item>-22.00746</item>
+        <item>-22.00313</item>
+        <item>-22.00446</item>
+        <item>-22.00918</item>
+
+        <!--Esportes e Exercícios-->
+        <item>-22.0063</item>
+        <item>-22.00564</item>
+        <item>-22.00604</item>
+        <item>-22.00693</item>
+        <item>-21.99918</item>
+        <item>-22.00226</item>
+        <item>-21.98612</item>
+
+        <!--Cultura e Entretenimento-->
+        <item>-22.00684</item>
+        <item>-22.00682</item>
+        <item>-22.01114</item>
+        <item>-22.00347</item>
+        <item>-22.0104</item>
+        <item>-22.00386</item>
+        <item>-22.00131</item>
+        <item>-22.00506</item>
+
+        <!--Utilidades-->
+        <item>-22.00752</item>
+        <item>-22.00389</item>
+        <item>-22.00457</item>
+        <item>-22.00551</item>
+
+        <!--Alojas-->
+        <item>-22.00776</item>
+        <item>-22.00592</item>
+
+        <!--Saídas-->
+        <item>-22.00258</item>
+        <item>-22.00624</item>
+        <item>-22.00801</item>
+        <item>-22.01142</item>
+    </array>
+    <array name="lonSaoCarlos">
+        <!--Representação Estudantil-->
+        <item>-47.89772</item>
+        <item>-47.89824</item>
+        <item>-47.89697</item>
+        <item>-47.8968</item>
+        <item>-47.92852</item>
+        <item>-47.9327</item>
+        <item>-47.9333</item>
+        <item>-47.89826</item>
+        <item>-47.89828</item>
+        <item>-47.89685</item>
+        <item>-47.93182</item>
+        <item>-47.89829</item>
+        <item>-47.89819</item>
+
+        <!--CAASO-->
+        <item>-47.89695</item>
+        <item>-47.8969</item>
+        <item>-47.89682</item>
+        <item>-47.89667</item>
+        <item>-47.89689</item>
+        <item>-47.89725</item>
+        <item>-47.89723</item>
+        <item>-47.89638</item>
+        <item>-47.89577</item>
+        <item>-47.89712</item>
+        <item>-47.93293</item>
+
+        <!--Graduação-->
+        <item>-47.89668</item>
+        <item>-47.89463</item>
+        <item>-47.8986</item>
+        <item>-47.89853</item>
+        <item>-47.89678</item>
+
+        <!--Esportes e Exercícios-->
+        <item>-47.8984</item>
+        <item>-47.89721</item>
+        <item>-47.8969</item>
+        <item>-47.89711</item>
+        <item>-47.89899</item>
+        <item>-47.92995</item>
+        <item>-47.88221</item>
+
+        <!--Cultura e Entretenimento-->
+        <item>-47.89685</item>
+        <item>-47.89733</item>
+        <item>-47.89659</item>
+        <item>-47.89977</item>
+        <item>-47.89659</item>
+        <item>-47.92771</item>
+        <item>-47.93445</item>
+        <item>-47.93401</item>
+
+        <!--Utilidades-->
+        <item>-47.93259</item>
+        <item>-47.89778</item>
+        <item>-47.89739</item>
+        <item>-47.90014</item>
+
+        <!--Alojas-->
+        <item>-47.89603</item>
+        <item>-47.89918</item>
+
+        <!--Saídas-->
+        <item>-47.89858</item>
+        <item>-47.8953</item>
+        <item>-47.89866</item>
+        <item>-47.89631</item>
+    </array>
+    <integer-array name="iconsSanca">
+        <!--Representação Estudantil-->
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_flag</item>
+
+        <!--CAASO-->
+        <item>@drawable/ic_map_bar</item>
+        <item>@drawable/ic_map_star</item>
+        <item>@drawable/ic_map_star</item>
+        <item>@drawable/ic_map_star</item>
+        <item>@drawable/ic_map_restaurant</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_music</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_star</item>
+        <item>@drawable/ic_map_bar</item>
+        <item>@drawable/ic_map_place</item>
+
+        <!--Graduação-->
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_grad</item>
+
+        <!--Esportes e Exercícios-->
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+
+        <!--Cultura e Entretenimento-->
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+
+        <!--Utilidades-->
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_bar</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+
+        <!--Alojas-->
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+
+        <!--Saídas-->
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+    </integer-array>
+</resources>
