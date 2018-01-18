@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\c01bb0ed4dc6ceadce9f34103a5522e3\AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\92596567b3a51c9ea80e037cdaf4dc03\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\030aa3a71fe41cc12371ef6d04779395\AndroidManifest.xml:17:1-32:12
@@ -45,20 +45,20 @@ MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\4e56ef0578d1e16d46551e4e068f23e4\AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\b6c3f14e7e2bc92a596497530f5d20a0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\56f273596e71ffb7b5716312aa19de52\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-62:12
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-68:12
 		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:11-69
@@ -95,7 +95,7 @@ MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\cac
 	android:name
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:8:22-76
 application
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:10:5-60:19
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:10:5-66:19
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\c01bb0ed4dc6ceadce9f34103a5522e3\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\c01bb0ed4dc6ceadce9f34103a5522e3\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\030aa3a71fe41cc12371ef6d04779395\AndroidManifest.xml:22:5-30:19
@@ -185,9 +185,11 @@ ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:24:13-58
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:27:9-30:47
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:27:9-31:51
 MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\cc2365f37b1b3b591490bfc2698f0982\AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\cc2365f37b1b3b591490bfc2698f0982\AndroidManifest.xml:29:9-32:66
+	android:screenOrientation
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:31:13-49
 	android:label
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:30:13-45
 	android:configChanges
@@ -197,67 +199,77 @@ MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle
 	android:name
 		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:28:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:31:9-43:20
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:32:9-45:20
+	android:screenOrientation
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:36:13-49
 	android:exported
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:33:13-36
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:34:13-36
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:34:13-56
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:35:13-56
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:32:13-58
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:33:13-58
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:35:13-42:29
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:37:13-44:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:38:17-76
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:40:17-76
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:38:27-73
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:40:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:39:17-78
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:41:17-78
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:39:27-75
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:41:27-75
 data
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:41:17-75
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:43:17-75
 	android:scheme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:41:23-72
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:43:23-72
 activity#com.example.appdcedausp.MainActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:44:9-53:20
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:46:9-56:20
+	android:screenOrientation
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:50:13-49
 	android:label
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:46:13-45
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:48:13-45
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:47:13-56
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:49:13-56
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:45:13-41
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:47:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:48:13-52:29
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:51:13-55:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:49:17-69
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:52:17-69
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:49:25-66
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:52:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:51:17-77
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:54:17-77
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:51:27-74
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:54:27-74
 activity#com.example.appdcedausp.MapActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:54:9-55:58
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:57:9-59:51
+	android:screenOrientation
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:59:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:55:13-56
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:58:13-56
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:54:19-46
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:57:19-46
 activity#com.example.appdcedausp.BandejaoActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:56:9-57:58
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:60:9-62:51
+	android:screenOrientation
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:62:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:57:13-56
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:61:13-56
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:56:19-51
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:60:19-51
 activity#com.example.appdcedausp.FacebookFeedActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:58:9-59:59
+ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:63:9-65:52
+	android:screenOrientation
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:65:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:59:13-56
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:64:13-56
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:58:19-55
+		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:63:19-55
 uses-sdk
 INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml

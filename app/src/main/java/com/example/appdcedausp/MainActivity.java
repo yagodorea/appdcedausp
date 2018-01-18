@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 if (isServicesOK()) {
                     Intent intent = new Intent(MainActivity.this,MapActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.anim_ffadein,R.anim.anim_ffadeout);
                 }
             }
         });
@@ -163,14 +164,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Animation a = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim_translatelogo_maintofb);
                 findViewById(R.id.logoDCE).startAnimation(a);
+                a.setFillAfter(true);
                 a.setAnimationListener(new Animation.AnimationListener() {
                     @Override
                     public void onAnimationStart(Animation animation) {}
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
+                        Animation a2 = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim_ffadeout);
+                        //a2.setFillAfter(true);
+                        findViewById(R.id.logoDCE).startAnimation(a2);
                         Intent i = new Intent(MainActivity.this,FacebookFeedActivity.class);
                         startActivity(i);
+                        overridePendingTransition(R.anim.anim_ffadein,R.anim.anim_ffadeout);
                     }
 
                     @Override

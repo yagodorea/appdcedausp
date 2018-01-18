@@ -1,18 +1,18 @@
 package com.example.appdcedausp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsoluteLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -32,9 +32,11 @@ public class FbFeedFragment extends Fragment {
     TextView fbStory;
     TextView fbDate;
     TextView fbPermalink;
+    TextView fbMessage;
     ImageView postSeparator;
     ImageView postPic;
-    Drawable pic;
+    Bitmap pic;
+    String imgurl;
 
     LinearLayout innerContainer;
 
@@ -69,80 +71,109 @@ public class FbFeedFragment extends Fragment {
         innerContainer = view.findViewById(R.id.innerContainer);
     }
 
-    public void setPost(String story, String date, String perma, final String imgurl) {
+    public void setPost(String date, String story, String picture, String message, String perma) {
 
-        fbDate = new TextView(c);
-        fbDate.setText(date);
-        fbDate.setTextSize(14f);
-        fbDate.setTypeface(null, Typeface.ITALIC);
-        fbDate.setPadding(10,10,0,0);
-        fbDate.setTextColor(getResources().getColor(R.color.creme));
-
-        fbStory = new TextView(c);
-        fbStory.setText(story);
-        fbStory.setTextSize(20f);
-        fbStory.setTypeface(null, Typeface.BOLD);
-        fbStory.setPadding(10,0,0,10);
-        fbStory.setTextColor(getResources().getColor(R.color.creme));
-
-        postPic = new ImageView(c);
-        postPic.setPadding(10,10,10,10);
-        postPic.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        postPic.setScaleX(2f);
-        postPic.setScaleY(2f);
-
-        fbPermalink = new TextView(c);
-        fbPermalink.setText(perma);
-        fbPermalink.setTextSize(14f);
-        fbPermalink.setTypeface(null, Typeface.ITALIC);
-        fbPermalink.setLinksClickable(true);
-        fbPermalink.setLinkTextColor(getResources().getColor(R.color.colorAccent));
-        fbPermalink.setPadding(10,0,0,10);
-        fbPermalink.setTextColor(getResources().getColor(R.color.creme));
-
-        postSeparator = new ImageView(c);
-        postSeparator.setImageResource(R.drawable.ic_separator);
-        postSeparator.setPadding(10,0,10,0);
-        postSeparator.setScaleType(ImageView.ScaleType.FIT_XY);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        if (date != null) {
+            fbDate = new TextView(c);
+            fbDate.setText(date);
+            fbDate.setTextSize(14f);
+            fbDate.setTypeface(null, Typeface.ITALIC);
+            fbDate.setPadding(10, 10, 0, 0);
+            fbDate.setTextColor(getResources().getColor(R.color.creme));
+            fbDate.setLayoutParams(params);
+            innerContainer.addView(fbDate);
+        }
+
+        if (story != null) {
+            fbStory = new TextView(c);
+            fbStory.setText(story);
+            fbStory.setTextSize(20f);
+            fbStory.setTypeface(null, Typeface.BOLD);
+            fbStory.setPadding(10, 0, 0, 10);
+            fbStory.setTextColor(getResources().getColor(R.color.creme));
+            fbStory.setLayoutParams(params);
+            innerContainer.addView(fbStory);
+        }
+
+        if (picture != null) {
+            imgurl = picture;
+            postPic = new ImageView(c);
+            postPic.setPadding(10, 10, 10, 10);
+            postPic.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            postPic.setLayoutParams(params);
+            innerContainer.addView(postPic);
+
+            new DownloadImageTask(postPic).execute(imgurl);
+        }
+
+        if (message != null) {
+            // Encurtar mensagem
+//            if (message.length() > 500) {
+//                message = StringBuilder();
+//            }
+
+            fbMessage = new TextView(c);
+            fbMessage.setText(message);
+            fbMessage.setTextSize(16f);
+            fbMessage.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+            fbMessage.setPadding(10, 0, 0, 10);
+            fbMessage.setTextColor(getResources().getColor(R.color.creme));
+            fbMessage.setLayoutParams(params);
+            innerContainer.addView(fbMessage);
+        }
+
+        if (perma != null) {
+            fbPermalink = new TextView(c);
+            fbPermalink.setText(perma);
+            fbPermalink.setTextSize(14f);
+            fbPermalink.setTypeface(null, Typeface.ITALIC);
+            fbPermalink.setLinkTextColor(getResources().getColor(R.color.colorAccent));
+            fbPermalink.setPadding(10, 0, 0, 10);
+            fbPermalink.setTextColor(getResources().getColor(R.color.creme));
+            fbPermalink.setLinksClickable(true);
+            fbPermalink.setLayoutParams(params);
+            innerContainer.addView(fbPermalink);
+        }
+
+        postSeparator = new ImageView(c);
+        postSeparator.setImageResource(R.drawable.ic_separator);
+        postSeparator.setPadding(10,0,10,50);
+        postSeparator.setScaleType(ImageView.ScaleType.FIT_XY);
         postSeparator.setLayoutParams(params);
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                // Run network operation in background thread not to freeze main thread
-                pic = LoadImageFromWebOperations(imgurl);
-
-                // Then hand the result to main thread who can alter the view it created
-                Handler handler = new Handler(c.getMainLooper());
-                Runnable runnable = new Runnable() {
-                    @Override
-                    public void run() {
-                        if (pic != null && postPic != null)
-                            postPic.setImageDrawable(pic);
-                    }
-                };
-                handler.post(runnable);
-            }
-        }).start();
-
-        innerContainer.addView(fbDate);
-        innerContainer.addView(fbStory);
-        innerContainer.addView(postPic);
-        innerContainer.addView(fbPermalink);
         innerContainer.addView(postSeparator);
     }
 
-    public static Drawable LoadImageFromWebOperations(String url) {
-        try {
-            InputStream is = (InputStream) new URL(url).getContent();
-            Drawable d = Drawable.createFromStream(is, "src name");
-            return d;
-        } catch (Exception e) {
-            Log.d(TAG, "Shazam! ->LoadImageFromWebOperations: error loading image from web: " + e.toString());
-            return null;
+    public class DownloadImageTask extends AsyncTask<String,Void,Bitmap> {
+        private ImageView image;
+        private Bitmap bitmap;
+
+        public DownloadImageTask(ImageView imageView) {
+            this.image = imageView;
+        }
+
+        @Override
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            try {
+                InputStream in = new URL(urldisplay).openStream();
+                bitmap = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                bitmap = null;
+                e.printStackTrace();
+            }
+            return bitmap;
+        }
+
+        @SuppressLint("NewApi")
+        @Override
+        protected void onPostExecute(Bitmap result) {
+            if (result != null) {
+                image.setImageBitmap(bitmap);
+            }
         }
     }
 }
