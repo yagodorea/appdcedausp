@@ -18,13 +18,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/mainRootLayout">
 
         <ImageView
             android:id="@+id/logoDCE"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_margin="20dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:src="@drawable/logo"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/logoDCE"
             android:id="@+id/buttonsContainer"
-            android:layout_above="@id/fbButton">
+            android:layout_alignParentBottom="true">
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -104,18 +104,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="center"
-            android:id="@+id/fbButton">
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:id="@+id/googleSignInContainer">
 
-            <com.facebook.login.widget.LoginButton
-                android:id="@+id/login_button"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:onClick="fbClick"
-                android:layout_marginBottom="10dp" />
+                android:layout_gravity="top|right"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/creme"
+                android:fontFamily="@font/roboto_regular"
+                android:id="@+id/googleSignInText"
+                android:text="Entrar:"/>
+
+            <ImageView
+                android:id="@+id/googleSignInButton"
+                android:layout_height="50dp"
+                android:layout_width="120dp"
+                android:scaleType="fitStart"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/googlesign_creme"
+                />
+
 
         </LinearLayout>
     </RelativeLayout>

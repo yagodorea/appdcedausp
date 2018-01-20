@@ -4,8 +4,17 @@
 
     <translate
         android:fromYDelta="0"
-        android:toYDelta="67%p"
-        android:duration="2000"
+        android:toYDelta="200%p"
+        android:fromXDelta="0"
+        android:toXDelta="50%p"
+        android:duration="1500"
+        />
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="0.5"
+        android:fromYScale="1.0"
+        android:toYScale="0.5"
+        android:duration="1500"
         />
 
 </set>

@@ -3,9 +3,16 @@
     package="com.example.appdcedausp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NETWORK" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" />
 
     <application
         android:allowBackup="true"
@@ -61,6 +68,9 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
         <activity android:name=".FacebookFeedActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EventsActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
     </application>

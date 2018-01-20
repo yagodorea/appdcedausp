@@ -17,8 +17,18 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.api.client.util.DateTime;
+
 import java.io.InputStream;
 import java.net.URL;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Locale;
 
 /**
  * Created by yago_ on 17/01/2018.
@@ -79,7 +89,12 @@ public class FbFeedFragment extends Fragment {
 
         if (date != null) {
             fbDate = new TextView(c);
-            fbDate.setText(date);
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss+SSS",new Locale("pt","BR"));
+            try {
+                fbDate.setText(DateFormat.getDateInstance(DateFormat.FULL,new Locale("pt","BR")).format(df.parse(date)));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
             fbDate.setTextSize(14f);
             fbDate.setTypeface(null, Typeface.ITALIC);
             fbDate.setPadding(10, 10, 0, 0);

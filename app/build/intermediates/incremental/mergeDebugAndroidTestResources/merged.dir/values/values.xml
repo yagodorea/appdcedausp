@@ -931,8 +931,10 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_settings_dialog">Permissions Required</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -2002,6 +2004,15 @@
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="EasyPermissions" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="EasyPermissions.Transparent" parent="EasyPermissions">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

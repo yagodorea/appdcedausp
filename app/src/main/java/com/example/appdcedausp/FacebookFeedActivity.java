@@ -4,13 +4,21 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.ScaleAnimation;
+import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 
 import com.facebook.AccessToken;
@@ -49,12 +57,6 @@ public class FacebookFeedActivity extends AppCompatActivity {
         Bundle param = new Bundle();
         param.putString("fields","created_time,name,story,picture,full_picture,message,description,permalink_url");
         param.putString("locale","pt_BR");
-
-//        fbFeedFragment = new FbFeedFragment();
-//        fragmentManager = getSupportFragmentManager();
-//        fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.add(R.id.fbFeedContainer,fbFeedFragment);
-//        fragmentTransaction.commit();
 
         addFragment();
 
@@ -135,7 +137,7 @@ public class FacebookFeedActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        //super.onBackPressed();
         exitAnimation();
     }
 
@@ -146,15 +148,18 @@ public class FacebookFeedActivity extends AppCompatActivity {
     }
 
     public void exitAnimation() {
-        Animation a = AnimationUtils.loadAnimation(FacebookFeedActivity.this,R.anim.anim_translatelogo_fbtomain);
+        AnimationSet a = loadLogoAnimationFacebook(findViewById(R.id.logoDCEfb));
         findViewById(R.id.logoDCEfb).startAnimation(a);
-        a.setFillAfter(true);
         a.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {}
 
             @Override
             public void onAnimationEnd(Animation animation) {
+                AlphaAnimation alpha = new AlphaAnimation(1f,0f);
+                alpha.setDuration(500);
+                findViewById(R.id.logoDCEfb).startAnimation(alpha);
+
                 Animation a2 = AnimationUtils.loadAnimation(FacebookFeedActivity.this,R.anim.anim_ffadeout);
                 //a2.setFillAfter(true);
                 findViewById(R.id.logoDCEfb).startAnimation(a2);
@@ -164,5 +169,33 @@ public class FacebookFeedActivity extends AppCompatActivity {
             @Override
             public void onAnimationRepeat(Animation animation) {}
         });
+    }
+
+    public AnimationSet loadLogoAnimationFacebook(View view) {
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+        View rootLayout = findViewById(R.id.fbActivContainer);
+        int statusBarOffset = dm.heightPixels - rootLayout.getMeasuredHeight();
+
+        int destPosX = dm.widthPixels/2;
+        int destPosY = 2*view.getMeasuredHeight() - statusBarOffset;
+
+        int xDelta = - (dm.widthPixels - destPosX - view.getMeasuredWidth()/2);
+        int yDelta = - (dm.heightPixels - destPosY);
+
+        AnimationSet a = new AnimationSet(true);
+        a.setFillAfter(true);
+        a.setDuration(1500);
+        a.setInterpolator(new DecelerateInterpolator());
+        ScaleAnimation scale = new ScaleAnimation(1f,2f,1f,2f,ScaleAnimation.RELATIVE_TO_SELF,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f);
+        a.addAnimation(scale);
+        TranslateAnimation translate = new TranslateAnimation(
+                TranslateAnimation.ABSOLUTE,0,
+                TranslateAnimation.ABSOLUTE,xDelta,
+                TranslateAnimation.ABSOLUTE,0,
+                TranslateAnimation.ABSOLUTE,yDelta);
+        a.addAnimation(translate);
+        return a;
     }
 }

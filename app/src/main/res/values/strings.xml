@@ -4,6 +4,7 @@
     <string name="facebook_app_id">992935517526832</string>
     <string name="fb_login_protocol_scheme">fb992935517526832</string>
     <string name="title_activity_settings">Settings</string>
+    <!--<string name="default_web_client_id">675152987162-u3vcnf1erusv6fmd1cei4o9uo3a068kq.apps.googleusercontent.com</string>-->
 
     <string-array name="list_campus">
         <item>Butantã</item>
