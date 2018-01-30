@@ -1,4 +1,4 @@
-package com.example.appdcedausp;
+package com.example.appdcedausp.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.appdcedausp.R;
 
 /**
  * Created by yago_ on 14/01/2018.

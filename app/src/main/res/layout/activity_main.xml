@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grena"
-    tools:context="com.example.appdcedausp.MainActivity">
+    tools:context="com.example.appdcedausp.ui.MainActivity">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/mudaCampus"

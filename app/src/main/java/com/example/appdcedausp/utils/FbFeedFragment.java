@@ -1,4 +1,4 @@
-package com.example.appdcedausp;
+package com.example.appdcedausp.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,17 +17,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.api.client.util.DateTime;
+import com.example.appdcedausp.R;
 
 import java.io.InputStream;
 import java.net.URL;
-import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.Locale;
 
 /**

@@ -1,39 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/creme"
+    android:padding="10dp">
 
-
-    <CalendarView
-        android:id="@+id/calendarView"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"/>
+        android:layout_centerHorizontal="true"
+        android:text="Eventos"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/grena"
+        android:textSize="32sp"
+        android:id="@+id/titleEventos"/>
 
-    <LinearLayout
-        android:layout_below="@+id/calendarView"
+    <TabHost
         android:layout_width="match_parent"
+        android:layout_below="@id/titleEventos"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/tabhost"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/grena"
-            android:textColor="@color/creme"
-            android:layout_gravity="left"
-            android:padding="20dp"
-            android:text="Event Summary"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:id="@+id/titleCalendar"/>
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/creme"
-            android:padding="20dp"
-            android:text="Event Description"
-            android:id="@+id/descriptionCalendar"/>
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/calendarTextContainer1">
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/calendarTextContainer2">
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/calendarTextContainer3">
+
+                    </ScrollView>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 </RelativeLayout>

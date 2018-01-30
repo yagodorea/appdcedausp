@@ -1,4 +1,4 @@
-package com.example.appdcedausp;
+package com.example.appdcedausp.utils;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.appdcedausp.R;
 
 /**
  * Created by yago_ on 13/01/2018.
