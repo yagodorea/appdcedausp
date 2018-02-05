@@ -2,14 +2,17 @@ package com.example.appdcedausp.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -146,8 +149,18 @@ public class FbFeedFragment extends Fragment {
             fbPermalink.setPadding(10, 0, 0, 10);
             fbPermalink.setTextColor(getResources().getColor(R.color.creme));
             fbPermalink.setLinksClickable(true);
+            fbPermalink.setMovementMethod(LinkMovementMethod.getInstance());
             fbPermalink.setLayoutParams(params);
             innerContainer.addView(fbPermalink);
+
+            final String link = perma;
+            fbPermalink.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    c.getPackageManager().getLaunchIntentForPackage("com.facebook.katana");
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(link)));
+                }
+            });
         }
 
         postSeparator = new ImageView(c);

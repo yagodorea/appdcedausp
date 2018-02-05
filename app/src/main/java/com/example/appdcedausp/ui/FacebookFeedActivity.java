@@ -103,9 +103,9 @@ public class FacebookFeedActivity extends AppCompatActivity {
                 }
 
                 if(obj.has("message")) {
-                    message = obj.getString("message");
+                    message = delimitMessage(obj.getString("message"));
                 } else if (obj.has("description")) {
-                    message = obj.getString("description");
+                    message = delimitMessage(obj.getString("description"));
                 }
 
                 if(obj.has("permalink_url"))
@@ -121,6 +121,16 @@ public class FacebookFeedActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    public String delimitMessage(String s) {
+        // return string with first 30 words and "..."
+        int i = 50;
+        String[] tokens = s.split(" ");
+        if (i > tokens.length) return s;
+        while(tokens[++i].length() < 5); // Não usar palavras pequenas com alta ocorrência (que, e, se, do, de...)
+        String[] broken = s.split(" " + tokens[i]); // separar string e pegar parte antes da ocorrência.
+        return (broken[0] + "...");
     }
 
     public void addFragment() {

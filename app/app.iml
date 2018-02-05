@@ -161,6 +161,8 @@
     <orderEntry type="library" scope="TEST" name="com.android.support:multidex-instrumentation-1.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="com.android.support.test.espresso:espresso-idling-resource-2.2.2" level="project" />
     <orderEntry type="library" name="com.facebook.android:facebook-login-4.29.0" level="project" />
+    <orderEntry type="library" name="com.squareup.picasso:picasso:2.5.2@jar" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-database-connection-license-11.8.0" level="project" />
     <orderEntry type="library" scope="TEST" name="javax.annotation:javax.annotation-api:1.2@jar" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-auth-api-phone-license-11.8.0" level="project" />
     <orderEntry type="library" name="com.android.support:transition-26.1.0" level="project" />
@@ -173,6 +175,7 @@
     <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.1.3@jar" level="project" />
     <orderEntry type="library" name="com.google.http-client:google-http-client-jackson2:1.23.0@jar" level="project" />
     <orderEntry type="library" name="com.android.support:appcompat-v7-27.0.1" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-storage-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-iid-license-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.http-client:google-http-client-android:1.23.0@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="junit:junit:4.12@jar" level="project" />
@@ -180,18 +183,25 @@
     <orderEntry type="library" name="com.google.android.gms:play-services-auth-api-phone-11.8.0" level="project" />
     <orderEntry type="library" scope="TEST" name="javax.inject:javax.inject:1@jar" level="project" />
     <orderEntry type="library" name="com.parse.bolts:bolts-applinks:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="com.firebaseui:firebase-ui-database-0.4.1" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-maps-license-11.8.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-annotations:27.0.1@jar" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-analytics-11.8.0" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-database-connection-11.8.0" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-storage-license-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-maps-11.8.0" level="project" />
     <orderEntry type="library" name="com.facebook.android:facebook-core-4.29.0" level="project" />
     <orderEntry type="library" name="com.parse.bolts:bolts-android:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-database-license-11.8.0" level="project" />
     <orderEntry type="library" scope="TEST" name="org.hamcrest:hamcrest-library:1.3@jar" level="project" />
     <orderEntry type="library" name="pub.devrel:easypermissions-0.3.0" level="project" />
     <orderEntry type="library" scope="TEST" name="com.android.support.test:runner-0.5" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-auth-base-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-auth-base-license-11.8.0" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-storage-common-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-location-11.8.0" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-storage-common-license-11.8.0" level="project" />
+    <orderEntry type="library" name="com.google.firebase:firebase-database-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-analytics-license-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-analytics-impl-license-11.8.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-tasks-license-11.8.0" level="project" />

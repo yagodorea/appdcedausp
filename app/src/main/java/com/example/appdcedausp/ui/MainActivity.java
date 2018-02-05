@@ -228,6 +228,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.startAnimation(animAlpha);
+
+                Intent intent = new Intent(MainActivity.this,SimpleBlogActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -409,22 +412,18 @@ public class MainActivity extends AppCompatActivity {
         // get logo location
         int originalPos[] = new int[2];
         view.getLocationOnScreen(originalPos);
-        // Bizarro: a localização horizontal é no meio e a vertical é no fim...
 
-        View rootLayout = findViewById(R.id.mainRootLayout);
-        int statusBarOffset = dm.heightPixels - rootLayout.getMeasuredHeight();
-
-        int xDelta = (- originalPos[0] + dm.widthPixels - view.getMeasuredWidth()/4);
-        int yDelta = (- originalPos[1]/2 + dm.heightPixels - view.getMeasuredHeight()/2 + statusBarOffset);
+        int xDelta = (dm.widthPixels - view.getMeasuredWidth() - originalPos[0]);
+        int yDelta = (dm.heightPixels - view.getMeasuredHeight() - originalPos[1]);
 
 
-        Log.d(TAG, "Shazam! ->loadLogoAnimationMain: pivotX: " + view.getPivotX());
-        Log.d(TAG, "Shazam! ->loadLogoAnimationMain: pivotY: " + view.getPivotY());
+//        Log.d(TAG, "Shazam! ->loadLogoAnimationMain: origX+w: " + (originalPos[0]+view.getMeasuredWidth()));
+//        Log.d(TAG, "Shazam! ->loadLogoAnimationMain: origY+h: " + (originalPos[1]+view.getMeasuredHeight()));
         AnimationSet a = new AnimationSet(true);
         a.setFillAfter(true);
         a.setDuration(500);
         a.setInterpolator(new DecelerateInterpolator());
-        ScaleAnimation scale = new ScaleAnimation(1f,0.5f,1.0f,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f);
+        ScaleAnimation scale = new ScaleAnimation(1f,0.5f,1.0f,0.5f,ScaleAnimation.RELATIVE_TO_SELF,1f,ScaleAnimation.RELATIVE_TO_SELF,1f);
         a.addAnimation(scale);
         TranslateAnimation translate = new TranslateAnimation(
                 TranslateAnimation.ABSOLUTE,0,

@@ -2,7 +2,7 @@ package com.example.appdcedausp.utils;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.Resources;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.ImageView;
@@ -10,21 +10,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.appdcedausp.R;
-import com.example.appdcedausp.ui.MainActivity;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
-import com.google.api.client.util.ExponentialBackOff;
-import com.google.api.services.calendar.CalendarScopes;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.util.Arrays;
 
@@ -36,11 +35,16 @@ import java.util.Arrays;
 
 public class FirebaseUtils {
 
+    // Firebase Auth
     private static FirebaseAuth mAuth;
     private static FirebaseUser mUser;
     private static AuthCredential mCredential;
 
     private static Activity mContext;
+
+    // Firebase Storage and Database
+    private static StorageReference mStorage;
+    private static DatabaseReference mDatabase;
 
     public static final String TAG = FirebaseUtils.class.getName();
 
@@ -48,7 +52,12 @@ public class FirebaseUtils {
         mContext = (Activity)context;
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
+        mStorage = FirebaseStorage.getInstance().getReference();
+        mDatabase = FirebaseDatabase.getInstance().getReference();
     }
+
+
+    ///////////////////////////////// AUTHENTICATION //////////////////////////////////////
 
     public static FirebaseAuth getAuthInstance() {
         return mAuth;
@@ -106,4 +115,11 @@ public class FirebaseUtils {
         mAuth.signOut();
         mUser = mAuth.getCurrentUser();
     }
+
+    ///////////////////////////////// STORAGE&DB //////////////////////////////////////
+
+    public static StorageReference getMStorage() { return mStorage; }
+
+    public static DatabaseReference getMDatabase() { return mDatabase; }
+
 }

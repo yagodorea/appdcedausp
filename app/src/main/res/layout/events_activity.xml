@@ -2,8 +2,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/creme"
     android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:elevation="2dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add2"
+            android:tint="@color/creme"
+            android:backgroundTint="@color/grena"
+            android:id="@+id/fabCalendar"
+            app:fabSize="mini"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Adicionar todos os eventos"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/grena"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"

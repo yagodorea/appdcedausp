@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.CalendarView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -65,9 +66,12 @@ public class EventsActivity extends AppCompatActivity {
 
     TabHost tabHost;
 
+    ScrollView scroller;
+
     TextView title;
     TextView description;
     long umDia;
+    boolean[] idLoaded;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -94,6 +98,7 @@ public class EventsActivity extends AppCompatActivity {
         tabHost.addTab(spec);
 
         getResultsFromApi(0);
+        idLoaded = new boolean[]{true,false,false};
 
         addFragment(0);
         addFragment(1);
@@ -102,15 +107,22 @@ public class EventsActivity extends AppCompatActivity {
         tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String s) {
-                if (s.equals("festas")) {
+                Log.d(TAG, "Shazam! ->onTabChanged: s: " + s);
+                if (s.equals("festas") && !idLoaded[0]) {
                     getResultsFromApi(0);
-                }else if (s.equals("me")) {
+                    idLoaded[0] = true;
+                }else if (s.equals("me") && !idLoaded[1]) {
                     getResultsFromApi(1);
-                } else {
+                    idLoaded[1] = true;
+                } else if (s.equals("institucional") && !idLoaded[2]) {
                     getResultsFromApi(2);
+                    idLoaded[2] = true;
                 }
             }
         });
+
+        scroller = findViewById(R.id.calendarTextContainer3);
+
 
 //        Bundle extras = getIntent().getExtras();
 //        long time = System.currentTimeMillis();
@@ -215,7 +227,7 @@ public class EventsActivity extends AppCompatActivity {
                     calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com";
                     break;
                 }case 2: {
-                    calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com";
+                    calendarId = "jm2qijsvn1lui4ftpfjf52p15g@group.calendar.google.com"; // Calendário acadêmico
                     break;
                 } default: {
                     calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com";
@@ -227,15 +239,16 @@ public class EventsActivity extends AppCompatActivity {
             // List the next 10 events from the primary calendar.
             DateTime now = new DateTime(System.currentTimeMillis());
             List<String> eventStrings = new ArrayList<String>();
+            events = null;
             events = mService.events().list(calendarId)
-                    .setMaxResults(10)
+                    .setMaxResults(CALENDAR_MAXRESULTS)
                     .setTimeMin(now)
                     .setOrderBy("startTime")
                     .setSingleEvents(true)
                     .execute();
             List<Event> items = events.getItems();
 
-            Log.d(TAG, "Shazam! ->getDataFromApi: items: " + items);
+            //Log.d(TAG, "Shazam! ->getDataFromApi: items: " + items);
 
             for (Event event : items) {
                 DateTime start = event.getStart().getDateTime();
@@ -267,8 +280,10 @@ public class EventsActivity extends AppCompatActivity {
                 //String startFull = DateFormat.getDateInstance(DateFormat.LONG,new Locale("pt","BR")).format(startDate);
                 //String endFull = DateFormat.getDateInstance(DateFormat.LONG,new Locale("pt","BR")).format(endDate);
 
-                String startFull = new SimpleDateFormat("dd/MM/yyyy, HH:mm:ss").format(new Date(start.getValue()));
-                String endFull = new SimpleDateFormat("dd/MM/yyyy, HH:mm:ss").format(new Date(end.getValue()));
+                String startFull = new SimpleDateFormat("EEE, d MMM, h:mm a",new Locale("pt","BR"))
+                        .format(new Date(start.getValue()));
+                String endFull = new SimpleDateFormat("EEE, d MMM, h:mm a",new Locale("pt","BR"))
+                        .format(new Date(end.getValue()));
 
                 eventStrings.add(
                         String.format("%s\n%s\n%s\n%s\n%s\n", event.getSummary(), startFull, endFull, local,descricao));
@@ -285,7 +300,7 @@ public class EventsActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(List<String> output) {
-            Log.d(TAG, "Shazam! ->onPostExecute: output: " + output);
+            //Log.d(TAG, "Shazam! ->onPostExecute: output: " + output);
             for (String s : output) {
                 String[] parts = s.split("\n");
                 ((EventFragment) getSupportFragmentManager().findFragmentByTag("tag_event" + calId))

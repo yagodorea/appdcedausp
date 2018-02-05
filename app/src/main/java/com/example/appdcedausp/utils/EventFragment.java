@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.appdcedausp.R;
+
+import java.lang.reflect.Type;
+import java.util.Random;
 
 /**
  * Created by yago_ on 29/01/2018.
@@ -27,6 +31,7 @@ public class EventFragment extends Fragment {
 
     RelativeLayout container;
     LinearLayout inner;
+    LinearLayout inner2;
     LinearLayout mainContainer;
     ImageView icon;
 
@@ -35,6 +40,8 @@ public class EventFragment extends Fragment {
     TextView tDateEnd;
     TextView tLocal;
     TextView tDesc;
+
+    TextView legend;
 
     @Nullable
     @Override
@@ -106,17 +113,45 @@ public class EventFragment extends Fragment {
 
 
         container = new RelativeLayout(c);
+
+
+        RelativeLayout.LayoutParams params2 = new RelativeLayout.LayoutParams(params);
+        params2.addRule(RelativeLayout.ALIGN_PARENT_RIGHT,RelativeLayout.TRUE);
+        params2.addRule(RelativeLayout.ALIGN_PARENT_TOP,RelativeLayout.TRUE);
+        params2.setMargins(10,80,20,0);
+        params2.height = ViewGroup.LayoutParams.WRAP_CONTENT;
+        params2.width = ViewGroup.LayoutParams.WRAP_CONTENT;
+
+        inner2 = new LinearLayout(c);
+        inner2.setLayoutParams(params2);
+        inner2.setOrientation(LinearLayout.VERTICAL);
+        inner2.setGravity(Gravity.CENTER);
+
         icon = new ImageView(c);
         icon.setImageResource(R.drawable.ic_add);
-        RelativeLayout.LayoutParams params2 = new RelativeLayout.LayoutParams(params);
-        params2.addRule(RelativeLayout.ALIGN_PARENT_END,RelativeLayout.TRUE);
-        params2.addRule(RelativeLayout.CENTER_VERTICAL,RelativeLayout.TRUE);
-        icon.setLayoutParams(params2);
+        icon.setId(new Random(19831983).nextInt()); // Precisa guardar esse Id para inicializar o OnClickListener
+        icon.setLayoutParams(params);
         icon.getLayoutParams().height = 200;
-        icon.getLayoutParams().width = 200;
+        inner2.addView(icon);
+        //icon.getLayoutParams().width = 200;
+
+        legend = new TextView(c);
+        legend.setText("Adicionar evento");
+        legend.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        legend.setTextSize(12f);
+        legend.setTypeface(null,Typeface.ITALIC);
+        params.height = ViewGroup.LayoutParams.WRAP_CONTENT;
+        legend.setLayoutParams(params);
+        inner2.addView(legend);
+
         container.setPadding(10,10,10,10);
+        params2 = new RelativeLayout.LayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        params2.addRule(RelativeLayout.ALIGN_PARENT_TOP,RelativeLayout.TRUE);
+        params2.addRule(RelativeLayout.ALIGN_PARENT_START,RelativeLayout.TRUE);
+        params2.addRule(RelativeLayout.CENTER_IN_PARENT,RelativeLayout.TRUE);
+        inner.setLayoutParams(params2);
         container.addView(inner);
-        container.addView(icon);
+        container.addView(inner2);
 
         mainContainer.addView(container);
     }

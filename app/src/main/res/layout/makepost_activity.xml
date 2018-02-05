@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/cinza">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/post_margin"
+        android:background="@color/branco"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/postImageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="Image for post."
+                android:scaleType="centerInside"
+                android:src="@drawable/inseriraqui" />
+
+            <EditText
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postImageContainer"
+                android:hint="Insira um título"
+                android:inputType="textCapSentences|textEmailSubject"
+                android:outlineProvider="none"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:id="@+id/postDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postTitle"
+                android:hint="Escreva sua mensagem"
+                android:inputType="textCapSentences|textMultiLine|textLongMessage"
+                android:padding="5dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/postSendButton"
+                android:padding="20dp"
+                android:background="@color/grena">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Adicionar post"
+                    android:textColor="@color/creme"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

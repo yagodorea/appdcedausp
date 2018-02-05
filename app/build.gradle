@@ -26,7 +26,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.firebase:firebase-auth:11.8.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:support-v4:26.1.0'
@@ -50,6 +49,13 @@ dependencies {
     implementation ('com.google.apis:google-api-services-calendar:v3-rev283-1.23.0') {
         exclude group: 'org.apache.httpcomponents'
     }
+    // Firebase dependencies
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.firebaseui:firebase-ui-database:0.4.1'
+    // Picasso - for image downloading
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 }
 
 apply plugin: 'com.google.gms.google-services'
