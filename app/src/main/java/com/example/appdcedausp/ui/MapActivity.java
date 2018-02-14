@@ -21,6 +21,10 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
+import android.view.animation.TranslateAnimation;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +43,8 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+
+import java.util.HashMap;
 
 /**
  * Created by yago_ on 12/01/2018.
@@ -66,6 +72,9 @@ public class MapActivity extends AppCompatActivity
     private static final LatLng santosInicio = new LatLng(-22.0050875f,-47.9102792f);
     private static final LatLng lorenaInicio = new LatLng(-23.9424612f,-46.3327931f);
     private Boolean mLocationPermissionGranted = false;
+    HashMap<String,Marker> markerHashMap;
+
+    private boolean searching = false;
 
     // Marcador
     private Marker mark;
@@ -80,6 +89,8 @@ public class MapActivity extends AppCompatActivity
     TextView descriptionContent;
     FloatingActionButton fabDesc;
     FloatingActionButton fabGo;
+    EditText searchBox;
+    ImageView searchButton;
 
     // Mapa e localização
     private GoogleMap mMap;
@@ -99,6 +110,38 @@ public class MapActivity extends AppCompatActivity
         campus = pref.getInt("Campus",0);
 
         getLocationPermission();
+
+        searchBox = findViewById(R.id.searchBox);
+        searchBox.setVisibility(View.INVISIBLE);
+        searchButton = findViewById(R.id.searchButton);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TranslateAnimation translate = new TranslateAnimation(1000, 0, 0, 0);
+                translate.setDuration(500);
+                TranslateAnimation back = new TranslateAnimation(0,1000,0,0);
+                back.setDuration(500);
+                InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                if (searching) {
+                    searchBox.startAnimation(back);
+                    imm.hideSoftInputFromWindow(searchBox.getWindowToken(),0);
+                    searchBox.setVisibility(View.INVISIBLE);
+                    searching = false;
+                    // Procurar
+                    String text = searchBox.getText().toString();
+                    if(markerHashMap.containsKey(text.toLowerCase())) {
+                        Log.d(TAG, "Shazam! ->onClick: text:" + text);
+                        onMarkerClick(markerHashMap.get(text.toLowerCase()));
+                    }
+                } else {
+                    imm.showSoftInputFromInputMethod(searchBox.getWindowToken(),0);
+                    searchBox.setText("");
+                    searchBox.setVisibility(View.VISIBLE);
+                    searchBox.setAnimation(translate);
+                    searching = true;
+                }
+            }
+        });
     }
 
     private void getDeviceLocation() {
@@ -277,15 +320,19 @@ public class MapActivity extends AppCompatActivity
                 break;
         }
 
+        markerHashMap = new HashMap<>();
+
         for(int i=0;i<res.getIntArray(R.array.markerNumber)[campus];i++)
         {
             Log.d(TAG, "Shazam! -> setMarkers: setando marcador " + titles[i]);
             //Bitmap small1 = Bitmap.createScaledBitmap(icon1.getBitmap(),100,100,false);
-            mMap.addMarker(new MarkerOptions()
+            MarkerOptions markerOptions = new MarkerOptions()
                     .position(new LatLng(lats.getFloat(i,0f),lons.getFloat(i,0f)))
                     .title(titles[i])
                     .snippet(desc[i])
-                    .icon(BitmapDescriptorFactory.fromResource(icons.getResourceId(i,-1))));
+                    .icon(BitmapDescriptorFactory.fromResource(icons.getResourceId(i,-1)));
+            mark = mMap.addMarker(markerOptions);
+            markerHashMap.put(titles[i].toLowerCase(),mark);
         }
         lats.recycle();
         lons.recycle();
@@ -441,6 +488,4 @@ public class MapActivity extends AppCompatActivity
 
 /**
  * TODO: Criar mapas customizados dos campi para transferir para o app
- * TODO: Criar fragmentos para mostrar detalhes dos markers do mapa do campus
- * TODO: Resolver dependência da configuração de campus (abrir mapas diferentes dependendo da escolha)
  */

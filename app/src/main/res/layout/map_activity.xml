@@ -3,7 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mapLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="1dp"
+        android:id="@+id/searchBoxContainer">
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Procurar"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@id/searchBoxContainer"
+        android:layout_alignBottom="@id/searchBoxContainer"
+        android:src="@drawable/ic_search"
+        android:background="@color/grena"
+        android:tint="@color/creme"
+        android:elevation="3dp"
+        android:id="@+id/searchButton"/>
 
     <fragment
         android:layout_width="match_parent"
@@ -17,6 +51,7 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="4dp"
         android:id="@+id/description_fragment_container">
 
         <android.support.design.widget.FloatingActionButton
