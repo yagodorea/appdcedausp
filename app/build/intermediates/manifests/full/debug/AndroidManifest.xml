@@ -54,16 +54,10 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/com_facebook_activity_theme" />
-        <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -77,7 +71,7 @@
             android:name="com.example.appdcedausp.ui.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -87,31 +81,35 @@
         <activity
             android:name="com.example.appdcedausp.ui.MapActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
             android:name="com.example.appdcedausp.ui.BandejaoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
             android:name="com.example.appdcedausp.ui.FacebookFeedActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
             android:name="com.example.appdcedausp.ui.EventsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
             android:name="com.example.appdcedausp.ui.SimpleBlogActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
             android:name="com.example.appdcedausp.ui.MakePostActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
             android:name="com.example.appdcedausp.ui.PostActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.example.appdcedausp.ui.ForumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
 
         <meta-data
             android:name="android.support.VERSION"
@@ -201,6 +199,10 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
         <activity android:name="com.facebook.CustomTabMainActivity" />
         <activity
             android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"

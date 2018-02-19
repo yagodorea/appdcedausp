@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 v.startAnimation(animAlpha);
 
-                Intent intent = new Intent(MainActivity.this,SimpleBlogActivity.class);
+                Intent intent = new Intent(MainActivity.this,ForumActivity.class);
                 startActivity(intent);
             }
         });

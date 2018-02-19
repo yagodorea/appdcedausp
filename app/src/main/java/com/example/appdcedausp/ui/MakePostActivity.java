@@ -44,6 +44,8 @@ public class MakePostActivity extends AppCompatActivity {
     TextView description;
     LinearLayout sendPost;
     int postId = 10;
+    int forumId;
+    int nPosts;
 
     Uri imgUri;
 
@@ -59,6 +61,8 @@ public class MakePostActivity extends AppCompatActivity {
         setContentView(com.example.appdcedausp.R.layout.makepost_activity);
 
         pref = getApplicationContext().getSharedPreferences("myConfig",0);
+        forumId = getIntent().getIntExtra("forumId",-1);
+        nPosts = getIntent().getIntExtra("nPosts",-1);
 
         gotImage = false;
 
@@ -102,7 +106,9 @@ public class MakePostActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(tit) && !TextUtils.isEmpty(desc)) {
             if (gotImage) {
                 // TODO tratar upload de imagem
-                StorageReference filepath = FirebaseUtils.getMStorage().child("forum_images").child("image:" + pref.getInt("Campus",0) + "-" + now);
+                StorageReference filepath = FirebaseUtils.getMStorage()
+                        .child("forum_images")
+                        .child("image:" + pref.getInt("Campus",0) + "-" + now);
 
                 filepath.putFile(imgUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
@@ -113,6 +119,8 @@ public class MakePostActivity extends AppCompatActivity {
                         DatabaseReference newPost = FirebaseUtils.getMDatabase()
                                 .child("Forum")
                                 .child(String.valueOf(pref.getInt("Campus",0)))
+                                .child(String.valueOf(forumId))
+                                .child("posts")
                                 .child(String.valueOf(now));
 
                         newPost.child("titulo").setValue(tit);
@@ -120,6 +128,12 @@ public class MakePostActivity extends AppCompatActivity {
                         newPost.child("autor").setValue(FirebaseUtils.getUser().getDisplayName());
                         newPost.child("criadoem").setValue(now);
                         newPost.child("imagem").setValue(downloadUri.toString());
+
+                        FirebaseUtils.getMDatabase()
+                                .child("Forum")
+                                .child(String.valueOf(pref.getInt("Campus",0)))
+                                .child(String.valueOf(forumId))
+                                .child("forum_posts").setValue(nPosts + 1);
 
                         progressDialog.dismiss();
                         finish();
@@ -130,12 +144,20 @@ public class MakePostActivity extends AppCompatActivity {
                 DatabaseReference newPost = FirebaseUtils.getMDatabase()
                         .child("Forum")
                         .child(String.valueOf(pref.getInt("Campus",0)))
+                        .child(String.valueOf(forumId))
+                        .child("posts")
                         .child(String.valueOf(now));
 
                 newPost.child("titulo").setValue(tit);
                 newPost.child("autor").setValue(FirebaseUtils.getUser().getDisplayName());
                 newPost.child("criadoem").setValue(now);
                 newPost.child("descricao").setValue(desc);
+
+                FirebaseUtils.getMDatabase()
+                        .child("Forum")
+                        .child(String.valueOf(pref.getInt("Campus",0)))
+                        .child(String.valueOf(forumId))
+                        .child("forum_posts").setValue(nPosts + 1);
 
                 progressDialog.dismiss();
                 finish();

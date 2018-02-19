@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.appdcedausp.R;
+import com.example.appdcedausp.utils.Constants;
 import com.example.appdcedausp.utils.FirebaseUtils;
 import com.example.appdcedausp.utils.Post;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -49,6 +50,8 @@ public class SimpleBlogActivity extends AppCompatActivity {
     TextView naoHaPosts;
 
     SharedPreferences pref;
+    int forumId;
+    int nPosts;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,6 +62,8 @@ public class SimpleBlogActivity extends AppCompatActivity {
         naoHaPosts.setVisibility(View.GONE);
 
         pref = getApplicationContext().getSharedPreferences("myConfig",0);
+        forumId = getIntent().getIntExtra("forumId",-1);
+        nPosts = getIntent().getIntExtra("nPosts",-1);
 
         mPostList = findViewById(R.id.post_list);
         mPostList.setHasFixedSize(true);
@@ -69,6 +74,8 @@ public class SimpleBlogActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SimpleBlogActivity.this,MakePostActivity.class);
+                intent.putExtra("forumId",forumId);
+                intent.putExtra("nPosts",nPosts);
                 startActivityForResult(intent,NEWPOST_REQUEST);
             }
         });
@@ -78,6 +85,10 @@ public class SimpleBlogActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        if (forumId == -1) {
+            Log.d(TAG, "Shazam! ->onStart: noExtra!");
+        }
+
         FirebaseRecyclerAdapter<Post,SimpleBlogActivity.PostViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Post, SimpleBlogActivity.PostViewHolder>(
                 Post.class,
                 R.layout.post_fragment,
@@ -85,15 +96,24 @@ public class SimpleBlogActivity extends AppCompatActivity {
                 FirebaseUtils.getMDatabase()
                         .child("Forum")
                         .child(String.valueOf(pref.getInt("Campus",0)))
+                        .child(String.valueOf(forumId))
+                        .child("posts")
         ) {
+            @Override
+            public void onBindViewHolder(PostViewHolder viewHolder, int position) {
+                super.onBindViewHolder(viewHolder, position);
+                Log.d(TAG, "Shazam! ->onBindViewHolder: entered, pos: " + position);
+            }
+
             @Override
             protected void populateViewHolder(SimpleBlogActivity.PostViewHolder viewHolder, Post model, int position) {
 
-                Log.d(TAG, "Shazam! ->populateViewHolder: imagem: " + model.getImagem());
+                Log.d(TAG, "Shazam! ->populateViewHolder: position: " + position);
+                Log.d(TAG, "Shazam! ->populateViewHolder: viewType: " + viewHolder.getItemViewType());
 
                 viewHolder.setTitle(model.getTitulo());
                 viewHolder.setDescription(model.getDescricao());
-                viewHolder.setAuthorAndDate(model.getAutor(),model.getCriadoem());
+                viewHolder.setAuthorAndDate(model.getAutor(), model.getCriadoem());
                 viewHolder.setImage(model.getImagem());
 
                 final Post post = model;
@@ -102,9 +122,9 @@ public class SimpleBlogActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Log.d(TAG, "Shazam! ->onClick: post title: " + post.getTitulo());
-                        Intent postIntent = new Intent(SimpleBlogActivity.this,PostActivity.class);
+                        Intent postIntent = new Intent(SimpleBlogActivity.this, PostActivity.class);
                         Bundle extras = new Bundle();
-                        extras.putSerializable("post",post);
+                        extras.putSerializable("post", post);
                         postIntent.putExtras(extras);
                         startActivity(postIntent);
                     }
@@ -112,13 +132,18 @@ public class SimpleBlogActivity extends AppCompatActivity {
             }
         };
 
+
+        // TODO fazer essa bosta funcionar, de aparecer o texto "não há posts"
+
         Log.d(TAG, "Shazam! ->onStart: invocou setAdapter");
+        Log.d(TAG, "Shazam! ->onStart: item count: " + firebaseRecyclerAdapter.getItemCount());
+
         mPostList.setAdapter(firebaseRecyclerAdapter);
-        Log.d(TAG, "Shazam! ->onStart: viewpool count" + mPostList.getAdapter().getItemCount());
+
         if (mPostList.getAdapter().getItemCount() > 0) {
             naoHaPosts.setVisibility(View.GONE);
         } else {
-            naoHaPosts.setVisibility(View.VISIBLE);
+            naoHaPosts.setVisibility(View.GONE);
         }
     }
 
