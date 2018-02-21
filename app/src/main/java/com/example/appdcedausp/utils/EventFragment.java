@@ -1,6 +1,7 @@
 package com.example.appdcedausp.utils;
 
 import android.graphics.Typeface;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -16,12 +17,8 @@ import android.widget.TextView;
 
 import com.example.appdcedausp.R;
 
-import java.lang.reflect.Type;
 import java.util.Random;
 
-/**
- * Created by yago_ on 29/01/2018.
- */
 
 public class EventFragment extends Fragment {
 
@@ -45,7 +42,7 @@ public class EventFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.event_fragment,container,false);
     }
 
@@ -56,7 +53,7 @@ public class EventFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         v = view;
 //        container = view.findViewById(R.id.eventContainer);
@@ -86,21 +83,24 @@ public class EventFragment extends Fragment {
         tDateStart = new TextView(c);
         tDateStart.setTextSize(12f);
         tDateStart.setTypeface(null,Typeface.ITALIC);
-        tDateStart.setText("Início: " + start);
+        String txt = "Início: " + start;
+        tDateStart.setText(txt);
         tDateStart.setLayoutParams(params);
         inner.addView(tDateStart);
 
         tDateEnd = new TextView(c);
         tDateEnd.setTextSize(12f);
         tDateEnd.setTypeface(null,Typeface.ITALIC);
-        tDateEnd.setText("Fim: " + end);
+        txt = "Fim: " + end;
+        tDateEnd.setText(txt);
         tDateEnd.setLayoutParams(params);
         inner.addView(tDateEnd);
 
         tLocal = new TextView(c);
         tLocal.setTextSize(16f);
         tLocal.setTypeface(null,Typeface.BOLD);
-        tLocal.setText("Local: " + local);
+        txt = "Local: " + local;
+        tLocal.setText(txt);
         tLocal.setLayoutParams(params);
         inner.addView(tLocal);
 
@@ -136,7 +136,8 @@ public class EventFragment extends Fragment {
         //icon.getLayoutParams().width = 200;
 
         legend = new TextView(c);
-        legend.setText("Adicionar evento");
+        txt = "Adicionar evento";
+        legend.setText(txt);
         legend.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         legend.setTextSize(12f);
         legend.setTypeface(null,Typeface.ITALIC);

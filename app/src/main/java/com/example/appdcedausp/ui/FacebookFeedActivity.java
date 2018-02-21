@@ -27,10 +27,6 @@ import com.facebook.HttpMethod;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by yago_ on 17/01/2018.
- */
-
 public class FacebookFeedActivity extends AppCompatActivity {
 
     private static final String TAG = FacebookFeedActivity.class.getName();
@@ -56,16 +52,28 @@ public class FacebookFeedActivity extends AppCompatActivity {
         param.putString("fields","created_time,name,story,picture,full_picture,message,description,permalink_url");
         param.putString("locale","pt_BR");
 
+        String token = "992935517526832|5f71e86a6be11ff8e76bfc650250bf1e";
+
         addFragment();
 
+        Log.d(TAG, "Shazam! ->onCreate: current access token: " + AccessToken.getCurrentAccessToken());
+
         new GraphRequest(
-                AccessToken.getCurrentAccessToken(),
-                "/169245436486734/feed",
+                new AccessToken(token,
+                        "992935517526832",
+                        "100001065407967",
+                        null,
+                        null,
+                        null,
+                        null,
+                        null),
+                getResources().getString(R.string.fb_page_id),
                 param,
                 HttpMethod.GET,
                 new GraphRequest.Callback() {
                     public void onCompleted(GraphResponse response) {
                         /* handle the result */
+                        Log.d(TAG, "Shazam! ->onCompleted: response: " + response);
                         processResponse(response);
                     }
                 }
@@ -104,8 +112,10 @@ public class FacebookFeedActivity extends AppCompatActivity {
 
                 if(obj.has("message")) {
                     message = delimitMessage(obj.getString("message"));
+//                    message = obj.getString("message");
                 } else if (obj.has("description")) {
                     message = delimitMessage(obj.getString("description"));
+//                    message = obj.getString("description");
                 }
 
                 if(obj.has("permalink_url"))
@@ -118,7 +128,7 @@ public class FacebookFeedActivity extends AppCompatActivity {
 //                                        .findFragmentById(R.id.fbFeedContainer);
 //                                frag.setPost(message, story, created_time, permalink, picture);
             }
-        } catch (JSONException e) {
+        } catch (JSONException | NullPointerException e) {
             e.printStackTrace();
         }
     }
@@ -128,7 +138,8 @@ public class FacebookFeedActivity extends AppCompatActivity {
         int i = 50;
         String[] tokens = s.split(" ");
         if (i > tokens.length) return s;
-        while(tokens[++i].length() < 5); // Não usar palavras pequenas com alta ocorrência (que, e, se, do, de...)
+        while(tokens[i].length() < 5){ i++; } // Não usar palavras pequenas com alta ocorrência (que, e, se, do, de...)
+        while (tokens[i].contains("(") || tokens[i].contains(")")) { i++; }
         String[] broken = s.split(" " + tokens[i]); // separar string e pegar parte antes da ocorrência.
         return (broken[0] + "...");
     }

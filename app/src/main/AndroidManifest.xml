@@ -32,20 +32,6 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="com.facebook.CustomTabActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar.Fullscreen"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="@string/fb_login_protocol_scheme" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".ui.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen"
@@ -57,9 +43,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.MapActivity"
-            android:theme="@style/AppTheme.NoActionBar.Fullscreen"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.BandejaoActivity"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen"
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.FacebookFeedActivity"

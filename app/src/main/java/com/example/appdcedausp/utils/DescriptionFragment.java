@@ -10,10 +10,6 @@ import android.widget.TextView;
 
 import com.example.appdcedausp.R;
 
-/**
- * Created by yago_ on 13/01/2018.
- */
-
 public class DescriptionFragment extends Fragment {
 
     TextView tTitle;

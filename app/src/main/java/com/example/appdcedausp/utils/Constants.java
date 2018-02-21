@@ -1,9 +1,5 @@
 package com.example.appdcedausp.utils;
 
-/**
- * Created by yago_ on 29/01/2018.
- */
-
 public class Constants {
     // Keys para uso no Firebase Database
     public static final String POST_KEY = "posts";

@@ -18,10 +18,6 @@ import com.example.appdcedausp.utils.Forum;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.squareup.picasso.Picasso;
 
-/**
- * Created by yago_ on 18/02/2018.
- */
-
 public class ForumActivity extends AppCompatActivity {
 
     private static final String TAG = ForumActivity.class.getName();
@@ -90,22 +86,23 @@ public class ForumActivity extends AppCompatActivity {
             mView = itemView;
         }
 
-        public void setName(String name) {
+        void setName(String name) {
             TextView tName = mView.findViewById(R.id.forum_name);
             tName.setText(name);
         }
 
-        public void setDescription(String description) {
+        void setDescription(String description) {
             TextView tDesc = mView.findViewById(R.id.forum_description);
             tDesc.setText(description);
         }
 
-        public void setNPosts(int posts) {
+        void setNPosts(int posts) {
             TextView tPosts = mView.findViewById(R.id.forum_posts);
-            tPosts.setText("Número de postagens: " + posts);
+            String nPostagens = "Número de postagens: " + posts;
+            tPosts.setText(nPostagens);
         }
 
-        public void setImage(String image) {
+        void setImage(String image) {
             ImageView imageView = mView.findViewById(R.id.forum_image);
             if (image == null) {
                 imageView.setVisibility(View.GONE);

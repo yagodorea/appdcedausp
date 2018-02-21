@@ -1,6 +1,7 @@
 package com.example.appdcedausp.utils;
 
 import android.accounts.Account;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -13,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.appdcedausp.R;
-import com.example.appdcedausp.ui.MainActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -26,27 +26,20 @@ import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccoun
 import com.google.api.client.util.ExponentialBackOff;
 import com.google.api.services.calendar.CalendarScopes;
 
-import java.util.Arrays;
+import java.util.Collections;
 
 import static com.example.appdcedausp.utils.Constants.ERROR_DIALOG_REQUEST;
 import static com.example.appdcedausp.utils.Constants.SIGN_IN_REQUEST;
 
-/**
- * Created by yago_ on 29/01/2018.
- *
- * Classe para lidar com o login da google e deixar o código mais limpo
- */
-
 public class GoogleUtils {
 
-    public static final String TAG = GoogleUtils.class.getName();
+    private static final String TAG = GoogleUtils.class.getName();
 
-    // Login Google
-    private static GoogleSignInOptions gso;
+    @SuppressLint("StaticFieldLeak")
     private static GoogleSignInClient mGoogleSignInClient;
-    private static GoogleSignInAccount account;
+    @SuppressLint("StaticFieldLeak")
     private static GoogleAccountCredential gCredential;
-
+    @SuppressLint("StaticFieldLeak")
     private static Activity mContext;
 
     public static void setContext(Context context) {
@@ -69,7 +62,7 @@ public class GoogleUtils {
         return false;
     }
 
-    public static void signIn() {
+    static void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         mContext.startActivityForResult(signInIntent,SIGN_IN_REQUEST);
     }
@@ -79,12 +72,12 @@ public class GoogleUtils {
         // Pega informações da conta Google que o usuário estiver logado, se não tiver nenhuma,
         // faz a requisição de login na função OnStart()
         Resources res = mContext.getResources();
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(res.getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
-        mGoogleSignInClient = GoogleSignIn.getClient(mContext,gso);
-        account = GoogleSignIn.getLastSignedInAccount(mContext);
+        mGoogleSignInClient = GoogleSignIn.getClient(mContext, gso);
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(mContext);
         if (account != null) {
             initCredential();
             gCredential.setSelectedAccount(account.getAccount());
@@ -93,15 +86,15 @@ public class GoogleUtils {
         Log.d(TAG, "Shazam! ->checkGoogleLoginStatus: gCredential: " + gCredential);
     }
 
-    public static void initCredential() {
+    static void initCredential() {
         Log.d(TAG, "Shazam! ->initCredential: entrou");
         // inicializacao GoogleAccountCredential
         gCredential = GoogleAccountCredential.usingOAuth2(
-                mContext, Arrays.asList(CalendarScopes.CALENDAR_READONLY))
+                mContext, Collections.singletonList(CalendarScopes.CALENDAR_READONLY))
                 .setBackOff(new ExponentialBackOff());
     }
 
-    public static void setgCredentialAcc(Account acc) {
+    static void setgCredentialAcc(Account acc) {
         gCredential.setSelectedAccount(acc);
     }
 
@@ -109,7 +102,7 @@ public class GoogleUtils {
         return gCredential;
     }
 
-    public static void googleSignOut() {
+    static void googleSignOut() {
         Log.d(TAG, "Shazam! ->googleSignOut: entrou");
         mGoogleSignInClient.signOut()
                 .addOnCompleteListener(mContext, new OnCompleteListener<Void>() {
@@ -121,7 +114,7 @@ public class GoogleUtils {
                 });
     }
 
-    public static void googleRevokeAccess() {
+    private static void googleRevokeAccess() {
         Log.d(TAG, "Shazam! ->googleRevokeAccess: entrou");
         mGoogleSignInClient.revokeAccess()
                 .addOnCompleteListener(mContext, new OnCompleteListener<Void>() {
@@ -131,7 +124,7 @@ public class GoogleUtils {
                         ImageView signInButton = mContext.findViewById(R.id.googleSignInButton);
                         signInButton.setImageResource(R.drawable.googlesign_creme);
                         TextView signInText = mContext.findViewById(R.id.googleSignInText);
-                        signInText.setText("Entrar:");
+                        signInText.setText(R.string.entrar);
                     }
                 });
     }

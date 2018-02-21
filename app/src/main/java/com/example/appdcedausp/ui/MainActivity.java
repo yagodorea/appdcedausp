@@ -1,12 +1,10 @@
 package com.example.appdcedausp.ui;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -31,23 +29,8 @@ import com.example.appdcedausp.utils.FirebaseUtils;
 import com.example.appdcedausp.utils.GoogleUtils;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
-import com.google.api.client.util.ExponentialBackOff;
-import com.google.api.services.calendar.CalendarScopes;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GoogleAuthProvider;
-
-import java.util.Arrays;
 
 import static com.example.appdcedausp.utils.Constants.*;
 
@@ -83,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         signInButton = findViewById(R.id.googleSignInButton);
         signInButton.setOnTouchListener(new View.OnTouchListener() {
+
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 Log.d(TAG, "Shazam! ->onTouch: " + motionEvent.getActionMasked());
@@ -192,8 +176,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.startAnimation(animAlpha);
-//                Intent intent = new Intent(MainActivity.this,BandejaoActivity.class);
-//                startActivity(intent);
                 String appPackageName = "br.usp.cardapio_usp";
                 Intent launch = getPackageManager().getLaunchIntentForPackage(appPackageName);
                 if (launch != null) {
@@ -247,7 +229,6 @@ public class MainActivity extends AppCompatActivity {
         btnLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Animation a = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim_translatelogo_maintofb);
                 AnimationSet a = loadLogoAnimationMain(v);
                 findViewById(R.id.logoDCE).startAnimation(a);
                 a.setAnimationListener(new Animation.AnimationListener() {
@@ -277,16 +258,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onStart() {
         super.onStart();
         if (FirebaseUtils.checkSignInStatus()) {
-            ((TextView)findViewById(R.id.googleSignInText)).setText("Sair:");
+            ((TextView)findViewById(R.id.googleSignInText)).setText(R.string.sair);
             signInButton.setImageResource(R.drawable.googlesign_grena);
         } else {
             // Usuário não está logado
             signInButton.setImageResource(R.drawable.googlesign_creme);
-            ((TextView)findViewById(R.id.googleSignInText)).setText("Entrar:");
+            ((TextView)findViewById(R.id.googleSignInText)).setText(R.string.entrar);
 
             // Tentar logar
             FirebaseUtils.login();
@@ -329,7 +311,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
         TextView title = new TextView(this);
-        title.setText("Escolha seu Campus");
+        title.setText(R.string.choose_campus);
         title.setGravity(Gravity.CENTER_HORIZONTAL);
         title.setPadding(50,50,50,50);
         title.setTextColor(getResources().getColor(R.color.grena));
@@ -435,10 +417,9 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-/**
+/*
  * TODO: Atividade da permanência
  * TODO: Atividade dos links
- * TODO: Atividade da denúncia
  * TODO: Fragmento inicial para o mural de eventos e informes
  * TODO: Mecanismo que retorna ao fragmento inicial dos informes e eventos
  */

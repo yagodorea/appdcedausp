@@ -29,22 +29,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-/**
- * Created by yago_ on 17/01/2018.
- */
-
 public class FbFeedFragment extends Fragment {
 
-    private static final String TAG = FbFeedFragment.class.getName();
-
-    TextView fbPost;
     TextView fbStory;
     TextView fbDate;
     TextView fbPermalink;
     TextView fbMessage;
     ImageView postSeparator;
     ImageView postPic;
-    Bitmap pic;
     String imgurl;
 
     LinearLayout innerContainer;
@@ -66,14 +58,8 @@ public class FbFeedFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        fbPost = view.findViewById(R.id.fbPostMessage);
-//        fbStory = view.findViewById(R.id.fbStory);
-//        fbDate = view.findViewById(R.id.fbDate);
-//        fbPermalink = view.findViewById(R.id.fbPermalink);
-//        postSeparator = view.findViewById(R.id.fbPostSeparator);
-//        postPic = view.findViewById(R.id.postPic);
 
         v = view;
 
@@ -171,11 +157,12 @@ public class FbFeedFragment extends Fragment {
         innerContainer.addView(postSeparator);
     }
 
+    @SuppressLint("StaticFieldLeak")
     public class DownloadImageTask extends AsyncTask<String,Void,Bitmap> {
         private ImageView image;
         private Bitmap bitmap;
 
-        public DownloadImageTask(ImageView imageView) {
+        DownloadImageTask(ImageView imageView) {
             this.image = imageView;
         }
 

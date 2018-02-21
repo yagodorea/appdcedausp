@@ -1,26 +1,18 @@
 package com.example.appdcedausp.ui;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.CalendarView;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TabHost;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.Constants;
 import com.example.appdcedausp.utils.EventFragment;
 import com.example.appdcedausp.utils.FirebaseUtils;
 import com.example.appdcedausp.utils.GoogleUtils;
@@ -31,28 +23,18 @@ import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.JsonFactory;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.DateTime;
-import com.google.api.client.util.ExponentialBackOff;
-import com.google.api.services.calendar.CalendarScopes;
 import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.Events;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.io.IOException;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Locale;
 
 import static com.example.appdcedausp.utils.Constants.*;
 
-/**
- * Created by yago_ on 19/01/2018.
- */
 
 public class EventsActivity extends AppCompatActivity {
 
@@ -68,9 +50,6 @@ public class EventsActivity extends AppCompatActivity {
 
     ScrollView scroller;
 
-    TextView title;
-    TextView description;
-    long umDia;
     boolean[] idLoaded;
 
     @Override
@@ -180,6 +159,7 @@ public class EventsActivity extends AppCompatActivity {
      * An asynchronous task that handles the Google Calendar API call.
      * Placing the API calls in their own task ensures the UI stays responsive.
      */
+    @SuppressLint("StaticFieldLeak")
     private class MakeRequestTask extends AsyncTask<Void, Void, List<String>> {
         private com.google.api.services.calendar.Calendar mService = null;
         private Exception mLastError = null;
@@ -214,7 +194,6 @@ public class EventsActivity extends AppCompatActivity {
         /**
          * Fetch a list of the next 10 events from the primary calendar.
          * @return List of Strings describing returned events.
-         * @throws IOException
          */
         private List<String> getDataFromApi() throws IOException {
             // Escolha do calendário
@@ -238,7 +217,7 @@ public class EventsActivity extends AppCompatActivity {
             Log.d(TAG, "Shazam! ->getDataFromApi: entrou");
             // List the next 10 events from the primary calendar.
             DateTime now = new DateTime(System.currentTimeMillis());
-            List<String> eventStrings = new ArrayList<String>();
+            List<String> eventStrings = new ArrayList<>();
             events = null;
             events = mService.events().list(calendarId)
                     .setMaxResults(CALENDAR_MAXRESULTS)
@@ -272,13 +251,6 @@ public class EventsActivity extends AppCompatActivity {
                 if (descricao == null) {
                     descricao = "...";
                 }
-
-
-                Date endDate = new Date(end.getValue());
-                Date startDate = new Date(start.getValue());
-                Log.d(TAG, "Shazam! ->getDataFromApi: start: " + start.getValue());
-                //String startFull = DateFormat.getDateInstance(DateFormat.LONG,new Locale("pt","BR")).format(startDate);
-                //String endFull = DateFormat.getDateInstance(DateFormat.LONG,new Locale("pt","BR")).format(endDate);
 
                 String startFull = new SimpleDateFormat("EEE, d MMM, h:mm a",new Locale("pt","BR"))
                         .format(new Date(start.getValue()));

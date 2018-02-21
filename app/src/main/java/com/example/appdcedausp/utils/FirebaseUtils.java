@@ -1,5 +1,6 @@
 package com.example.appdcedausp.utils;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
@@ -38,15 +39,15 @@ public class FirebaseUtils {
     // Firebase Auth
     private static FirebaseAuth mAuth;
     private static FirebaseUser mUser;
-    private static AuthCredential mCredential;
 
+    @SuppressLint("StaticFieldLeak")
     private static Activity mContext;
 
     // Firebase Storage and Database
     private static StorageReference mStorage;
     private static DatabaseReference mDatabase;
 
-    public static final String TAG = FirebaseUtils.class.getName();
+    private static final String TAG = FirebaseUtils.class.getName();
 
     public static void setContext(Context context) {
         mContext = (Activity)context;
@@ -59,10 +60,6 @@ public class FirebaseUtils {
 
     ///////////////////////////////// AUTHENTICATION //////////////////////////////////////
 
-    public static FirebaseAuth getAuthInstance() {
-        return mAuth;
-    }
-
     public static FirebaseUser getUser() {
         return mUser;
     }
@@ -72,7 +69,7 @@ public class FirebaseUtils {
         final GoogleSignInAccount account = acct;
         mContext = (Activity)context;
         GoogleUtils.initCredential();
-        mCredential = GoogleAuthProvider.getCredential(acct.getIdToken(),null);
+        AuthCredential mCredential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
         Log.d(TAG, "Shazam! ->firebaseAuthWithGoogle: mCredential: " + mCredential.toString());
         if (mAuth != null) {
             mAuth.signInWithCredential(mCredential)
@@ -85,7 +82,7 @@ public class FirebaseUtils {
                             if (task.isSuccessful()) {
                                 mUser = task.getResult().getUser();
                                 GoogleUtils.setgCredentialAcc(account.getAccount());
-                                signInText.setText("Sair:");
+                                signInText.setText(R.string.sair);
                                 signInButton.setImageResource(R.drawable.googlesign_grena);
                                 Toast.makeText(mContext, "Logado como " + mUser.getDisplayName(), Toast.LENGTH_SHORT).show();
                             } else {

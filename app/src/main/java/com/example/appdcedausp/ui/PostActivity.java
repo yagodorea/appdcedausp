@@ -1,7 +1,7 @@
 package com.example.appdcedausp.ui;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -22,10 +22,6 @@ import com.squareup.picasso.Picasso;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-
-/**
- * Created by yago_ on 05/02/2018.
- */
 
 public class PostActivity extends AppCompatActivity {
 
@@ -54,25 +50,28 @@ public class PostActivity extends AppCompatActivity {
         fabDelete = findViewById(R.id.fabDeletePost);
 
 
-        if (getIntent().hasExtra("post")) {
+        if (getIntent().hasExtra("post") && getIntent().getExtras() != null) {
             Log.d(TAG, "Shazam! ->onCreate: hasExtra = true");
             Post post = (Post) getIntent().getExtras().getSerializable("post");
 
-            Log.d(TAG, "Shazam! ->onCreate: title = " + post.getTitulo());
-
             // Set post
-            if (post.getImagem() != null) {
-                imUrl = post.getImagem();
-                Picasso.with(this)
-                        .load(imUrl)
-                        .fit()
-                        .centerCrop()
-                        .into(imagePost);
+            if (post != null) {
+                Log.d(TAG, "Shazam! ->onCreate: title = " + post.getTitulo());
+
+                if (post.getImagem() != null) {
+                    imUrl = post.getImagem();
+                    Picasso.with(this)
+                            .load(imUrl)
+                            .fit()
+                            .centerCrop()
+                            .into(imagePost);
+                }
+                postTitle.setText(post.getTitulo());
+                postDescription.setText(post.getDescricao());
+                Date date = new Date(post.getCriadoem());
+                String txt = post.getAutor() + ", " + new SimpleDateFormat("EEE, d MMM, h:mm a", new Locale("pt", "BR")).format(date);
+                postDateAndAuthor.setText(txt);
             }
-            postTitle.setText(post.getTitulo());
-            postDescription.setText(post.getDescricao());
-            Date date = new Date(post.getCriadoem());
-            postDateAndAuthor.setText(post.getAutor() + ", " + new SimpleDateFormat("EEE, d MMM, h:mm a", new Locale("pt", "BR")).format(date));
         }
 
         imagePost.setOnClickListener(new View.OnClickListener() {
@@ -112,11 +111,11 @@ public class PostActivity extends AppCompatActivity {
         @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            @SuppressWarnings("ConstantConditions") AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
             LayoutInflater inflater = getActivity().getLayoutInflater();
 
-            View v = inflater.inflate(R.layout.dialog_image,null);
+            @SuppressLint("InflateParams") View v = inflater.inflate(R.layout.dialog_image,null);
             builder.setView(v);
             im = v.findViewById(R.id.dialogImage);
 

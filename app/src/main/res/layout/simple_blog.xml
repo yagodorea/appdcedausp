@@ -13,14 +13,13 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="32dp"
         app:fabSize="normal"
-        android:backgroundTint="@color/branco"
+        app:backgroundTint="@color/branco"
         android:tint="@color/grena"
         android:id="@+id/fabAddPost"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ainda não há posts!"
         android:layout_centerInParent="true"
         android:textSize="32sp"
         android:textColor="@color/cinza"

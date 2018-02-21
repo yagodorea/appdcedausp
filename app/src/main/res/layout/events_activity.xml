@@ -21,19 +21,20 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_add2"
             android:tint="@color/creme"
-            android:backgroundTint="@color/grena"
+            app:backgroundTint="@color/grena"
             android:id="@+id/fabCalendar"
             app:fabSize="mini"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Adicionar todos os eventos"
+            android:text="@string/adicionar_eventos"
             android:gravity="center_vertical"
             android:textSize="12sp"
             android:textColor="@color/grena"
             android:textStyle="bold"
-            android:paddingLeft="5dp"/>
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"/>
 
     </LinearLayout>
 
@@ -41,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Eventos"
+        android:text="@string/eventos"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/grena"
@@ -78,7 +79,6 @@
                     android:orientation="vertical">
 
                     <ScrollView
-                        android:layout_alignParentTop="true"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -95,7 +95,6 @@
                     android:orientation="vertical">
 
                     <ScrollView
-                        android:layout_alignParentTop="true"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -112,7 +111,6 @@
                     android:orientation="vertical">
 
                     <ScrollView
-                        android:layout_alignParentTop="true"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"

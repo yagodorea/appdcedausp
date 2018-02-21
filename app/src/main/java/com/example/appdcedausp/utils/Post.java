@@ -2,9 +2,6 @@ package com.example.appdcedausp.utils;
 
 import java.io.Serializable;
 
-/**
- * Created by yago_ on 05/02/2018.
- */
 
 public class Post implements Serializable {
 

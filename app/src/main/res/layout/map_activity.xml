@@ -29,6 +29,7 @@
     </LinearLayout>
 
     <ImageView
+        android:contentDescription="@string/image_content_description"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignEnd="@id/searchBoxContainer"
@@ -63,7 +64,7 @@
             android:layout_margin="@dimen/fab_margin2"
             android:src="@drawable/ic_go"
             app:fabSize="mini"
-            android:backgroundTint="@color/creme"
+            app:backgroundTint="@color/creme"
             android:scaleType="fitCenter"/>
 
         <android.support.design.widget.FloatingActionButton
@@ -75,7 +76,7 @@
             android:layout_margin="@dimen/fab_margin2"
             android:src="@drawable/ic_close"
             app:fabSize="mini"
-            android:backgroundTint="@color/creme"
+            app:backgroundTint="@color/creme"
             android:scaleType="fitCenter" />
 
     </android.support.design.widget.CoordinatorLayout>

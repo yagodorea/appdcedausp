@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,8 +17,6 @@ import android.widget.TextView;
 
 import com.example.appdcedausp.R;
 import com.example.appdcedausp.utils.FirebaseUtils;
-import com.example.appdcedausp.utils.Post;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
@@ -127,7 +124,9 @@ public class MakePostActivity extends AppCompatActivity {
                         newPost.child("descricao").setValue(desc);
                         newPost.child("autor").setValue(FirebaseUtils.getUser().getDisplayName());
                         newPost.child("criadoem").setValue(now);
-                        newPost.child("imagem").setValue(downloadUri.toString());
+                        if (downloadUri != null) {
+                            newPost.child("imagem").setValue(downloadUri.toString());
+                        }
 
                         FirebaseUtils.getMDatabase()
                                 .child("Forum")
@@ -184,8 +183,6 @@ public class MakePostActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else {
-            // Não selecionou uma imagem
         }
     }
 }

@@ -2,11 +2,7 @@ package com.example.appdcedausp.ui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -18,26 +14,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.Constants;
 import com.example.appdcedausp.utils.FirebaseUtils;
 import com.example.appdcedausp.utils.Post;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.squareup.picasso.Picasso;
 
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.io.Serializable;
-import java.net.URL;
-import java.net.URLConnection;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
 import static com.example.appdcedausp.utils.Constants.*;
-
-/**
- * Created by yago_ on 30/01/2018.
- */
 
 public class SimpleBlogActivity extends AppCompatActivity {
 
@@ -157,20 +143,21 @@ public class SimpleBlogActivity extends AppCompatActivity {
             mView = itemView;
         }
 
-        public void setTitle(String title) {
+        void setTitle(String title) {
             TextView post_title = mView.findViewById(R.id.post_title);
             post_title.setText(title);
         }
 
-        public void setDescription(String desc) {
+        void setDescription(String desc) {
             TextView post_desc = mView.findViewById(R.id.post_description);
             post_desc.setText(desc);
         }
 
-        public void setAuthorAndDate(String author,long created) {
+        void setAuthorAndDate(String author,long created) {
             Date date = new Date(created);
             TextView post_author = mView.findViewById(R.id.post_author_date);
-            post_author.setText(author + ", " + new SimpleDateFormat("EEE, d MMM, h:mm a",new Locale("pt","BR")).format(date));
+            String txt = author + ", " + new SimpleDateFormat("EEE, d MMM, h:mm a",new Locale("pt","BR")).format(date);
+            post_author.setText(txt);
         }
 
         public void setImage(String image) {

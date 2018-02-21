@@ -46,9 +46,6 @@ import com.google.android.gms.tasks.Task;
 
 import java.util.HashMap;
 
-/**
- * Created by yago_ on 12/01/2018.
- */
 
 public class MapActivity extends AppCompatActivity
     implements GoogleMap.OnMarkerClickListener
@@ -124,7 +121,9 @@ public class MapActivity extends AppCompatActivity
                 InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
                 if (searching) {
                     searchBox.startAnimation(back);
-                    imm.hideSoftInputFromWindow(searchBox.getWindowToken(),0);
+                    if (imm != null) {
+                        imm.hideSoftInputFromWindow(searchBox.getWindowToken(),0);
+                    }
                     searchBox.setVisibility(View.INVISIBLE);
                     searching = false;
                     // Procurar
@@ -134,7 +133,9 @@ public class MapActivity extends AppCompatActivity
                         onMarkerClick(markerHashMap.get(text.toLowerCase()));
                     }
                 } else {
-                    imm.showSoftInputFromInputMethod(searchBox.getWindowToken(),0);
+                    if (imm != null) {
+                        imm.showSoftInputFromInputMethod(searchBox.getWindowToken(),0);
+                    }
                     searchBox.setText("");
                     searchBox.setVisibility(View.VISIBLE);
                     searchBox.setAnimation(translate);
@@ -445,8 +446,8 @@ public class MapActivity extends AppCompatActivity
         switch(requestCode) {
             case LOCATION_PERMISSION_REQUEST_CODE: {
                 if (grantResults.length > 0) {// Se for maior que zero, significa que alguma coisa foi permitida
-                    for (int i = 0;i < grantResults.length;i++) {
-                        if (grantResults[i] != PackageManager.PERMISSION_GRANTED) {
+                    for (int grantResult : grantResults) {
+                        if (grantResult != PackageManager.PERMISSION_GRANTED) {
                             mLocationPermissionGranted = false;
                             return;
                         }
@@ -486,6 +487,6 @@ public class MapActivity extends AppCompatActivity
     }
 }
 
-/**
+/*
  * TODO: Criar mapas customizados dos campi para transferir para o app
  */

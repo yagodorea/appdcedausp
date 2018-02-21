@@ -1,9 +1,5 @@
 package com.example.appdcedausp.utils;
 
-/**
- * Created by yago_ on 18/02/2018.
- */
-
 public class Forum {
 
     private String forum_name, forum_description, forum_image;
