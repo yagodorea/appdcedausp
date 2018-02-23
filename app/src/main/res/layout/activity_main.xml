@@ -10,14 +10,15 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/mudaCampus"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_margin="@dimen/fab_margin2"
-        app:fabSize="mini"
+        app:fabSize="normal"
         app:backgroundTint="@color/creme"
-        android:scaleType="fitCenter" />
+        android:src="@drawable/txtsanca"
+        android:scaleType="centerInside"/>
 
     <LinearLayout
         android:layout_width="wrap_content"

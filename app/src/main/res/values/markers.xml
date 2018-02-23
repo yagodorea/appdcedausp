@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer-array name="markerNumber">
-        <item>0</item>
-        <item>54</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
+        <item>0</item>  <!-- Butantã -->
+        <item>54</item>  <!-- São Carlos -->
+        <item>0</item>  <!-- EACH -->
+        <item>0</item>  <!-- Sanfran -->
+        <item>17</item>  <!-- Piracicaba -->
+        <item>0</item>  <!-- RP -->
+        <item>20</item>  <!-- Pirassununga -->
+        <item>0</item>  <!-- Bauru -->
+        <item>0</item>  <!-- Santos -->
+        <item>0</item>  <!-- Lorena -->
+        <item>0</item>  <!-- Saúde -->
     </integer-array>
+
+    <!-- São Carlos -->
+    <!-- títulos -->
     <string-array name="titlesSaoCarlos">
         <!--Representação Estudantil-->
         <item>SAAU</item>
@@ -83,6 +87,7 @@
         <item>Saída Física</item>
         <item>Saída Produção</item>
     </string-array>
+    <!-- descrições -->
     <string-array name="descSaoCarlos">
         <!--Representação Estudantil-->
         <item>Secretaria Acadêmica de Arquitetura e Urbanismo.</item>
@@ -155,6 +160,7 @@
         <item>Saída Sul do campus, na Av. Dr. Carlos Botelho, acesso à praça XV.</item>
 
     </string-array>
+    <!-- latitudes -->
     <array name="latSaoCarlos">
         <!--Representação Estudantil-->
         <item>-22.00367</item>
@@ -226,6 +232,7 @@
         <item>-22.00801</item>
         <item>-22.01142</item>
     </array>
+    <!-- longitudes -->
     <array name="lonSaoCarlos">
         <!--Representação Estudantil-->
         <item>-47.89772</item>
@@ -297,6 +304,7 @@
         <item>-47.89866</item>
         <item>-47.89631</item>
     </array>
+    <!-- ícones -->
     <integer-array name="iconsSanca">
         <!--Representação Estudantil-->
         <item>@drawable/ic_map_flag</item>
@@ -369,4 +377,226 @@
         <item>@drawable/ic_map_place</item>
         <item>@drawable/ic_map_place</item>
     </integer-array>
+
+    <!-- Piracicaba -->
+    <!-- títulos -->
+    <string-array name="titlesPiracicaba">
+        <item>Central de Aulas</item>
+        <item>Restaurante Universitário dos Centros Acadêmicos</item>
+        <item>Prédio Central</item>
+        <item>Centro de Vivências</item>
+        <item>Cantina ‘Te Café’</item>
+        <item>CENA</item>
+        <item>Casa do Estudante</item>
+        <item>Vila Estudantil</item>
+        <item>Biblioteca</item>
+        <item>Serviço Médico</item>
+        <item>Casa do HIP HOP/</item>
+        <item>Supermercado Jaú Serve</item>
+        <item>Hortinha de Orgânicos</item>
+        <item>CALQ</item>
+        <item>Atlética ESALQ</item>
+        <item>Serviço de Graduação</item>
+        <item>Serviço de Assistência Social</item>
+    </string-array>
+    <!-- descrições -->
+    <string-array name="descPiracicaba">
+        <item>Na Central sempre acontecem palestras no começo do ano e espaços/eventos de grupos estudantis, além das aulas.</item>
+        <item>O RUCAS, conquistado pelo CALQ na ESALQ, hoje oferece duas refeições por dia, funcionando de segunda a sexta (11h a 13h30 e 17h30 a 19h) e aos sábados (almoço) .</item>
+        <item>O Prédio Central comporta a Diretoria e setores administrativos como a Prefeitura do Campus.</item>
+        <item>O C.V. é um espaço de lazer e descanso, cheio de arte onde os estudantes podem aguardar o período entre aulas, além de realizarem reuniões periódicas de seus grupos.</item>
+        <item>A cantina fica perto do C.V e da copiadora. Possui diversos produtos e funciona das 6h30 às 22h.</item>
+        <item>O Centro de Energia Nuclear na Agricultura comporta um enorme polo de pesquisa na ESALQ além de salas de aula.</item>
+        <item>A C.E.U. é o prédio de moradia dos estudantes dentro do campus. Destinada a pessoas de condição socioeconômica baixa, atualmente possui  mais de 100 moradores residindo</item>
+        <item>A Vila é a moradia da ESALQ fora do campus, tendo van pra levar e trazer da escolas em horários fixos.</item>
+        <item>Promove o acesso e incentiva o uso e a geração da informação, contribuindo para a qualidade do ensino, pesquisa e extensão, com a utilização eficaz dos recursos públicos</item>
+        <item>É necessário marcar horário para: consultas de rotina e retorno; atestados médicos para concursos e bolsas; avaliações cardiológicas para atividades físicas, entre outros.</item>
+        <item>A organização oferece às crianças e aos adolescentes da cidade atividades gratuitas de arte, cultura, comunicação, esporte, lazer, educação. Tudo com um propósito de formação da consciência e cidadania.</item>
+        <item>Um dos supermercados mais próximos à ESALQ.</item>
+        <item>Horta de produtos agroecológicos a preços acessíveis e bem localizada para os estudantes da ESALQ</item>
+        <item>O CALQ é o espaço do CA para realização de eventos e festas da comunidade esalqueana. Fica em local estratégico perto da universidade.</item>
+        <item>A Atlética é o lugar que comporta as quadras e materiais esportivos para uso dos alunos. Há também os treinos periódicos de cada grupo esportivo que acontecem pela semana.</item>
+        <item>O Serviço de Graduação atende às dúvidas dos estudantes, realiza cadastros e atua nos processos de graduação gerais que virão pelo período letivo.</item>
+        <item>O DEVATCOM é reponsável pelo manejo de bolsas/auxílios para a permanência de estudantes de contexto econômico/social prejudicado.</item>
+    </string-array>
+    <!-- latitudes -->
+    <array name="latPiracicaba">
+        <item>-22.70545837</item> <!-- latitude do local 1 -->
+        <item>-22.70471112</item> <!-- latitude do local 2 -->
+        <item>-22.70957067</item> <!-- latitude do local 3 -->
+        <item>-22.70886797</item>  <!-- latitude do local 4 -->
+        <item>-22.70881849</item> <!-- latitude do local 5 -->
+        <item>-22.70841271</item> <!-- latitude do local 6 -->
+        <item>-22.71209934</item> <!-- latitude do local 7 -->
+        <item>-22.71972097</item> <!-- latitude do local 8 -->
+        <item>-22.70639367</item> <!-- latitude do local 9 -->
+        <item>-22.70775207</item> <!-- latitude do local 10 -->
+        <item>-22.7459331</item> <!-- latitude do local 11 -->
+        <item>-22.7136801</item> <!-- latitude do local 12-->
+        <item>-22.71134223</item> <!-- latitude do local 13-->
+        <item>-22.71175295</item> <!-- latitude do local 14 -->
+        <item>-22.71278223</item> <!-- latitude do local 15-->
+        <item>-22.70747742</item> <!-- latitude do local 16 -->
+        <item>-22.71058759</item> <!-- latitude do local 17-->
+    </array>
+    <!-- longitudes -->
+    <array name="lonPiracicaba">
+        <item>-47.63248354</item> <!-- longitude do local 1 -->
+        <item>-47.63263375</item> <!-- longitude do local 2 -->
+        <item>-47.63174325</item> <!-- longitude do local 3 -->
+        <item>-47.63143346</item> <!-- longitude do local 4 -->
+        <item>-47.63133958</item> <!-- longitude do local 5 -->
+        <item>-47.64356911</item> <!-- longitude do local 6 -->
+        <item>-47.63551578</item> <!-- longitude do local 7 -->
+        <item>-47.6224608</item> <!-- longitude do local 8 -->
+        <item>-47.63445899</item> <!-- longitude do local 9 -->
+        <item>-47.63209864</item> <!-- longitude do local 10 -->
+        <item>-47.6463305</item> <!-- longitude do local 11 -->
+        <item>-47.6417439</item> <!-- longitude do local 12 -->
+        <item>-47.64013723</item> <!-- longitude do local 13 -->
+        <item>-47.63758644</item> <!-- longitude do local 14 -->
+        <item>-47.63456091</item> <!-- longitude do local 15 -->
+        <item>-47.63243929</item> <!-- longitude do local 16 -->
+        <item>-47.63582692</item> <!-- longitude do local 17 -->
+    </array>
+    <!-- ícones -->
+    <string-array name="iconsPiracicaba">
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+    </string-array>
+
+
+    <!-- Pirassununga -->
+    <!-- títulos -->
+    <string-array name="titlesPirassununga">
+        <item>Prédio Central</item>
+        <item>Restaurante Universitário</item>
+        <item>Quadras</item>
+        <item>UBAS</item>
+        <item>Unicetex</item>
+        <item>Departamento de Zootecnia</item>
+        <item>Departamento de Engenharia de Alimentos</item>
+        <item>Departamento de Engenharia de Biossistemas</item>
+        <item>Departamento de Medicina Veterinária</item>
+        <item>Biblioteca</item>
+        <item>Unidade Clinico Hospitalar de Medicina Veterinária</item>
+        <item>Portaria</item>
+        <item>Salas de Aula "ZEB"</item>
+        <item>Departamento de Ciências Básicas (ZAB)</item>
+        <item>Salas de Aula</item>
+        <item>Laticínio Escola</item>
+        <item>Fábrica de Ração</item>
+        <item>Associação dos Funcionários do Campus USP Fernando Costa</item>
+        <item>Guarda Universitária</item>
+        <item>Centro de Eventos</item>
+    </string-array>
+    <!-- descrições -->
+    <string-array name="descPirassununga">
+        <item>Principal prédio da Faculdade, nele se encontram os alojamentos, seção de Graduação e Pós, diretoria, Assistência Social, Sala Pró-aluno, bancos e outras seções da FZEA.</item>
+        <item>O Restaurante Universitário, conhecido pelos alunos como bandejão, funciona para almoço e janta.Localiza-se também no prédio central.</item>
+        <item>Local de práticas esportivas do Campus, conta com duas quadras poliesportivas, pista para caminhada, quadra de vôlei de areia, quadra de tênis e campo de futebol. Ao lado esta também a sede do Centro Acadêmico.</item>
+        <item>Centro de atendimento médico e odontológico, localizado de frente para as quadras. Funciona de seg à sex, das 07:00 às 11:00 e das 13:00 às 17:00 h. Agendamento, com Manoel pelo tel: (19)3565–4046.</item>
+        <item>Incubadora de empresas do campus, nesse prédio estão também as sedes das Empresas Jrs.</item>
+        <item>No Departamento de Zootecnia (ZAZ) encontram-se as salas de professores, salas de aula e o auditório do BDNA. Nesse prédio também estão instalações da FMVZ.</item>
+        <item>No Departamento de Eng. de Alimentos (ZEA) encontram-se as salas de professores, secretaria e laboratórios.</item>
+        <item>No Departamento de Eng. de Biossistemas (ZEB) encontram-se as salas de professores, secretaria, laboratórios, sala de reuniões e laboratório de informática.</item>
+        <item>No Departamento de Medicina Veterinária (ZMV) encontram-se as salas de professores, secretaria e laboratórios.</item>
+        <item>A Biblioteca da FZEA possuí livros, teses e dissertações para leitura e empréstimo, computadores, salas de estudo e xerox. Funcionamento: 2ª à 6ª – 8h às 21h e Sábado – 8h às 12h. Férias: 2ª à 6ª - 8h às 17h</item>
+        <item>Hospital veterinário.</item>
+        <item>Na portaria encontram-se o ponto de ônibus que circula pelo Campus, entrada para carros cadastrados e visitantes e ao lado estão as bicicletas para compartilhamento disponibilizadas na unidade.</item>
+        <item>Salas de aula do Dep. de Eng. de Biossistemas</item>
+        <item>No Departamento de Ciências Básicas (ZAB) encontram-se as salas de professores, secretaria, laboratórios, salas de aula.</item>
+        <item>Salas de aula do ZMV</item>
+        <item>Setor onde são fabricados derivados de leite e se realizam aulas práticas dos diversos cursos.</item>
+        <item>Fabrica de ração animal.</item>
+        <item>A Associação dos Funcionários do Campus USP Fernando Costa conta com campos de futebol, sauna, playground e restaurante.</item>
+        <item>Setor responsável pela segurança do Campus. Telefone: (19) 3565–4328 / 4011.</item>
+        <item>Nesse local encontram-se o setor de Práticas Culturais e o Centro de Eventos.</item>
+    </string-array>
+    <!-- latitudes -->
+    <array name="latPirassununga">
+        <item>-21.9595881</item> <!-- latitude do local 1 -->
+        <item>-21.9595881</item> <!-- latitude do local 2 -->
+        <item>-21.9595881</item> <!-- latitude do local 3 -->
+        <item>-21.9595881</item> <!-- latitude do local 4 -->
+        <item>-21.9581353</item> <!-- latitude do local 5 -->
+        <item>-21.958593</item> <!-- latitude do local 6 -->
+        <item>-21.9767018</item> <!-- latitude do local 7 -->
+        <item>-21.9765625</item> <!-- latitude do local 8 -->
+        <item>-21.9765097</item> <!-- latitude do local 9 -->
+        <item>-21.96843</item> <!-- latitude do local 10 -->
+        <item>-21.979434</item> <!-- latitude do local 11 -->
+        <item>-21.9814636</item> <!-- latitude do local 12 -->
+        <item>-21.9763776</item> <!-- latitude do local 13 -->
+        <item>-21.9767756</item> <!-- latitude do local 14 -->
+        <item>-21.957557</item> <!-- latitude do local 15 -->
+        <item>-21.9565517</item> <!-- latitude do local 16 -->
+        <item>-21.9545541</item> <!-- latitude do local 17 -->
+        <item>-21.965057</item> <!-- latitude do local 18 -->
+        <item>-21.9630966</item> <!-- latitude do local 19 -->
+        <item>-21.9792399</item> <!-- latitude do local 20 -->
+    </array>
+    <!-- longitudes -->
+    <array name="lonPirassununga">
+        <item>-47.4690758</item> <!-- longitude do local 1 -->
+        <item>-47.4690758</item> <!-- longitude do local 2 -->
+        <item>-47.4690758</item> <!-- longitude do local 3 -->
+        <item>-47.4690758</item> <!-- longitude do local 4 -->
+        <item>-47.4604605</item> <!-- longitude do local 5 -->
+        <item>-47.4566733</item> <!-- longitude do local 6 -->
+        <item>-47.4419533</item> <!-- longitude do local 7 -->
+        <item>-47.4425326</item> <!-- longitude do local 8 -->
+        <item>-47.4395455</item> <!-- longitude do local 9 -->
+        <item>-47.4701715</item> <!-- longitude do local 10 -->
+        <item>-47.4370194</item> <!-- longitude do local 11 -->
+        <item>-47.4321431</item> <!-- longitude do local 12 -->
+        <item>-47.4420845</item> <!-- longitude do local 13 -->
+        <item>-47.440781</item> <!-- longitude do local 14 -->
+        <item>-47.4536473</item> <!-- longitude do local 15 -->
+        <item>-47.4535131</item> <!-- longitude do local 16 -->
+        <item>-47.4533093</item> <!-- longitude do local 17 -->
+        <item>-47.454969</item> <!-- longitude do local 18 -->
+        <item>-47.4589312</item> <!-- longitude do local 19 -->
+        <item>-47.4368271</item> <!-- longitude do local 20 -->
+    </array>
+    <!-- ícones -->
+    <array name="iconsPirassununga">
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+    </array>
+
+    <!-- -->
 </resources>

@@ -14,23 +14,23 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="false"
         android:layout_alignParentEnd="false"
+        android:id="@+id/fabCalendar"
         android:elevation="2dp">
 
         <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_add2"
+            android:src="@drawable/ic_back"
             android:tint="@color/creme"
             app:backgroundTint="@color/grena"
-            android:id="@+id/fabCalendar"
             app:fabSize="mini"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/adicionar_eventos"
+            android:text="@string/voltar"
             android:gravity="center_vertical"
-            android:textSize="12sp"
+            android:textSize="18sp"
             android:textColor="@color/grena"
             android:textStyle="bold"
             android:paddingEnd="5dp"

@@ -284,11 +284,11 @@ public class MapActivity extends AppCompatActivity
                 icons = res.obtainTypedArray(R.array.iconsSanca);
                 break;
             }case 6: {
-                lats = res.obtainTypedArray(R.array.latSaoCarlos);
-                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
-                titles = res.getStringArray(R.array.titlesSaoCarlos);
-                desc = res.getStringArray(R.array.descSaoCarlos);
-                icons = res.obtainTypedArray(R.array.iconsSanca);
+                lats = res.obtainTypedArray(R.array.latPirassununga);
+                lons = res.obtainTypedArray(R.array.lonPirassununga);
+                titles = res.getStringArray(R.array.titlesPirassununga);
+                desc = res.getStringArray(R.array.descPirassununga);
+                icons = res.obtainTypedArray(R.array.iconsPirassununga);
                 break;
             }case 7: {
                 lats = res.obtainTypedArray(R.array.latSaoCarlos);

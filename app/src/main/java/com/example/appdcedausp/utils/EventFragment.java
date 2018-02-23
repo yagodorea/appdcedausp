@@ -60,7 +60,7 @@ public class EventFragment extends Fragment {
         mainContainer = view.findViewById(R.id.eventInnerContainer);
     }
 
-    public void setEvent(String title, String start, String end, String local, String desc) {
+    public ImageView setEvent(String title, String start, String end, String local, String desc) {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -155,5 +155,6 @@ public class EventFragment extends Fragment {
         container.addView(inner2);
 
         mainContainer.addView(container);
+        return icon;
     }
 }

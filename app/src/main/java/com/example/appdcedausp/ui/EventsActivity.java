@@ -1,14 +1,19 @@
 package com.example.appdcedausp.ui;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TabHost;
 
@@ -27,6 +32,8 @@ import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.Events;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -49,6 +56,7 @@ public class EventsActivity extends AppCompatActivity {
     TabHost tabHost;
 
     ScrollView scroller;
+    LinearLayout fabBack;
 
     boolean[] idLoaded;
 
@@ -101,41 +109,13 @@ public class EventsActivity extends AppCompatActivity {
         });
 
         scroller = findViewById(R.id.calendarTextContainer3);
-
-
-//        Bundle extras = getIntent().getExtras();
-//        long time = System.currentTimeMillis();
-//        umDia = 86400000L;
-//        DateTime date = new DateTime(time);
-//        extras.putLong("date",time);
-
-//        if (extras != null) {
-//            title = findViewById(R.id.titleCalendar);
-//            title.setText(extras.getString("saida0"));
-//
-//            description = findViewById(R.id.descriptionCalendar);
-////            title.setText(extras.getString("saida0"));
-//        }
-
-//        calendarView = findViewById(R.id.calendarView);
-//        calendarView.setDate(time + umDia*2);
-//        Date today = new Date(calendarView.getDate());
-//        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-//            @Override
-//            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
-//                DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-//                Date otherDay = new GregorianCalendar(i,i1,i2).getTime();
-//                //otherDay = new Date(otherDay.getTime() + 3*umDia);
-//                Toast.makeText(EventsActivity.this, "dia: "+ df.format(otherDay), Toast.LENGTH_SHORT).show();
-//                calendarView.setDate(otherDay.getTime());
-//                title.setText(df.format(new GregorianCalendar(i,i1,i2).getTime()));
-//                description.setText(DateFormat.getDateInstance(DateFormat.FULL,new Locale("pt","BR")).format(otherDay)
-//                        + "\n" + DateFormat.getDateInstance(DateFormat.FULL,new Locale("en","US")).format(otherDay)
-//                        + "\n" + DateFormat.getDateInstance(DateFormat.FULL,new Locale("ja","JP")).format(otherDay)
-//                        + "\n" + DateFormat.getDateInstance(DateFormat.FULL,new Locale("ru","RU")).format(otherDay)
-//                        + "\n" + DateFormat.getDateInstance(DateFormat.FULL,new Locale("ko","KR")).format(otherDay));
-//            }
-//        });
+        fabBack = findViewById(R.id.fabCalendar);
+        fabBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     /////////////////// CALENDAR ////////////////////////
@@ -200,10 +180,10 @@ public class EventsActivity extends AppCompatActivity {
             String calendarId;
             switch (calId) {
                 case 0: {
-                    calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com";
+                    calendarId = "ku3bfo1ve7ehaq1gljr7g7cal4@group.calendar.google.com"; // Calendário de festas
                     break;
                 }case 1: {
-                    calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com";
+                    calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com"; // Calendário do ME
                     break;
                 }case 2: {
                     calendarId = "jm2qijsvn1lui4ftpfjf52p15g@group.calendar.google.com"; // Calendário acadêmico
@@ -235,6 +215,8 @@ public class EventsActivity extends AppCompatActivity {
                     // All-day events don't have start times, so just use
                     // the start date.
                     start = event.getStart().getDate();
+                    Log.d(TAG, "Shazam! ->getDataFromApi: start.getTimeZone: " + event.getEnd().getTimeZone());
+                    Log.d(TAG, "Shazam! ->getDataFromApi: start.getTimeZoneShift: " + event.getEnd().getDate().getTimeZoneShift());
                 }
 
                 DateTime end = event.getEnd().getDateTime();
@@ -258,7 +240,7 @@ public class EventsActivity extends AppCompatActivity {
                         .format(new Date(end.getValue()));
 
                 eventStrings.add(
-                        String.format("%s\n%s\n%s\n%s\n%s\n", event.getSummary(), startFull, endFull, local,descricao));
+                        String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s\n", event.getSummary(), startFull, endFull, local, descricao, String.valueOf(start.getValue()), String.valueOf(end.getValue())));
             }
 
             return eventStrings;
@@ -275,8 +257,29 @@ public class EventsActivity extends AppCompatActivity {
             //Log.d(TAG, "Shazam! ->onPostExecute: output: " + output);
             for (String s : output) {
                 String[] parts = s.split("\n");
-                ((EventFragment) getSupportFragmentManager().findFragmentByTag("tag_event" + calId))
-                        .setEvent(parts[0],parts[1],parts[2],parts[3],parts[4]);
+                final String[] evento = parts;
+                EventFragment eventFragment = (EventFragment) getSupportFragmentManager().findFragmentByTag("tag_event" + calId);
+                ImageView ic = eventFragment.setEvent(parts[0],parts[1],parts[2],parts[3],parts[4]);
+                ic.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Log.d(TAG, "Shazam! ->onClick: clicou em: " + evento[0]);
+                        long beginTime;
+                        long endTime;
+
+                        beginTime = Long.parseLong(evento[5]);
+                        endTime = Long.parseLong(evento[6]);
+
+                        Intent addEvent = new Intent(Intent.ACTION_INSERT)
+                                .setData(CalendarContract.Events.CONTENT_URI)
+                                .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime)
+                                .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime)
+                                .putExtra(CalendarContract.Events.TITLE, evento[0])
+                                .putExtra(CalendarContract.Events.DESCRIPTION, evento[4])
+                                .putExtra(CalendarContract.Events.EVENT_LOCATION, evento[3]);
+                        startActivity(addEvent);
+                    }
+                });
             }
         }
 
