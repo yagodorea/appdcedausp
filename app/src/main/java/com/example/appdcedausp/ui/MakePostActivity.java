@@ -1,15 +1,18 @@
 package com.example.appdcedausp.ui;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -22,6 +25,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Random;
 
@@ -41,7 +46,7 @@ public class MakePostActivity extends AppCompatActivity {
     TextView description;
     LinearLayout sendPost;
     int postId = 10;
-    int forumId;
+    long forumId;
     int nPosts;
 
     Uri imgUri;
@@ -58,7 +63,7 @@ public class MakePostActivity extends AppCompatActivity {
         setContentView(com.example.appdcedausp.R.layout.makepost_activity);
 
         pref = getApplicationContext().getSharedPreferences("myConfig",0);
-        forumId = getIntent().getIntExtra("forumId",-1);
+        forumId = getIntent().getLongExtra("forumId",-1);
         nPosts = getIntent().getIntExtra("nPosts",-1);
 
         gotImage = false;

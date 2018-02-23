@@ -2,7 +2,8 @@
     <dimen name="fab_margin">32dp</dimen>
     <dimen name="fab_margin2">16dp</dimen>
     <dimen name="post_margin">40dp</dimen>
-    <dimen name="design_fab_size_normal" tools:override="true">90dp</dimen>
-    <dimen name="design_fab_size_mini" tools:override="true">56dp</dimen>
+    <dimen name="answer_margin">28dp</dimen>
+    <dimen name="design_fab_size_normal" tools:override="true">70dp</dimen>
+    <dimen name="design_fab_size_mini" tools:override="true">50dp</dimen>
     <dimen name="design_fab_image_size" tools:override="true">60dp</dimen>
 </resources>

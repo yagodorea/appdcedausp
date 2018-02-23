@@ -125,6 +125,9 @@ public class MainActivity extends AppCompatActivity {
             }case 9: { // Lorena
                 fabCampus.setImageResource(R.drawable.txtpirassununga);
                 break;
+            }case 10: { // Saúde
+                fabCampus.setImageResource(R.drawable.txtpirassununga);
+                break;
             } default: askForCampus();
         }
 
@@ -376,6 +379,11 @@ public class MainActivity extends AppCompatActivity {
                                 fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtsantos
                                 break;
                             }case 9: { // Lorena
+                                editor.putInt("Campus",i);
+                                editor.apply();
+                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtlorena
+                                break;
+                            } case 10: { // Quadrilátero
                                 editor.putInt("Campus",i);
                                 editor.apply();
                                 fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtlorena

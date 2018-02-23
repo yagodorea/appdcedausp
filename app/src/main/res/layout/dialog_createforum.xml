@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/creme"
+    android:layout_margin="@dimen/answer_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/forum_dialog"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/newForumImage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/inseriraqui"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newForumTitle"
+        android:inputType="text|textCapWords"
+        android:maxLength="20"
+        android:hint="@string/forum_title"
+        android:maxLines="1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="start|top"
+        android:id="@+id/newForumDesc"
+        android:inputType="text|textMultiLine|textLongMessage|textEmailSubject"
+        android:maxLength="200"
+        android:hint="@string/forum_desc"
+        android:maxLines="5"
+        android:scrollHorizontally="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forum_dialog_ok"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:background="@color/grena"
+            android:textColor="@color/creme"
+            android:id="@+id/forumCreateButton"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forum_dialog_cancel"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:background="@color/grena"
+            android:textColor="@color/creme"
+            android:id="@+id/forumCreateCancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

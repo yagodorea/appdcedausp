@@ -30,13 +30,14 @@ public class SimpleBlogActivity extends AppCompatActivity {
     private static final String TAG = SimpleBlogActivity.class.getName();
 
     FloatingActionButton fabAddPost;
+    FloatingActionButton fabLeaveForum;
 
     private RecyclerView mPostList;
 
     TextView naoHaPosts;
 
     SharedPreferences pref;
-    int forumId;
+    long forumId;
     int nPosts;
 
     @Override
@@ -48,7 +49,7 @@ public class SimpleBlogActivity extends AppCompatActivity {
         naoHaPosts.setVisibility(View.GONE);
 
         pref = getApplicationContext().getSharedPreferences("myConfig",0);
-        forumId = getIntent().getIntExtra("forumId",-1);
+        forumId = getIntent().getLongExtra("forumId",-1);
         nPosts = getIntent().getIntExtra("nPosts",-1);
 
         mPostList = findViewById(R.id.post_list);
@@ -63,6 +64,14 @@ public class SimpleBlogActivity extends AppCompatActivity {
                 intent.putExtra("forumId",forumId);
                 intent.putExtra("nPosts",nPosts);
                 startActivityForResult(intent,NEWPOST_REQUEST);
+            }
+        });
+
+        fabLeaveForum = findViewById(R.id.fabLeaveForum);
+        fabLeaveForum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SimpleBlogActivity.this.finish();
             }
         });
     }
@@ -109,6 +118,7 @@ public class SimpleBlogActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Log.d(TAG, "Shazam! ->onClick: post title: " + post.getTitulo());
                         Intent postIntent = new Intent(SimpleBlogActivity.this, PostActivity.class);
+                        postIntent.putExtra("forumId",forumId);
                         Bundle extras = new Bundle();
                         extras.putSerializable("post", post);
                         postIntent.putExtras(extras);

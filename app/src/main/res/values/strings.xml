@@ -20,6 +20,17 @@
     <string name="post_description">Descrição do post.</string>
     <string name="post_date">Nome do autor, data</string>
     <string name="voltar">Voltar</string>
+    <string name="answer_author">Autor da resposta</string>
+    <string name="answer_text">Texto da resposta</string>
+    <string name="answer_date">Hora da resposta</string>
+    <string name="answer_dialog">Responder</string>
+    <string name="answer_cancel">Cancelar</string>
+    <string name="answer_send">OK</string>
+    <string name="forum_dialog">Criar novo fórum</string>
+    <string name="forum_dialog_ok">Criar</string>
+    <string name="forum_dialog_cancel">Cancelar</string>
+    <string name="forum_title">Insira um nome</string>
+    <string name="forum_desc">Descreva o novo fórum</string>
     <!--<string name="default_web_client_id">675152987162-u3vcnf1erusv6fmd1cei4o9uo3a068kq.apps.googleusercontent.com</string>-->
 
     <string-array name="list_campus">
@@ -33,6 +44,7 @@
         <item>Bauru</item>
         <item>Santos</item>
         <item>Lorena</item>
+        <item>Quadrilátero Saúde</item>
     </string-array>
 
 </resources>

@@ -68,6 +68,7 @@ public class MapActivity extends AppCompatActivity
     private static final LatLng bauruInicio = new LatLng(-22.3345195f,-49.0671509f);
     private static final LatLng santosInicio = new LatLng(-22.0050875f,-47.9102792f);
     private static final LatLng lorenaInicio = new LatLng(-23.9424612f,-46.3327931f);
+    private static final LatLng saudeInicio = new LatLng(-23.9424612f,-46.3327931f);
     private Boolean mLocationPermissionGranted = false;
     HashMap<String,Marker> markerHashMap;
 
@@ -191,6 +192,9 @@ public class MapActivity extends AppCompatActivity
                                 }case 9: {
                                     moveCamera(lorenaInicio, DEFAULT_ZOOM);
                                     break;
+                                }case 10: {
+                                    moveCamera(saudeInicio, DEFAULT_ZOOM);
+                                    break;
                                 }default : { moveCamera(new LatLng(currLocation.getLatitude(),currLocation.getLongitude()), DEFAULT_ZOOM); break; }
                             }
                         } else {
@@ -270,11 +274,11 @@ public class MapActivity extends AppCompatActivity
                 icons = res.obtainTypedArray(R.array.iconsSanca);
                 break;
             }case 4: {
-                lats = res.obtainTypedArray(R.array.latSaoCarlos);
-                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
-                titles = res.getStringArray(R.array.titlesSaoCarlos);
-                desc = res.getStringArray(R.array.descSaoCarlos);
-                icons = res.obtainTypedArray(R.array.iconsSanca);
+                lats = res.obtainTypedArray(R.array.latPiracicaba);
+                lons = res.obtainTypedArray(R.array.lonPiracicaba);
+                titles = res.getStringArray(R.array.titlesPiracicaba);
+                desc = res.getStringArray(R.array.descPiracicaba);
+                icons = res.obtainTypedArray(R.array.iconsPiracicaba);
                 break;
             }case 5: {
                 lats = res.obtainTypedArray(R.array.latSaoCarlos);
@@ -305,6 +309,13 @@ public class MapActivity extends AppCompatActivity
                 icons = res.obtainTypedArray(R.array.iconsSanca);
                 break;
             }case 9: {
+                lats = res.obtainTypedArray(R.array.latSaoCarlos);
+                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
+                titles = res.getStringArray(R.array.titlesSaoCarlos);
+                desc = res.getStringArray(R.array.descSaoCarlos);
+                icons = res.obtainTypedArray(R.array.iconsSanca);
+                break;
+            }case 10: {
                 lats = res.obtainTypedArray(R.array.latSaoCarlos);
                 lons = res.obtainTypedArray(R.array.lonSaoCarlos);
                 titles = res.getStringArray(R.array.titlesSaoCarlos);

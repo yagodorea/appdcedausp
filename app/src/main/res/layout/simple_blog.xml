@@ -13,9 +13,21 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="32dp"
         app:fabSize="normal"
-        app:backgroundTint="@color/branco"
+        app:backgroundTint="@color/creme"
         android:tint="@color/grena"
         android:id="@+id/fabAddPost"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/creme"
+        android:tint="@color/grena"
+        android:id="@+id/fabLeaveForum"/>
 
     <TextView
         android:layout_width="wrap_content"

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/creme"
+    android:layout_margin="@dimen/answer_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/answer_dialog"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/answerBox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="start|top"
+        android:inputType="text|textShortMessage|textMultiLine|textCapSentences"
+        android:maxLines="8"
+        android:scrollHorizontally="false"
+        android:maxLength="300" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_send"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:background="@color/grena"
+            android:textColor="@color/creme"
+            android:id="@+id/answerSend"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_cancel"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:background="@color/grena"
+            android:textColor="@color/creme"
+            android:id="@+id/answerCancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

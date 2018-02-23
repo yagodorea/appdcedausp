@@ -6,27 +6,49 @@
     android:background="@color/grena">
 
     <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="@dimen/post_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:elevation="4dp">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabClosePost"
+        app:fabSize="mini"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="@dimen/post_margin"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fabClosePost"
-            app:fabSize="mini"
-            android:layout_width="43dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_close"
-            android:tint="@color/grena"
-            app:backgroundTint="@color/creme"/>
+        android:src="@drawable/ic_close"
+        android:tint="@color/creme"
+        app:backgroundTint="@color/grena"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/creme"
+        android:textColor="@color/preto"
         android:text="@string/fechar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/postMain"
+        android:layout_alignStart="@id/postMain"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:elevation="4dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAnswerPost"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_answer"
+            android:tint="@color/grena"
+            app:backgroundTint="@color/creme"/>
 
     </LinearLayout>
 
@@ -52,7 +74,7 @@
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/fabDeletePost"
                 app:fabSize="mini"
-                android:layout_width="43dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_del"
                 android:tint="@color/grena"
@@ -68,7 +90,7 @@
         <ImageView
             android:contentDescription="@string/image_content_description"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="120dp"
             android:id="@+id/mainPostImage"/>
 
         <TextView
@@ -105,8 +127,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:id="@+id/respostas"
         android:layout_below="@+id/postMain"
         android:text="@string/respostas"
         android:textColor="@color/creme"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/answer_margin"
+        android:id="@+id/respMain"
+        app:cardCornerRadius="15dp"
+        android:layout_below="@id/respostas"
+        app:cardBackgroundColor="@color/creme">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_list">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v7.widget.CardView>
+
 
 </RelativeLayout>
