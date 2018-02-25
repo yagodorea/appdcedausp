@@ -1,7 +1,9 @@
 package com.example.appdcedausp.ui;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +18,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.appdcedausp.utils.FbFeedFragment;
 import com.example.appdcedausp.R;
@@ -38,10 +41,15 @@ public class FacebookFeedActivity extends AppCompatActivity {
     String message = null;
     String permalink = null;
 
+    FloatingActionButton fabBack;
+    ProgressDialog dialog;
+
     // Fragmentos
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
     FbFeedFragment fbFeedFragment;
+
+    AccessToken accessToken;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,21 +60,29 @@ public class FacebookFeedActivity extends AppCompatActivity {
         param.putString("fields","created_time,name,story,picture,full_picture,message,description,permalink_url");
         param.putString("locale","pt_BR");
 
-        String token = "992935517526832|5f71e86a6be11ff8e76bfc650250bf1e";
-
+        if (AccessToken.getCurrentAccessToken() == null) {
+            Toast.makeText(this, "Can't get current access token", Toast.LENGTH_SHORT).show();
+            String token = "992935517526832|5f71e86a6be11ff8e76bfc650250bf1e";
+            accessToken = new AccessToken(token,
+                    "992935517526832",
+                    "100001065407967",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null);
+        } else {
+            accessToken = AccessToken.getCurrentAccessToken();
+        }
         addFragment();
 
         Log.d(TAG, "Shazam! ->onCreate: current access token: " + AccessToken.getCurrentAccessToken());
 
+        dialog = new ProgressDialog(this);
+        dialog.setMessage("Carregando...");
+        dialog.show();
         new GraphRequest(
-                new AccessToken(token,
-                        "992935517526832",
-                        "100001065407967",
-                        null,
-                        null,
-                        null,
-                        null,
-                        null),
+                accessToken,
                 getResources().getString(R.string.fb_page_id),
                 param,
                 HttpMethod.GET,
@@ -79,8 +95,8 @@ public class FacebookFeedActivity extends AppCompatActivity {
                 }
         ).executeAsync();
 
-        ImageView logoDCEfb = findViewById(R.id.logoDCEfb);
-        logoDCEfb.setOnClickListener(new View.OnClickListener() {
+        fabBack = findViewById(R.id.fabFbBack);
+        fabBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 exitAnimation();
@@ -123,12 +139,15 @@ public class FacebookFeedActivity extends AppCompatActivity {
 
                 ((FbFeedFragment) getSupportFragmentManager().findFragmentByTag("tag_fbFeed"))
                     .setPost(created_time,story,picture,message,permalink);
+                dialog.dismiss();
 
 //                                FbFeedFragment frag = (FbFeedFragment)getSupportFragmentManager()
 //                                        .findFragmentById(R.id.fbFeedContainer);
 //                                frag.setPost(message, story, created_time, permalink, picture);
             }
         } catch (JSONException | NullPointerException e) {
+            dialog.dismiss();
+            Toast.makeText(this, "Erro ao carregar notícias", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
     }
@@ -167,8 +186,8 @@ public class FacebookFeedActivity extends AppCompatActivity {
     }
 
     public void exitAnimation() {
-        AnimationSet a = loadLogoAnimationFacebook(findViewById(R.id.logoDCEfb));
-        findViewById(R.id.logoDCEfb).startAnimation(a);
+        AnimationSet a = loadLogoAnimationFacebook(fabBack);
+        fabBack.startAnimation(a);
         a.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {}
@@ -177,11 +196,11 @@ public class FacebookFeedActivity extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 AlphaAnimation alpha = new AlphaAnimation(1f,0f);
                 alpha.setDuration(500);
-                findViewById(R.id.logoDCEfb).startAnimation(alpha);
+                fabBack.startAnimation(alpha);
 
                 Animation a2 = AnimationUtils.loadAnimation(FacebookFeedActivity.this,R.anim.anim_ffadeout);
                 //a2.setFillAfter(true);
-                findViewById(R.id.logoDCEfb).startAnimation(a2);
+                fabBack.startAnimation(a2);
                 finish();
             }
 
@@ -197,23 +216,23 @@ public class FacebookFeedActivity extends AppCompatActivity {
         View rootLayout = findViewById(R.id.fbActivContainer);
         int statusBarOffset = dm.heightPixels - rootLayout.getMeasuredHeight();
 
-        int destPosX = dm.widthPixels/2;
+        int destPosX = dm.widthPixels;
         int destPosY = 2*view.getMeasuredHeight() - statusBarOffset;
 
-        int xDelta = - (dm.widthPixels - destPosX - view.getMeasuredWidth()/2);
+        int xDelta = - (destPosX - view.getMeasuredWidth()*2);
         int yDelta = - (dm.heightPixels - destPosY);
 
         AnimationSet a = new AnimationSet(true);
         a.setFillAfter(true);
         a.setDuration(500);
         a.setInterpolator(new DecelerateInterpolator());
-        ScaleAnimation scale = new ScaleAnimation(1f,2f,1f,2f,ScaleAnimation.RELATIVE_TO_SELF,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f);
-        a.addAnimation(scale);
+//        ScaleAnimation scale = new ScaleAnimation(1f,2f,1f,2f,ScaleAnimation.RELATIVE_TO_SELF,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f);
+//        a.addAnimation(scale);
         TranslateAnimation translate = new TranslateAnimation(
                 TranslateAnimation.ABSOLUTE,0,
                 TranslateAnimation.ABSOLUTE,xDelta,
                 TranslateAnimation.ABSOLUTE,0,
-                TranslateAnimation.ABSOLUTE,yDelta);
+                TranslateAnimation.ABSOLUTE,0);
         a.addAnimation(translate);
         return a;
     }

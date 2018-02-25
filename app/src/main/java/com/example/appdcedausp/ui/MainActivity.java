@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
 
         signInButton = findViewById(R.id.googleSignInButton);
         signInButton.setOnTouchListener(new View.OnTouchListener() {
-
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 Log.d(TAG, "Shazam! ->onTouch: " + motionEvent.getActionMasked());

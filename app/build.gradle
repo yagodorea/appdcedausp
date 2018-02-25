@@ -40,13 +40,14 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:11.8.0'
     implementation 'com.google.android.gms:play-services-auth:11.8.0'
     implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.android.gms:play-services-drive:11.8.0'
     // Facebook Login
     implementation 'com.facebook.android:facebook-login:4.29.0'
     // Google Api for Calendar
-    implementation ('com.google.api-client:google-api-client-android:1.23.0') {
+    implementation('com.google.api-client:google-api-client-android:1.23.0') {
         exclude group: 'org.apache.httpcomponents'
     }
-    implementation ('com.google.apis:google-api-services-calendar:v3-rev283-1.23.0') {
+    implementation('com.google.apis:google-api-services-calendar:v3-rev283-1.23.0') {
         exclude group: 'org.apache.httpcomponents'
     }
     // Firebase dependencies
@@ -57,5 +58,6 @@ dependencies {
     // Picasso - for image downloading
     implementation 'com.squareup.picasso:picasso:2.5.2'
 }
+
 
 apply plugin: 'com.google.gms.google-services'

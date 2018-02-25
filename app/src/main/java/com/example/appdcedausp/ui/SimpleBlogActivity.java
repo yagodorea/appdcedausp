@@ -1,22 +1,32 @@
 package com.example.appdcedausp.ui;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.appdcedausp.R;
 import com.example.appdcedausp.utils.FirebaseUtils;
 import com.example.appdcedausp.utils.Post;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
@@ -106,6 +116,10 @@ public class SimpleBlogActivity extends AppCompatActivity {
                 Log.d(TAG, "Shazam! ->populateViewHolder: position: " + position);
                 Log.d(TAG, "Shazam! ->populateViewHolder: viewType: " + viewHolder.getItemViewType());
 
+                if (!model.getAprovado()) {
+                    viewHolder.mView.setVisibility(View.GONE);
+                    verifyAdm(viewHolder.mView,model.getCriadoem());
+                }
                 viewHolder.setTitle(model.getTitulo());
                 viewHolder.setDescription(model.getDescricao());
                 viewHolder.setAuthorAndDate(model.getAutor(), model.getCriadoem());
@@ -118,7 +132,8 @@ public class SimpleBlogActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Log.d(TAG, "Shazam! ->onClick: post title: " + post.getTitulo());
                         Intent postIntent = new Intent(SimpleBlogActivity.this, PostActivity.class);
-                        postIntent.putExtra("forumId",forumId);
+                        postIntent.putExtra("forumId", forumId);
+                        postIntent.putExtra("nPosts", nPosts);
                         Bundle extras = new Bundle();
                         extras.putSerializable("post", post);
                         postIntent.putExtras(extras);
@@ -170,6 +185,10 @@ public class SimpleBlogActivity extends AppCompatActivity {
             post_author.setText(txt);
         }
 
+        void setApproved(boolean approved) {
+            // TODO mecanismo de moderação aqui?
+        }
+
         public void setImage(String image) {
             // Tratar download da imagem (fazer async)
             ImageView post_image = mView.findViewById(R.id.post_image);
@@ -185,5 +204,74 @@ public class SimpleBlogActivity extends AppCompatActivity {
                         .into(post_image);
             }
         }
+    }
+
+    public void verifyAdm(View v, long post) {
+        Log.d(TAG, "Shazam! ->verifyAdm: post nao aprovado");
+
+        final View view = v;
+        final long postId = post;
+        DatabaseReference ref = FirebaseUtils.getMDatabase().child("Forum").child("adms");
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                int i = 0;
+                String userEmail = FirebaseUtils.getUser().getEmail();
+                while (dataSnapshot.child(String.valueOf(i)).exists()) {
+                    String adm = dataSnapshot.child(String.valueOf(i)).getValue(String.class);
+                    if (adm.equals(userEmail)) {
+                        // mostra caixa de dialogo
+                        Toast.makeText(SimpleBlogActivity.this, "Existem posts a serem aprovados", Toast.LENGTH_SHORT).show();
+                        view.setVisibility(View.VISIBLE);
+                        view.findViewById(R.id.postOuterContainer).setAlpha(0.4f);
+                        view.findViewById(R.id.aprovarPost).setVisibility(View.VISIBLE);
+                        view.findViewById(R.id.aprovarPost).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                AlertDialog aprovar = new AlertDialog.Builder(SimpleBlogActivity.this).create();
+                                aprovar.setTitle("Moderação");
+                                aprovar.setMessage("Deseja aprovar esse post?");
+                                aprovar.setButton(DialogInterface.BUTTON_POSITIVE, "Aprovar",
+                                        new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                Task t = FirebaseUtils.getMDatabase()
+                                                        .child("Forum")
+                                                        .child(String.valueOf(pref.getInt("Campus",0)))
+                                                        .child(String.valueOf(forumId))
+                                                        .child("posts")
+                                                        .child(Long.toString(postId))
+                                                        .child("aprovado").setValue(true);
+                                                dialogInterface.dismiss();
+                                            }
+                                        });
+                                aprovar.setButton(DialogInterface.BUTTON_NEGATIVE, "Apagar",
+                                        new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                Task t = FirebaseUtils.getMDatabase()
+                                                        .child("Forum")
+                                                        .child(String.valueOf(pref.getInt("Campus",0)))
+                                                        .child(String.valueOf(forumId))
+                                                        .child("posts")
+                                                        .child(Long.toString(postId)).removeValue();
+                                                dialogInterface.dismiss();
+                                            }
+                                        });
+                                aprovar.show();
+                            }
+                        });
+                        break;
+                    } else {
+                        i++;
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 }

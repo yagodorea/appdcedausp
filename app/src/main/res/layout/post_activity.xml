@@ -8,7 +8,7 @@
     <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
+    android:layout_alignParentTop="true"
     android:layout_alignParentEnd="true"
     android:layout_margin="@dimen/post_margin"
     android:orientation="vertical"
@@ -23,64 +23,75 @@
         android:src="@drawable/ic_close"
         android:tint="@color/creme"
         app:backgroundTint="@color/grena"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/preto"
-        android:text="@string/fechar"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/postMain"
+        android:layout_alignBottom="@id/respostas"
         android:layout_alignStart="@id/postMain"
-        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical"
         android:gravity="center"
         android:elevation="4dp">
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fabAnswerPost"
-            app:fabSize="normal"
+            app:fabSize="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_answer"
-            android:tint="@color/grena"
-            app:backgroundTint="@color/creme"/>
+            android:tint="@color/creme"
+            app:backgroundTint="@color/grena"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/creme"
+            android:text="@string/answer_dialog"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/respostas"
+        android:layout_alignEnd="@+id/postMain"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDeletePost"
+            app:fabSize="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_del"
+            android:tint="@color/creme"
+            app:backgroundTint="@color/grena"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/creme"
+            android:text="@string/erase_dialog"/>
 
     </LinearLayout>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/post_margin"
+        android:layout_marginTop="@dimen/post_margin"
+        android:layout_marginEnd="@dimen/post_margin"
+        android:layout_marginStart="@dimen/post_margin"
+        android:layout_marginBottom="20dp"
         android:id="@+id/postMain"
         app:cardCornerRadius="15dp"
         android:layout_alignParentTop="true"
         app:cardBackgroundColor="@color/creme">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|end"
-            android:layout_margin="5dp"
-            android:elevation="2dp"
-            android:orientation="vertical"
-            android:gravity="center">
-
-
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fabDeletePost"
-                app:fabSize="mini"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_del"
-                android:tint="@color/grena"
-                app:backgroundTint="@color/creme"/>
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,6 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:paddingTop="5dp"
+                android:paddingBottom="10dp"
                 android:layout_margin="15dp"
                 android:id="@+id/postDateAndAuthor"
                 android:textStyle="italic"
@@ -127,15 +139,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
         android:id="@+id/respostas"
         android:layout_below="@+id/postMain"
         android:text="@string/respostas"
+        android:textSize="18sp"
         android:textColor="@color/creme"/>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/answer_margin"
+        android:layout_marginBottom="@dimen/answer_margin"
+        android:layout_marginStart="@dimen/answer_margin"
+        android:layout_marginEnd="@dimen/answer_margin"
         android:id="@+id/respMain"
         app:cardCornerRadius="15dp"
         android:layout_below="@id/respostas"
@@ -144,6 +160,7 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:id="@+id/answer_list">
 
         </android.support.v7.widget.RecyclerView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appdcedausp.ui.Main2Activity"
+    tools:showIn="@layout/content_main2">
+
+    <include layout="@layout/content_main2" />
+
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/answer_margin"
+        android:src="@drawable/logo_small"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/grena"
+        android:tint="@color/creme"
+        android:src="@drawable/txtsanca"
+        app:fabSize="normal"/>
+
+</android.support.design.widget.CoordinatorLayout>

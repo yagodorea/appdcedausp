@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_option1"
+            android:icon="@drawable/ic_map_place"
+            android:title="@string/menu_title1" />
+        <item
+            android:id="@+id/nav_option2"
+            android:icon="@drawable/ic_answer"
+            android:title="@string/menu_title2" />
+        <item
+            android:id="@+id/nav_option3"
+            android:icon="@drawable/ic_agenda"
+            android:title="@string/menu_title3" />
+        <item
+            android:id="@+id/nav_option4"
+            android:icon="@drawable/ic_map_restaurant"
+            android:title="@string/menu_title4" />
+        <item
+            android:id="@+id/nav_option5"
+            android:icon="@drawable/ic_map_grad"
+            android:title="@string/menu_title5" />
+        <item
+            android:id="@+id/nav_option6"
+            android:icon="@drawable/ic_map_flag"
+            android:title="@string/menu_title6" />
+        <item
+            android:id="@+id/nav_option7"
+            android:icon="@drawable/ic_map_star"
+            android:title="@string/menu_title7"/>
+    </group>
+
+</menu>

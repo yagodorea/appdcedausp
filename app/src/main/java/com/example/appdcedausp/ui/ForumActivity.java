@@ -49,6 +49,7 @@ public class ForumActivity extends AppCompatActivity {
     RecyclerView mForumList;
     FloatingActionButton fabLeave;
     FloatingActionButton fabCreate;
+    TextView forumsTitle;
 
     CreateForumDialog dialog;
     static ProgressDialog progressDialog;
@@ -61,6 +62,7 @@ public class ForumActivity extends AppCompatActivity {
         setContentView(R.layout.forum_activity);
 
         pref = getApplicationContext().getSharedPreferences("myConfig",0);
+        setForumsTitle();
 
         progressDialog = new ProgressDialog(this);
 
@@ -87,10 +89,8 @@ public class ForumActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int i = 0;
                 String userEmail = FirebaseUtils.getUser().getEmail();
-                Log.d(TAG, "Shazam! ->onDataChange: userEmail = " + userEmail);
                 while (dataSnapshot.child(String.valueOf(i)).exists()) {
                     String adm = dataSnapshot.child(String.valueOf(i)).getValue(String.class);
-                    Log.d(TAG, "Shazam! ->onDataChange: adms: " + adm);
                     if (adm.equals(userEmail)) {
                         // mostra caixa de dialogo
                         Toast.makeText(ForumActivity.this, "Você é um administrador", Toast.LENGTH_SHORT).show();
@@ -158,6 +158,18 @@ public class ForumActivity extends AppCompatActivity {
         };
 
         mForumList.setAdapter(firebaseRecyclerAdapter);
+        progressDialog.show();
+        mForumList.addOnChildAttachStateChangeListener(new RecyclerView.OnChildAttachStateChangeListener() {
+            @Override
+            public void onChildViewAttachedToWindow(View view) {
+                progressDialog.dismiss();
+            }
+
+            @Override
+            public void onChildViewDetachedFromWindow(View view) {
+
+            }
+        });
     }
 
     public static class ForumViewHolder extends RecyclerView.ViewHolder {
@@ -313,5 +325,11 @@ public class ForumActivity extends AppCompatActivity {
             Log.d(TAG, "Shazam! ->onActivityResult: resultCode: " + resultCode);
             Log.d(TAG, "Shazam! ->onActivityResult: requestCode: " + requestCode);
         }
+    }
+
+    public void setForumsTitle() {
+        forumsTitle = findViewById(R.id.forums_name);
+        String[] list_campus = getResources().getStringArray(R.array.list_campus);
+        forumsTitle.setText("Fóruns - " + list_campus[pref.getInt("Campus",0)]);
     }
 }

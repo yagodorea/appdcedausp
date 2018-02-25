@@ -132,6 +132,7 @@ public class MakePostActivity extends AppCompatActivity {
                         if (downloadUri != null) {
                             newPost.child("imagem").setValue(downloadUri.toString());
                         }
+                        newPost.child("aprovado").setValue(false);
 
                         FirebaseUtils.getMDatabase()
                                 .child("Forum")

@@ -2,6 +2,7 @@ package com.example.appdcedausp.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -92,6 +93,8 @@ public class PostActivity extends AppCompatActivity {
                             .fit()
                             .centerCrop()
                             .into(imagePost);
+                } else {
+                    imagePost.setVisibility(View.GONE);
                 }
                 postTitle.setText(post.getTitulo());
                 postDescription.setText(post.getDescricao());
@@ -121,7 +124,25 @@ public class PostActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: verificar se é dono ou adm, e fazer função para deletar o post
-                verifyAdm();
+                AlertDialog eraseDialog = new AlertDialog.Builder(PostActivity.this).create();
+                eraseDialog.setTitle("Apagar");
+                eraseDialog.setMessage("Deseja mesmo apagar esse post?");
+                eraseDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Sim",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                                verifyAdm();
+                            }
+                        });
+                eraseDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Não",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                            }
+                        });
+                eraseDialog.show();
             }
         });
 
@@ -198,6 +219,13 @@ public class PostActivity extends AppCompatActivity {
                                         PostActivity.this.finish();
                                     }
                                 });
+                        // Também decrementar o numero de posts do forum
+                        FirebaseUtils.getMDatabase()
+                                .child("Forum")
+                                .child(String.valueOf(pref.getInt("Campus",0)))
+                                .child(String.valueOf(getIntent().getLongExtra("forumId",-1)))
+                                .child("forum_posts")
+                                .setValue(Integer.valueOf(getIntent().getIntExtra("nPosts",0) - 1));
                         break;
                     } else {
                         i++;
@@ -274,13 +302,14 @@ public class PostActivity extends AppCompatActivity {
             builder.setView(v);
             im = v.findViewById(R.id.dialogImage);
 
-            if (im != null && image != null) {
-                Picasso.with(getActivity())
-                        .load(image)
-                        .resize(v.getWidth(),
-                                (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,120,v.getResources().getDisplayMetrics()))
-
-                        .into(im);
+            if (im != null) {
+                if (image != null) {
+                    Picasso.with(getActivity())
+                            .load(image)
+                            .into(im);
+                } else {
+                    im.setVisibility(View.GONE);
+                }
             }
 
             im.setOnClickListener(new View.OnClickListener() {

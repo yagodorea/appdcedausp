@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creme"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.appdcedausp.ui.Main2Activity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/logo"
+        android:id="@+id/mainLogo"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/mainLogo"
+        app:layout_constraintStart_toStartOf="@id/mainLogo"
+        app:layout_constraintEnd_toEndOf="@id/mainLogo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Entrar:"
+            android:id="@+id/loginText"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/googlesign_grena"
+            android:id="@+id/loginButton"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

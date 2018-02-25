@@ -15,16 +15,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/answer_author"
+        android:textColor="@color/grena"
         android:textSize="18sp"
         android:textStyle="italic|bold"/>
     <TextView
         android:id="@+id/answer_text"
+        android:textColor="@color/grena"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/answer_text"
         android:textSize="14sp"/>
     <TextView
         android:id="@+id/answer_date"
+        android:textColor="@color/grena"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/answer_date"

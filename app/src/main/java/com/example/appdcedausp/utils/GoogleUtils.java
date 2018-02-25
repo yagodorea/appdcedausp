@@ -20,6 +20,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.drive.Drive;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
@@ -73,6 +74,7 @@ public class GoogleUtils {
         // faz a requisição de login na função OnStart()
         Resources res = mContext.getResources();
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestScopes(Drive.SCOPE_FILE)
                 .requestIdToken(res.getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
@@ -121,9 +123,9 @@ public class GoogleUtils {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         gCredential = null;
-                        ImageView signInButton = mContext.findViewById(R.id.googleSignInButton);
-                        signInButton.setImageResource(R.drawable.googlesign_creme);
-                        TextView signInText = mContext.findViewById(R.id.googleSignInText);
+                        ImageView signInButton = mContext.findViewById(R.id.loginButton);
+                        signInButton.setImageResource(R.drawable.googlesign_grena);
+                        TextView signInText = mContext.findViewById(R.id.loginText);
                         signInText.setText(R.string.entrar);
                     }
                 });

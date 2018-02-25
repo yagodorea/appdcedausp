@@ -3,7 +3,6 @@ package com.example.appdcedausp.utils;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.ImageView;
@@ -13,7 +12,6 @@ import android.widget.Toast;
 import com.example.appdcedausp.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
@@ -24,9 +22,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-
-import java.util.Arrays;
 
 /**
  * Created by yago_ on 29/01/2018.
@@ -50,6 +45,7 @@ public class FirebaseUtils {
     private static final String TAG = FirebaseUtils.class.getName();
 
     public static void setContext(Context context) {
+        Log.d(TAG, "Shazam! ->setContext: firebase set context");
         mContext = (Activity)context;
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
@@ -77,17 +73,17 @@ public class FirebaseUtils {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             Log.d(TAG, "Shazam! ->onComplete: entrou");
-                            ImageView signInButton = mContext.findViewById(R.id.googleSignInButton);
-                            TextView signInText = mContext.findViewById(R.id.googleSignInText);
+                            ImageView signInButton = mContext.findViewById(R.id.loginButton);
+                            TextView signInText = mContext.findViewById(R.id.loginText);
                             if (task.isSuccessful()) {
                                 mUser = task.getResult().getUser();
                                 GoogleUtils.setgCredentialAcc(account.getAccount());
                                 signInText.setText(R.string.sair);
-                                signInButton.setImageResource(R.drawable.googlesign_grena);
+                                signInButton.setImageResource(R.drawable.googlesign_creme);
                                 Toast.makeText(mContext, "Logado como " + mUser.getDisplayName(), Toast.LENGTH_SHORT).show();
                             } else {
                                 Toast.makeText(mContext, "Login Firebase falhou!", Toast.LENGTH_SHORT).show();
-                                signInButton.setImageResource(R.drawable.googlesign_creme);
+                                signInButton.setImageResource(R.drawable.googlesign_grena);
                             }
                         }
                     });

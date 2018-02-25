@@ -1,6 +1,7 @@
 package com.example.appdcedausp.ui;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TabHost;
+import android.widget.Toast;
 
 import com.example.appdcedausp.R;
 import com.example.appdcedausp.utils.EventFragment;
@@ -57,6 +59,7 @@ public class EventsActivity extends AppCompatActivity {
 
     ScrollView scroller;
     LinearLayout fabBack;
+    ProgressDialog progressDialog;
 
     boolean[] idLoaded;
 
@@ -64,6 +67,9 @@ public class EventsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.events_activity);
+
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Carregando eventos...");
 
         tabHost = findViewById(R.id.tabhost);
         tabHost.setup();
@@ -131,6 +137,7 @@ public class EventsActivity extends AppCompatActivity {
             Log.d(TAG, "Shazam! ->getResultsFromApi: User is null");
         } else {
             //gCredential.setSelectedAccount(account.getAccount());
+            progressDialog.show();
             new MakeRequestTask(cal).execute();
         }
     }
@@ -162,6 +169,7 @@ public class EventsActivity extends AppCompatActivity {
          */
         @Override
         protected List<String> doInBackground(Void... params) {
+            Log.d(TAG, "Shazam! ->doInBackground: entrou");
             try {
                 return getDataFromApi();
             } catch (Exception e) {
@@ -208,6 +216,10 @@ public class EventsActivity extends AppCompatActivity {
             List<Event> items = events.getItems();
 
             //Log.d(TAG, "Shazam! ->getDataFromApi: items: " + items);
+            if (items.isEmpty()) {
+                progressDialog.dismiss();
+                Toast.makeText(EventsActivity.this, "Não há eventos dessa agenda próximos dias", Toast.LENGTH_SHORT).show();
+            }
 
             for (Event event : items) {
                 DateTime start = event.getStart().getDateTime();
@@ -280,6 +292,7 @@ public class EventsActivity extends AppCompatActivity {
                         startActivity(addEvent);
                     }
                 });
+                progressDialog.dismiss();
             }
         }
 

@@ -12,15 +12,17 @@ public class Post implements Serializable {
     private String autor;
     private String imagem;
     private long criadoem;
+    private boolean aprovado;
 
     public Post() {}
 
-    public Post(String title, String description, String author, String imageUrl, long created) {
+    public Post(String title, String description, String author, String imageUrl, long created, boolean aprov) {
         titulo = title;
         descricao = description;
         autor = author;
         imagem = imageUrl;
         criadoem = created;
+        aprovado = aprov;
     }
 
     public String getTitulo() {
@@ -41,5 +43,9 @@ public class Post implements Serializable {
 
     public long getCriadoem() {
         return criadoem;
+    }
+
+    public boolean getAprovado() {
+        return aprovado;
     }
 }
