@@ -141,6 +141,7 @@ public class MakePostActivity extends AppCompatActivity {
                                 .child("forum_posts").setValue(nPosts + 1);
 
                         progressDialog.dismiss();
+                        setResult(RESULT_OK);
                         finish();
                     }
                 });
@@ -165,10 +166,12 @@ public class MakePostActivity extends AppCompatActivity {
                         .child("forum_posts").setValue(nPosts + 1);
 
                 progressDialog.dismiss();
+                setResult(RESULT_OK);
                 finish();
             }
         } else {
             progressDialog.dismiss();
+            setResult(RESULT_CANCELED);
             finish();
         }
     }

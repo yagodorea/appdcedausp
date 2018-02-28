@@ -2,6 +2,7 @@ package com.example.appdcedausp.ui;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -45,6 +46,8 @@ import static com.example.appdcedausp.utils.Constants.*;
 public class ForumActivity extends AppCompatActivity {
 
     private static final String TAG = ForumActivity.class.getName();
+
+    private static boolean isAdm = false;
 
     RecyclerView mForumList;
     FloatingActionButton fabLeave;
@@ -101,6 +104,7 @@ public class ForumActivity extends AppCompatActivity {
                                 showCreateForumDialog();
                             }
                         });
+                        isAdm = true;
                         break;
                     } else {
                         i++;
@@ -154,6 +158,44 @@ public class ForumActivity extends AppCompatActivity {
                         startActivity(forumIntent);
                     }
                 });
+
+                if (isAdm) {
+                    viewHolder.mView.findViewById(R.id.fabDeleteForum).setVisibility(View.VISIBLE);
+                    viewHolder.mView.findViewById(R.id.fabDeleteForum).setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            final AlertDialog dialog = new AlertDialog.Builder(ForumActivity.this).create();
+                            dialog.setTitle("Apagar fórum");
+                            dialog.setMessage("Deseja mesmo apagar esse fórum?");
+                            dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Não",
+                                    new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            dialogInterface.dismiss();
+                                        }
+                                    });
+                            dialog.setButton(DialogInterface.BUTTON_POSITIVE, "Sim",
+                                    new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            FirebaseUtils.getMDatabase()
+                                                    .child("Forum")
+                                                    .child(String.valueOf(pref.getInt("Campus",0)))
+                                                    .child(String.valueOf(forumId)).removeValue();
+                                            // Restart activity
+                                            Intent intent = ForumActivity.this.getIntent();
+                                            finish();
+                                            startActivity(intent);
+                                        }
+                                    });
+                            dialog.show();
+                        }
+                    });
+                }
+            }
+            @Override
+            public Forum getItem(int position) {
+                return super.getItem(getItemCount() - 1 - position);
             }
         };
 
@@ -289,6 +331,11 @@ public class ForumActivity extends AppCompatActivity {
                                 ref.child("forum_created").setValue(now);
                                 progressDialog.dismiss();
                                 CreateForumDialog.this.dismiss();
+
+                                // Restart activity
+                                Intent i = getActivity().getIntent();
+                                getActivity().finish();
+                                getActivity().startActivity(i);
                             }
                         });
                     }

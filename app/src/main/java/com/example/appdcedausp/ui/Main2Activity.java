@@ -3,9 +3,14 @@ package com.example.appdcedausp.ui;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.animation.FastOutLinearInInterpolator;
+import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.Gravity;
@@ -16,10 +21,13 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -124,6 +132,7 @@ public class Main2Activity extends AppCompatActivity
                 break;
             } default: askForCampus();
         }
+        fabCampus.setVisibility(View.INVISIBLE);
         fabCampus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,11 +142,31 @@ public class Main2Activity extends AppCompatActivity
 
         final DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
+        TranslateAnimation translate = new TranslateAnimation(0,drawer.getMeasuredWidth(),0,0);
+        translate.setInterpolator(new FastOutLinearInInterpolator());
+        translate.setDuration(200);
+        drawer.setAnimation(translate);
+
         fab = findViewById(R.id.fab);
+        fab.setVisibility(View.INVISIBLE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer.openDrawer(GravityCompat.START,true);
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawer(GravityCompat.START,true);
+                } else {
+                    drawer.openDrawer(GravityCompat.START, true);
+                    findViewById(R.id.nav_header).setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            String url = "fb://page/";
+                            String page = "169245436486734";
+                            Intent fbIntent = new Intent(Intent.ACTION_VIEW);
+                            fbIntent.setData(Uri.parse(url + page));
+                            startActivity(fbIntent);
+                        }
+                    });
+                }
             }
         });
 
@@ -155,21 +184,6 @@ public class Main2Activity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     ////////////////////////// LOGIN GOOGLE ///////////////////////////////
     @Override
     protected void onStart() {
@@ -181,6 +195,12 @@ public class Main2Activity extends AppCompatActivity
             AlphaAnimation wait2s = new AlphaAnimation(1f, 1f);
             wait2s.setDuration(2000);
             intro.startAnimation(wait2s);
+            intro.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    view.clearAnimation();
+                }
+            });
             wait2s.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart(Animation animation) {
@@ -189,7 +209,7 @@ public class Main2Activity extends AppCompatActivity
                 @Override
                 public void onAnimationEnd(Animation animation) {
                     AlphaAnimation fadeout = new AlphaAnimation(1f, 0f);
-                    fadeout.setDuration(1000);
+                    fadeout.setDuration(500);
                     fadeout.setInterpolator(new AccelerateInterpolator());
                     intro.startAnimation(fadeout);
                     fadeout.setAnimationListener(new Animation.AnimationListener() {
@@ -200,6 +220,15 @@ public class Main2Activity extends AppCompatActivity
                         @Override
                         public void onAnimationEnd(Animation animation) {
                             intro.setVisibility(View.GONE);
+                            AlphaAnimation a = new AlphaAnimation(0f,1f);
+                            a.setDuration(1000);
+                            fab.setAnimation(a);
+                            fab.animate();
+                            fab.setVisibility(View.VISIBLE);
+
+                            fabCampus.setAnimation(a);
+                            fabCampus.animate();
+                            fabCampus.setVisibility(View.VISIBLE);
                             ///////////////////////////////// INÍCIO DO APP ///////////////////////////////////
                             GoogleUtils.checkGoogleLoginStatus();
 
@@ -380,8 +409,8 @@ public class Main2Activity extends AppCompatActivity
             } else {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
             }
-        } else if (id == R.id.nav_option5) {
-            // TODO Informações úteis
+//        } else if (id == R.id.nav_option5) {
+//            // Informações úteis
         } else if (id == R.id.nav_option6) {
             // Documentos da gestão
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/open?id=" + Constants.DRIVE_FOLDER_ID)));
@@ -389,6 +418,28 @@ public class Main2Activity extends AppCompatActivity
             // Notícias
             Intent i = new Intent(Main2Activity.this,FacebookFeedActivity.class);
             startActivity(i);
+        } else if (id == R.id.nav_option8) {
+            // Transporte
+            Intent i = new Intent(Main2Activity.this,OnibusActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_option9) {
+            // Atendimento
+            Intent i = new Intent(Main2Activity.this,MedicoActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_option10) {
+            AlertDialog email = new AlertDialog.Builder(this).create();
+            email.setTitle("Contato");
+            email.setMessage("Para dúvidas, sugestões, reclamações e elogios, entre em contato pelo facebook ou envie email para:\n"
+            + "contatodceusp@gmail.com\n"
+            + "Fora Temer!");
+            email.setButton(DialogInterface.BUTTON_NEUTRAL, "OK",
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+            email.show();
         }
 
         return true;

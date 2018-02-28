@@ -6,78 +6,130 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mapLayout">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:elevation="1dp"
-        android:id="@+id/searchBoxContainer">
-
-        <EditText
-            android:id="@+id/searchBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Procurar"
-            android:inputType="textCapWords"
-            android:singleLine="true" />
-
-    </LinearLayout>
-
-    <ImageView
-        android:contentDescription="@string/image_content_description"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignEnd="@id/searchBoxContainer"
-        android:layout_alignBottom="@id/searchBoxContainer"
-        android:src="@drawable/ic_search"
-        android:background="@color/grena"
-        android:tint="@color/creme"
-        android:elevation="3dp"
-        android:id="@+id/searchButton"/>
-
-    <fragment
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/mapDrawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/map"
-        tools:context=".ui.MapActivity"
-        android:orientation="vertical"
-        android:name="com.google.android.gms.maps.SupportMapFragment">
-    </fragment>
-    <android.support.design.widget.CoordinatorLayout
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="4dp"
-        android:id="@+id/description_fragment_container">
+        android:background="@color/creme">
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fabGo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="bottom|end"
-            android:visibility="gone"
-            android:layout_margin="@dimen/fab_margin2"
-            android:src="@drawable/ic_go"
-            app:fabSize="normal"
-            app:backgroundTint="@color/creme"
-            android:scaleType="fitCenter"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fabDesc"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="top|end"
-            android:visibility="gone"
-            android:layout_margin="@dimen/fab_margin2"
-            android:src="@drawable/ic_close"
-            app:fabSize="normal"
-            app:backgroundTint="@color/creme"
-            android:scaleType="fitCenter" />
+            <fragment android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.MapActivity"
+                android:orientation="vertical"
+                android:name="com.google.android.gms.maps.SupportMapFragment">
+            </fragment>
 
-    </android.support.design.widget.CoordinatorLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/branco"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:elevation="1dp"
+                android:id="@+id/searchBoxContainer">
+
+                <EditText
+                    android:id="@+id/searchBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Procurar"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:contentDescription="@string/image_content_description"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@id/searchBoxContainer"
+                android:layout_alignBottom="@id/searchBoxContainer"
+                android:src="@drawable/ic_search"
+                android:background="@color/grena"
+                android:tint="@color/creme"
+                android:elevation="3dp"
+                android:id="@+id/searchButton"/>
+
+            <android.support.design.widget.CoordinatorLayout android:id="@+id/description_fragment_container"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp">
+
+                <android.support.design.widget.FloatingActionButton android:id="@+id/fabGo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|end"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/fab_margin2"
+                    android:src="@drawable/ic_go"
+                    app:fabSize="normal"
+                    app:backgroundTint="@color/creme"
+                    android:scaleType="fitCenter"/>
+
+                <android.support.design.widget.FloatingActionButton android:id="@+id/fabDesc"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top|end"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/fab_margin2"
+                    android:src="@drawable/ic_close"
+                    app:fabSize="normal"
+                    app:backgroundTint="@color/creme"
+                    android:scaleType="fitCenter" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <android.support.design.widget.FloatingActionButton android:id="@+id/fabDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                app:fabSize="mini"
+                android:src="@drawable/ic_map_place"
+                android:layout_margin="@dimen/fab_margin"
+                app:backgroundTint="@color/creme"
+                android:elevation="4dp"
+                />
+
+            <android.support.design.widget.FloatingActionButton android:id="@+id/fabLeaveMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/fabDrawer"
+                android:layout_alignEnd="@id/fabDrawer"
+                android:layout_marginTop="100dp"
+                app:fabSize="mini"
+                android:src="@drawable/ic_back"
+                app:backgroundTint="@color/creme"
+                android:elevation="4dp"
+                />
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:id="@+id/left_drawer"
+            android:background="@color/creme"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
 </RelativeLayout>

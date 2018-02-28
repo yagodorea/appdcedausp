@@ -10,6 +10,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -36,7 +37,7 @@ public class EventFragment extends Fragment {
     TextView tDateStart;
     TextView tDateEnd;
     TextView tLocal;
-    TextView tDesc;
+    WebView tDesc;
 
     TextView legend;
 
@@ -72,12 +73,12 @@ public class EventFragment extends Fragment {
         inner.setOrientation(LinearLayout.VERTICAL);
 
         tTitle = new TextView(c);
-        tTitle.setBackgroundColor(getResources().getColor(R.color.preto));
-        tTitle.setTextColor(getResources().getColor(R.color.creme));
+        tTitle.setTextColor(getResources().getColor(R.color.grena));
         tTitle.setTextSize(24f);
         tTitle.setTypeface(null,Typeface.BOLD_ITALIC);
         tTitle.setText(title);
         tTitle.setLayoutParams(params);
+        int id = tTitle.getId();
         inner.addView(tTitle);
 
         tDateStart = new TextView(c);
@@ -104,9 +105,10 @@ public class EventFragment extends Fragment {
         tLocal.setLayoutParams(params);
         inner.addView(tLocal);
 
-        tDesc = new TextView(c);
-        tDesc.setTextSize(14f);
-        tDesc.setText(desc);
+        tDesc = new WebView(c);
+        tDesc.loadData(desc,"text/html","UTF-8");
+//        tDesc.setTextSize(14f);
+//        tDesc.setText(desc);
         tDesc.setLayoutParams(params);
         tDesc.setPadding(0,0,0,20);
         inner.addView(tDesc);
@@ -117,7 +119,7 @@ public class EventFragment extends Fragment {
 
         RelativeLayout.LayoutParams params2 = new RelativeLayout.LayoutParams(params);
         params2.addRule(RelativeLayout.ALIGN_PARENT_RIGHT,RelativeLayout.TRUE);
-        params2.addRule(RelativeLayout.ALIGN_PARENT_TOP,RelativeLayout.TRUE);
+        params2.addRule(RelativeLayout.BELOW,id);
         params2.setMargins(10,80,20,0);
         params2.height = ViewGroup.LayoutParams.WRAP_CONTENT;
         params2.width = ViewGroup.LayoutParams.WRAP_CONTENT;

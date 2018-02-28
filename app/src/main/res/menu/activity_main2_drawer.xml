@@ -20,10 +20,10 @@
             android:id="@+id/nav_option4"
             android:icon="@drawable/ic_map_restaurant"
             android:title="@string/menu_title4" />
-        <item
-            android:id="@+id/nav_option5"
-            android:icon="@drawable/ic_map_grad"
-            android:title="@string/menu_title5" />
+        <!--<item-->
+            <!--android:id="@+id/nav_option5"-->
+            <!--android:icon="@drawable/ic_map_grad"-->
+            <!--android:title="@string/menu_title5" />-->
         <item
             android:id="@+id/nav_option6"
             android:icon="@drawable/ic_map_flag"
@@ -32,6 +32,21 @@
             android:id="@+id/nav_option7"
             android:icon="@drawable/ic_map_star"
             android:title="@string/menu_title7"/>
+        <item
+            android:id="@+id/nav_option8"
+            android:icon="@drawable/ic_bus"
+            android:title="@string/menu_title8"
+            />
+        <item
+            android:id="@+id/nav_option9"
+            android:icon="@drawable/ic_medic"
+            android:title="@string/menu_title9"
+            />
+        <item
+            android:id="@+id/nav_option10"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_title10"
+            />
     </group>
 
 </menu>

@@ -34,13 +34,6 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name=".ui.MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar.Fullscreen">
-
-        </activity>
-        <activity
             android:name=".ui.MapActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
@@ -66,6 +59,14 @@
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
             android:name=".ui.ForumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".ui.OnibusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".ui.MedicoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity

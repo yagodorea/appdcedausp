@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -225,7 +226,7 @@ public class FacebookFeedActivity extends AppCompatActivity {
         AnimationSet a = new AnimationSet(true);
         a.setFillAfter(true);
         a.setDuration(500);
-        a.setInterpolator(new DecelerateInterpolator());
+        a.setInterpolator(new LinearOutSlowInInterpolator());
 //        ScaleAnimation scale = new ScaleAnimation(1f,2f,1f,2f,ScaleAnimation.RELATIVE_TO_SELF,0.5f,ScaleAnimation.RELATIVE_TO_SELF,0.5f);
 //        a.addAnimation(scale);
         TranslateAnimation translate = new TranslateAnimation(

@@ -4,6 +4,7 @@
     <string name="app_description">Aplicativo do DCE Livre da USP, desenvolvido pela diretoria de comunicação da gestão Nossa Voz, em 2018, para auxiliar os estudantes da USP em diversos aspectos da vida acadêmica e universitária.</string>
     <string name="app_facebook_page">www.facebook.com/DCEdaUSP</string>
     <string name="action_settings">Settings</string>
+
     <string name="menu_title1">Mapa do Campus</string>
     <string name="menu_title2">Fórum</string>
     <string name="menu_title3">Agenda</string>
@@ -11,6 +12,10 @@
     <string name="menu_title5">Informações úteis</string>
     <string name="menu_title6">Documentos da gestão</string>
     <string name="menu_title7">Notícias</string>
+    <string name="menu_title8">Transporte</string>
+    <string name="menu_title9">Atendimento</string>
+    <string name="menu_title10">Fale conosco!</string>
+
     <string name="facebook_app_id">992935517526832</string>
     <string name="fb_login_protocol_scheme">fb992935517526832</string>
     <string name="fb_page_id">/169245436486734/feed</string>
@@ -44,6 +49,34 @@
     <string name="forum_desc">Descreva o novo fórum</string>
     <string name="forums">Fóruns</string>
     <!--<string name="default_web_client_id">675152987162-u3vcnf1erusv6fmd1cei4o9uo3a068kq.apps.googleusercontent.com</string>-->
+
+    <string-array name="onibus_campus">
+        <item>http://www.sptrans.com.br/</item>
+        <item>http://www.puspsc.usp.br/horario-de-onibus-areas-1-e-2/</item>
+        <item>http://www.puspsc.usp.br/horario-de-onibus-areas-1-e-2/</item>
+        <item>http://www.sptrans.com.br/</item>
+        <item>http://www.esalq.usp.br/atad/sctrans</item>
+        <item>https://www.puspfc.usp.br/?page_id=48</item>
+        <item>http://ccint.fmvz.usp.br/pt/novidades/13-pt/301-transporte-campus-pirassununga</item>
+        <item>http://www.bauru.usp.br/?page_id=22</item>
+        <item>http://www.puspsc.usp.br/horario-de-onibus-areas-1-e-2/</item>
+        <item>http://site.eel.usp.br/informacoes/rotas-de-acesso-ao-campus</item>
+        <item>http://www.sptrans.com.br/</item>
+    </string-array>
+
+    <string-array name="atendimento_campus">
+        <item>http://www.hu.usp.br/</item>
+        <item>http://www.saocarlos.usp.br/index.php?option=com_content&amp;task=view&amp;id=133&amp;Itemid=107</item>
+        <item>http://www5.each.usp.br/ubasleste/</item>
+        <item>http://www.hu.usp.br/</item>
+        <item>http://www.cclq.usp.br/ubas/</item>
+        <item>http://www.prefeiturarp.usp.br/page.asp?url=ubas</item>
+        <item>http://www.puspfc.usp.br/?page_id=86</item>
+        <item>http://www.ccb.usp.br/saude.php</item>
+        <item>http://www.hu.usp.br/</item>
+        <item>http://www.hu.usp.br/</item>
+        <item>http://www.hu.usp.br/</item>
+    </string-array>
 
     <string-array name="list_campus">
         <item>Butantã</item>

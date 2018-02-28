@@ -2,11 +2,11 @@
 <resources>
     <integer-array name="markerNumber">
         <item>0</item>  <!-- Butantã -->
-        <item>54</item>  <!-- São Carlos -->
+        <item>57</item>  <!-- São Carlos -->
         <item>0</item>  <!-- EACH -->
         <item>0</item>  <!-- Sanfran -->
         <item>17</item>  <!-- Piracicaba -->
-        <item>0</item>  <!-- RP -->
+        <item>41</item>  <!-- RP -->
         <item>20</item>  <!-- Pirassununga -->
         <item>0</item>  <!-- Bauru -->
         <item>0</item>  <!-- Santos -->
@@ -42,7 +42,7 @@
         <item>Salão Cultural do CAASO</item>
         <item>Salão de Eventos do CAASO</item>
         <item>Colégio CAASO</item>
-        <item>EESC'o'Bar</item>
+        <item>EESCoBar</item>
         <item>CAASO Campus 2</item>
 
         <!--Graduação-->
@@ -51,6 +51,9 @@
         <item>Graduação IAU</item>
         <item>Graduação IQSC</item>
         <item>Graduação IFSC</item>
+        <item>Bloco B</item>
+        <item>Bloco C</item>
+        <item>Bloco D</item>
 
         <!--Esportes e Exercícios-->
         <item>Campo de Futebol</item>
@@ -123,6 +126,9 @@
         <item>Serviço de graduação.</item>
         <item>Serviço de graduação.</item>
         <item>Serviço de graduação.</item>
+        <item>Bloco B de aulas da EESC. É o bloco de aulas da Engenharia de Produção.</item>
+        <item>Bloco C de aulas da EESC.</item>
+        <item>Bloco D de aulas da EESC.</item>
 
         <!--Esportes e Exercícios-->
         <item>Bom para exercícios físicos e treinamentos com times da Atlética CAASO.</item>
@@ -151,7 +157,7 @@
 
         <!--Alojas-->
         <item>Bloco A do Aloja, ou "o Velho".</item>
-        <item>Blocos B a E: Manicômio, ??, Novo, Novíssimo e Novérrimo. Mas não são tão novos, na real, já deviam ter construído outros!</item>
+        <item>Blocos B a E do Alojamento. Procure a Autogestão do Aloja pra saber como conseguir uma vaga! facebook.com/AlojaUSPsaocarlos/</item>
 
         <!--Saídas-->
         <item>Saída Norte do campus, na Av. Trabalhador Sancarlense, acesso ao Kartódromo e bairro Cidade Jardim.</item>
@@ -196,6 +202,9 @@
         <item>-22.00313</item>
         <item>-22.00446</item>
         <item>-22.00918</item>
+        <item>-22.0096444</item>
+        <item>-22.0066704</item>
+        <item>-22.0040494</item>
 
         <!--Esportes e Exercícios-->
         <item>-22.0063</item>
@@ -268,6 +277,9 @@
         <item>-47.8986</item>
         <item>-47.89853</item>
         <item>-47.89678</item>
+        <item>-47.9053428</item>
+        <item>-47.9048378</item>
+        <item>-47.9071628</item>
 
         <!--Esportes e Exercícios-->
         <item>-47.8984</item>
@@ -340,6 +352,9 @@
         <item>@drawable/ic_map_grad</item>
         <item>@drawable/ic_map_grad</item>
         <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_grad</item>
 
         <!--Esportes e Exercícios-->
         <item>@drawable/ic_map_place</item>
@@ -351,7 +366,6 @@
         <item>@drawable/ic_map_place</item>
 
         <!--Cultura e Entretenimento-->
-        <item>@drawable/ic_map_place</item>
         <item>@drawable/ic_map_place</item>
         <item>@drawable/ic_map_place</item>
         <item>@drawable/ic_map_place</item>
@@ -480,6 +494,229 @@
         <item>@drawable/ic_map_place</item>
     </string-array>
 
+    <!-- Ribeirão Preto -->
+    <!-- títulos -->
+    <string-array name="titlesRibeirao">
+        <item>Cantina do Valter</item>
+        <item>CEFER – centro de esportes</item>
+        <item>Biblioteca Central</item>
+        <item>ARFUSP</item>
+        <item>Bar do Marcão</item>
+        <item>Lanchonete Mr. Barriga</item>
+        <item>Valdo Lanches</item>
+        <item>The Chicken</item>
+        <item>Subway</item>
+        <item>Espetinho do Branco</item>
+        <item>Museu do Café</item>
+        <item>Biblioteca do Direito</item>
+        <item>Bandex</item>
+        <item>Banco do Brasil</item>
+        <item>Bradesco</item>
+        <item>Santander</item>
+        <item>Convívio da Med</item>
+        <item>CREU</item>
+        <item>Vila</item>
+        <item>CEM</item>
+        <item>Convívio da FEA</item>
+        <item>Prefeitura do Campus</item>
+        <item>Rodoviária</item>
+        <item>Pinguim</item>
+        <item>Teatro Pedro II</item>
+        <item>Aeroporto</item>
+        <item>Shopping Santa Úrsula</item>
+        <item>Shopping Iguatemi</item>
+        <item>Novo Shopping</item>
+        <item>Ribeirão Shopping</item>
+        <item>Posto São Judas</item>
+        <item>Cantina da Filô</item>
+        <item>L A de Andrade copiadora</item>
+        <item>Copiadora Madrid </item>
+        <item>Center Cópias</item>
+        <item>SESC</item>
+        <item>Pizzaria 3 Irmãos</item>
+        <item>Invicta</item>
+        <item>Delícias do Açaí</item>
+        <item>Transerp</item>
+        <item>Mercadão</item>
+
+    </string-array>
+    <!-- descrições -->
+    <string-array name="descRibeirao">
+        <item>Embora ofereça café, almoço, jantar e lanches, o ponto alto é a chapa de carnes no almoço. Melhor lugar para amantes de carne cansados do Bandex</item>
+        <item>Local de treino, de práticas desportivas e de competir e torcer</item>
+        <item>Cheia de livros, muito lugar pra estudar. Ideal para estudar em grupo</item>
+        <item>provavelmente o lugar mais barato do campus pra almoçar depois do Bandex. Como é pouco conhecido, nunca tem filas. </item>
+        <item>Onde vários dias de estudo terminam, é mais frequentado por uspianos que a própria usp</item>
+        <item>uma das lanchonetes mais baratas pra quem quer uma opção gostosa de lanches</item>
+        <item>Lanche maravilhoso</item>
+        <item>Restaurante conhecido pelo frango frito delicioso</item>
+        <item>O barato do dia sempre dá aquela salvada quando é almôndega ou peixe no bandex</item>
+        <item>Espetinho bom e barato</item>
+        <item>O melhor ponto turístico responsável pela fama de Ribeirão (nas raras vezes que está aberto): Cidade do Café e terra do Chopp.</item>
+        <item>Excelente local para estudar</item>
+        <item>Aberto de segunda a sábado, para café, almoço e jantar (menos sábado), é a melhor opção para comer barato em Ribeirão</item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item>Sede das atividades estudantis da saúde e excelente ocal de descanso </item>
+        <item>Moradia Estudantil</item>
+        <item>Moradia Estudantil</item>
+        <item>Moradia Estudantil</item>
+        <item>Almoço, jantar, salgados e um café, ao lado de muita natureza e no centro da FEA.</item>
+        <item> </item>
+        <item> </item>
+        <item>O Chopp mais famoso do Brasil, das Américas, da Terra, do universo</item>
+        <item>Conhecido por sua arquitetura e design, sempre tem concerto da orquestra sinfônica por 0 reais</item>
+        <item> </item>
+        <item>Shopping mais próximo da USP</item>
+        <item> </item>
+        <item>Único boliche da cidade</item>
+        <item> </item>
+        <item>Litrão gelado e barato</item>
+        <item> </item>
+        <item>Copiadora mais próxima da USP, perfeita pra imprimir trabalhos – Não faz banners</item>
+        <item>Próxima da USP e faz Banners</item>
+        <item>Maior gráfica da cidade, faz tudo e é bem localizada</item>
+        <item>É conhecido por seus espetáculos de baixa renda ou gratuitos. Localizado no centro é uma otima fonte de cultura e lazer </item>
+        <item>Só perde pro Marcão em populaçao uspiana, rodizio maravilhoso com variedades e refri free</item>
+        <item>Restaurante com cervejas artesanais renomadas e diferentes lanches, perfeito para amantes de breja!</item>
+        <item>Além do açaí tradicional, apresenta barcas, sucos e lanches deliciosos</item>
+        <item>Lugar onde faz o cartão de estudante pra pagar meia no ônibus</item>
+        <item>trata-se de um lugar repleto de diversidades, vende desde óculos até temperos.</item>
+    </string-array>
+    <!-- latitudes -->
+    <array name="latRibeirao">
+        <item>-21.1672177</item> <!-- latitude do local 1 -->
+        <item>-21.1693071</item> <!-- latitude do local 2 -->
+        <item>-21.167527</item> <!-- latitude do local 3 -->
+        <item>-21.1695766</item> <!-- latitude do local 4 -->
+        <item>-21.1713441</item> <!-- latitude do local 5 -->
+        <item>-21.1659459</item> <!-- latitude do local 6 -->
+        <item>-21.1747365</item> <!-- latitude do local 7 -->
+        <item>-21.174696</item> <!-- latitude do local 8 -->
+        <item>-21.1745977</item> <!-- latitude do local 9 -->
+        <item>-21.1746552</item> <!-- latitude do local 10 -->
+        <item>-21.1709769</item> <!-- latitude do local 11 -->
+        <item>-21.1656856</item> <!-- latitude do local 12 -->
+        <item>-21.1595373</item> <!-- latitude do local 13 -->
+        <item>-21.1595574</item> <!-- latitude do local 14 -->
+        <item>-21.158746</item> <!-- latitude do local 15 -->
+        <item>-21.1596765</item> <!-- latitude do local 16 -->
+        <item>-21.1638737</item> <!-- latitude do local 17 -->
+        <item>-21.1652044</item> <!-- latitude do local 18 -->
+        <item>-21.1598015</item> <!-- latitude do local 19 -->
+        <item>-21.1702267</item> <!-- latitude do local 20 -->
+        <item>-21.1663922</item> <!-- latitude do local 21 -->
+        <item>-21.164334</item> <!-- latitude do local 22 -->
+        <item>-21.1734584</item> <!-- latitude do local 23 -->
+        <item>-21.1746598</item> <!-- latitude do local 24 -->
+        <item>-21.1745272</item> <!-- latitude do local 25 -->
+        <item>-21.1371458</item> <!-- latitude do local 26 -->
+        <item>-21.1764599</item> <!-- latitude do local 27 -->
+        <item>-21.1764563</item> <!-- latitude do local 28 -->
+        <item>-21.2042971</item> <!-- latitude do local 29 -->
+        <item>-21.2042971</item> <!-- latitude do local 29 -->
+        <item>-21.2115937</item> <!-- latitude do local 30 -->
+        <item>-21.1649822</item> <!-- latitude do local 31 -->
+        <item>-21.1638994</item> <!-- latitude do local 32 -->
+        <item>-21.173244</item> <!-- latitude do local 33 -->
+        <item>-21.1746846</item> <!-- latitude do local 34 -->
+        <item>-21.1779061</item> <!-- latitude do local 35 -->
+        <item>-21.1729125</item> <!-- latitude do local 36 -->
+        <item>-21.175076</item> <!-- latitude do local 37 -->
+        <item>-21.174934</item> <!-- latitude do local 38 -->
+        <item>-21.1746983</item> <!-- latitude do local 39 -->
+        <item>-21.1780402</item> <!-- latitude do local 40 -->
+        <item>-21.1740861</item> <!-- latitude do local 41 -->
+    </array>
+    <!-- longitudes -->
+    <array name="lonRibeirao">
+        <item>-47.8496349</item> <!-- longitude do local 1 -->
+        <item>-47.8547294</item> <!-- longitude do local 2 -->
+        <item>-47.8538757</item> <!-- longitude do local 3 -->
+        <item>-47.8595379</item> <!-- longitude do local 4 -->
+        <item>-47.8357835</item> <!-- longitude do local 5 -->
+        <item>-47.8398477</item> <!-- longitude do local 6 -->
+        <item>-47.8266889</item> <!-- longitude do local 7 -->
+        <item>-47.8316197</item> <!-- longitude do local 8 -->
+        <item>-47.8325709</item> <!-- longitude do local 9 -->
+        <item>-47.8224473</item> <!-- longitude do local 10 -->
+        <item>-47.8526797</item> <!-- longitude do local 11 -->
+        <item>-47.8482297</item> <!-- longitude do local 12 -->
+        <item>-47.8489592</item> <!-- longitude do local 13 -->
+        <item>-47.8490451</item> <!-- longitude do local 14 -->
+        <item>-47.8479671</item> <!-- longitude do local 15 -->
+        <item>-47.8479403</item> <!-- longitude do local 16 -->
+        <item>-47.8509176</item> <!-- longitude do local 17 -->
+        <item>-47.8535837</item> <!-- longitude do local 18 -->
+        <item>-47.845816</item> <!-- longitude do local 19 -->
+        <item>-47.854322</item> <!-- longitude do local 20 -->
+        <item>-47.8541775</item> <!-- longitude do local 21 -->
+        <item>-47.8600747</item> <!-- longitude do local 22 -->
+        <item>-47.8156144</item> <!-- longitude do local 23 -->
+        <item>-47.8120621</item> <!-- longitude do local 24 -->
+        <item>-47.8096803</item> <!-- longitude do local 25 -->
+        <item>-47.788051</item> <!-- longitude do local 26 -->
+        <item>-47.8115604</item> <!-- longitude do local 27 -->
+        <item>-47.8385978</item> <!-- longitude do local 28 -->
+        <item>-47.7701508</item> <!-- longitude do local 29 -->
+        <item>-47.8173996</item> <!-- longitude do local 30 -->
+        <item>-47.8438301</item> <!-- longitude do local 31 -->
+        <item>-47.8593307</item> <!-- longitude do local 32 -->
+        <item>-47.8422933</item> <!-- longitude do local 33 -->
+        <item>-47.8366137</item> <!-- longitude do local 34 -->
+        <item>-47.8110269</item> <!-- longitude do local 35 -->
+        <item>-47.8091548</item> <!-- longitude do local 36 -->
+        <item>-47.8250667</item> <!-- longitude do local 37 -->
+        <item>-47.833102</item> <!-- longitude do local 38 -->
+        <item>-47.8255918</item> <!-- longitude do local 39 -->
+        <item>-47.8091596</item> <!-- longitude do local 40 -->
+        <item>-47.8154171</item> <!-- longitude do local 41 -->
+    </array>
+    <!-- ícones -->
+    <string-array name="iconsRibeirao">
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+    </string-array>
 
     <!-- Pirassununga -->
     <!-- títulos -->

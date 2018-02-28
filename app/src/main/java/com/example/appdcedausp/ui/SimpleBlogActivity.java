@@ -141,6 +141,11 @@ public class SimpleBlogActivity extends AppCompatActivity {
                     }
                 });
             }
+
+            @Override
+            public Post getItem(int position) {
+                return super.getItem(getItemCount() - 1 - position);
+            }
         };
 
 
@@ -273,5 +278,15 @@ public class SimpleBlogActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == NEWPOST_REQUEST && resultCode == RESULT_OK) {
+            Toast.makeText(this, "Postagem feita com sucesso. Aguardando moderação.", Toast.LENGTH_SHORT).show();
+        } else if (requestCode == NEWPOST_REQUEST && resultCode == RESULT_CANCELED) {
+            Toast.makeText(this, "Postagem cancelada", Toast.LENGTH_SHORT).show();
+        }
     }
 }

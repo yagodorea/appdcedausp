@@ -75,14 +75,14 @@ public class EventsActivity extends AppCompatActivity {
         tabHost.setup();
         tabHost.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 
-        TabHost.TabSpec spec = tabHost.newTabSpec("festas");
+        TabHost.TabSpec spec = tabHost.newTabSpec("me");
         spec.setContent(R.id.tab1);
-        spec.setIndicator("Festas");
+        spec.setIndicator("Movimento Estudantil");
         tabHost.addTab(spec);
 
-        spec = tabHost.newTabSpec("me");
+        spec = tabHost.newTabSpec("festas");
         spec.setContent(R.id.tab2);
-        spec.setIndicator("Movimento Estudantil");
+        spec.setIndicator("Festas");
         tabHost.addTab(spec);
 
         spec = tabHost.newTabSpec("institucional");
@@ -101,10 +101,10 @@ public class EventsActivity extends AppCompatActivity {
             @Override
             public void onTabChanged(String s) {
                 Log.d(TAG, "Shazam! ->onTabChanged: s: " + s);
-                if (s.equals("festas") && !idLoaded[0]) {
+                if (s.equals("me") && !idLoaded[0]) {
                     getResultsFromApi(0);
                     idLoaded[0] = true;
-                }else if (s.equals("me") && !idLoaded[1]) {
+                }else if (s.equals("festas") && !idLoaded[1]) {
                     getResultsFromApi(1);
                     idLoaded[1] = true;
                 } else if (s.equals("institucional") && !idLoaded[2]) {
@@ -188,10 +188,10 @@ public class EventsActivity extends AppCompatActivity {
             String calendarId;
             switch (calId) {
                 case 0: {
-                    calendarId = "ku3bfo1ve7ehaq1gljr7g7cal4@group.calendar.google.com"; // Calendário de festas
+                    calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com"; // Calendário do ME
                     break;
                 }case 1: {
-                    calendarId = "qp8p8c1c3t1gbqr9353n7ei6ik@group.calendar.google.com"; // Calendário do ME
+                    calendarId = "ku3bfo1ve7ehaq1gljr7g7cal4@group.calendar.google.com"; // Calendário de festas
                     break;
                 }case 2: {
                     calendarId = "jm2qijsvn1lui4ftpfjf52p15g@group.calendar.google.com"; // Calendário acadêmico

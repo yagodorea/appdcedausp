@@ -15,16 +15,22 @@ import android.support.v4.app.ActivityCompat;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,7 +74,7 @@ public class MapActivity extends AppCompatActivity
     private static final LatLng bauruInicio = new LatLng(-22.3345195f,-49.0671509f);
     private static final LatLng santosInicio = new LatLng(-22.0050875f,-47.9102792f);
     private static final LatLng lorenaInicio = new LatLng(-23.9424612f,-46.3327931f);
-    private static final LatLng saudeInicio = new LatLng(-23.9424612f,-46.3327931f);
+    private static final LatLng saudeInicio = new LatLng(-23.552324,-46.6559853);
     private Boolean mLocationPermissionGranted = false;
     HashMap<String,Marker> markerHashMap;
 
@@ -87,8 +93,13 @@ public class MapActivity extends AppCompatActivity
     TextView descriptionContent;
     FloatingActionButton fabDesc;
     FloatingActionButton fabGo;
+    FloatingActionButton fabDrawer;
+    FloatingActionButton fabBack;
     EditText searchBox;
     ImageView searchButton;
+    LinearLayout searchContainer;
+    DrawerLayout mDrawerLayout;
+    ListView mDrawerList;
 
     // Mapa e localização
     private GoogleMap mMap;
@@ -110,7 +121,9 @@ public class MapActivity extends AppCompatActivity
         getLocationPermission();
 
         searchBox = findViewById(R.id.searchBox);
-        searchBox.setVisibility(View.INVISIBLE);
+        searchContainer = findViewById(R.id.searchBoxContainer);
+        searchBox.setVisibility(View.GONE);
+        searchContainer.setVisibility(View.INVISIBLE);
         searchButton = findViewById(R.id.searchButton);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,7 +138,8 @@ public class MapActivity extends AppCompatActivity
                     if (imm != null) {
                         imm.hideSoftInputFromWindow(searchBox.getWindowToken(),0);
                     }
-                    searchBox.setVisibility(View.INVISIBLE);
+                    searchBox.setVisibility(View.GONE);
+                    searchContainer.setVisibility(View.INVISIBLE);
                     searching = false;
                     // Procurar
                     String text = searchBox.getText().toString();
@@ -139,9 +153,29 @@ public class MapActivity extends AppCompatActivity
                     }
                     searchBox.setText("");
                     searchBox.setVisibility(View.VISIBLE);
+                    searchContainer.setVisibility(View.VISIBLE);
                     searchBox.setAnimation(translate);
                     searching = true;
                 }
+            }
+        });
+
+        // MARKER DRAWER
+        mDrawerLayout = findViewById(R.id.mapDrawer);
+        mDrawerList = findViewById(R.id.left_drawer);
+        fabDrawer = findViewById(R.id.fabDrawer);
+        fabDrawer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDrawerLayout.openDrawer(Gravity.START,true);
+            }
+        });
+
+        fabBack = findViewById(R.id.fabLeaveMap);
+        fabBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }
@@ -157,48 +191,68 @@ public class MapActivity extends AppCompatActivity
                     @Override
                     public void onComplete(@NonNull Task task) {
                         if (task.isSuccessful()) {
+                            if (task.getResult() != null) {
 
-                            currLocation = (Location)task.getResult();
+                                currLocation = (Location) task.getResult();
 
-                            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currLocation.getLatitude(),currLocation.getLongitude()),DEFAULT_ZOOM));
-                            switch (campus) {
-                                case 0: {
-                                    moveCamera(butantaInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 1: {
-                                    moveCamera(sancaInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 2: {
-                                    moveCamera(eachInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 3: {
-                                    moveCamera(sanfranInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 4: {
-                                    moveCamera(piracicInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 5: {
-                                    moveCamera(ribeiraoInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 6: {
-                                    moveCamera(pirassuInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 7: {
-                                    moveCamera(bauruInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 8: {
-                                    moveCamera(santosInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 9: {
-                                    moveCamera(lorenaInicio, DEFAULT_ZOOM);
-                                    break;
-                                }case 10: {
-                                    moveCamera(saudeInicio, DEFAULT_ZOOM);
-                                    break;
-                                }default : { moveCamera(new LatLng(currLocation.getLatitude(),currLocation.getLongitude()), DEFAULT_ZOOM); break; }
+                                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currLocation.getLatitude(), currLocation.getLongitude()), DEFAULT_ZOOM));
+                                switch (campus) {
+                                    case 0: {
+                                        moveCamera(butantaInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 1: {
+                                        moveCamera(sancaInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 2: {
+                                        moveCamera(eachInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 3: {
+                                        moveCamera(sanfranInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 4: {
+                                        moveCamera(piracicInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 5: {
+                                        moveCamera(ribeiraoInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 6: {
+                                        moveCamera(pirassuInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 7: {
+                                        moveCamera(bauruInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 8: {
+                                        moveCamera(santosInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 9: {
+                                        moveCamera(lorenaInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    case 10: {
+                                        moveCamera(saudeInicio, DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                    default: {
+                                        moveCamera(new LatLng(currLocation.getLatitude(), currLocation.getLongitude()), DEFAULT_ZOOM);
+                                        break;
+                                    }
+                                }
+                            } else {
+                                Toast.makeText(MapActivity.this, "Ative sua localização!", Toast.LENGTH_SHORT).show();
+                                finish();
                             }
                         } else {
                             Toast.makeText(MapActivity.this,"Erro na localização!",Toast.LENGTH_LONG).show();
+                            finish();
                         }
                     }
                 });
@@ -241,6 +295,7 @@ public class MapActivity extends AppCompatActivity
     }
 
     private void setMarkers() {
+        Log.d(TAG, "Shazam! ->setMarkers: entrou, campus: " + campus);
         Resources res = getResources();
         TypedArray lats, lons, icons;
         String[] titles,desc;
@@ -281,11 +336,11 @@ public class MapActivity extends AppCompatActivity
                 icons = res.obtainTypedArray(R.array.iconsPiracicaba);
                 break;
             }case 5: {
-                lats = res.obtainTypedArray(R.array.latSaoCarlos);
-                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
-                titles = res.getStringArray(R.array.titlesSaoCarlos);
-                desc = res.getStringArray(R.array.descSaoCarlos);
-                icons = res.obtainTypedArray(R.array.iconsSanca);
+                lats = res.obtainTypedArray(R.array.latRibeirao);
+                lons = res.obtainTypedArray(R.array.lonRibeirao);
+                titles = res.getStringArray(R.array.titlesRibeirao);
+                desc = res.getStringArray(R.array.descRibeirao);
+                icons = res.obtainTypedArray(R.array.iconsRibeirao);
                 break;
             }case 6: {
                 lats = res.obtainTypedArray(R.array.latPirassununga);
@@ -349,6 +404,20 @@ public class MapActivity extends AppCompatActivity
         lats.recycle();
         lons.recycle();
         icons.recycle();
+
+        // Set list adapter
+        if (res.getIntArray(R.array.markerNumber)[campus] > 0) { // Se não pega a lista de sanca
+            mDrawerList.setAdapter(new ArrayAdapter<String>(this,
+                    R.layout.map_list_item, titles));
+            final String[] list = titles;
+            mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    mDrawerLayout.closeDrawer(Gravity.START, true);
+                    onMarkerClick(markerHashMap.get(list[i].toLowerCase()));
+                }
+            });
+        }
     }
 
     // Inflar fragmentos e dar zoom quando clicarem nos markers
