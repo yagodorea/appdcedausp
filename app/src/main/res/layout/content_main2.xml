@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/creme"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.appdcedausp.ui.Main2Activity">
+    tools:context="com.dceusp.appdcedausp.ui.Main2Activity">
 
     <ImageView
         android:layout_width="300dp"

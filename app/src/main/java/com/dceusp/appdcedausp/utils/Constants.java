@@ -1,4 +1,4 @@
-package com.example.appdcedausp.utils;
+package com.dceusp.appdcedausp.utils;
 
 public class Constants {
     public static final String POST_KEY = "posts";

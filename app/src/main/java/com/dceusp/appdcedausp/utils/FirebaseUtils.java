@@ -1,4 +1,4 @@
-package com.example.appdcedausp.utils;
+package com.dceusp.appdcedausp.utils;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.R;
+import com.dceusp.appdcedausp.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

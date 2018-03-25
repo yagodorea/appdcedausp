@@ -1,4 +1,4 @@
-package com.example.appdcedausp.utils;
+package com.dceusp.appdcedausp.utils;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.appdcedausp.R;
+import com.dceusp.appdcedausp.R;
 
 public class DescriptionFragment extends Fragment {
 

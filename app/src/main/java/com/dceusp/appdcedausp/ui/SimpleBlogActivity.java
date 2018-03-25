@@ -1,4 +1,4 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,19 +13,17 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.FirebaseUtils;
-import com.example.appdcedausp.utils.Post;
+import com.dceusp.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.FirebaseUtils;
+import com.dceusp.appdcedausp.utils.Post;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
@@ -33,7 +31,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static com.example.appdcedausp.utils.Constants.*;
+import static com.dceusp.appdcedausp.utils.Constants.*;
 
 public class SimpleBlogActivity extends AppCompatActivity {
 

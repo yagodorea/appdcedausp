@@ -51,31 +51,31 @@
     <!--<string name="default_web_client_id">675152987162-u3vcnf1erusv6fmd1cei4o9uo3a068kq.apps.googleusercontent.com</string>-->
 
     <string-array name="onibus_campus">
-        <item>http://www.sptrans.com.br/</item>
+        <item>http://www.puspc.usp.br/2017/04/05/transportes-3/</item>
         <item>http://www.puspsc.usp.br/horario-de-onibus-areas-1-e-2/</item>
-        <item>http://www.puspsc.usp.br/horario-de-onibus-areas-1-e-2/</item>
-        <item>http://www.sptrans.com.br/</item>
+        <item>nope</item>
+        <item>nope</item>
         <item>http://www.esalq.usp.br/atad/sctrans</item>
+        <item>nope</item>
         <item>https://www.puspfc.usp.br/?page_id=48</item>
-        <item>http://ccint.fmvz.usp.br/pt/novidades/13-pt/301-transporte-campus-pirassununga</item>
         <item>http://www.bauru.usp.br/?page_id=22</item>
-        <item>http://www.puspsc.usp.br/horario-de-onibus-areas-1-e-2/</item>
+        <item>nope</item>
         <item>http://site.eel.usp.br/informacoes/rotas-de-acesso-ao-campus</item>
-        <item>http://www.sptrans.com.br/</item>
+        <item>nope</item>
     </string-array>
 
     <string-array name="atendimento_campus">
-        <item>http://www.hu.usp.br/</item>
+        <item>nope</item>
         <item>http://www.saocarlos.usp.br/index.php?option=com_content&amp;task=view&amp;id=133&amp;Itemid=107</item>
         <item>http://www5.each.usp.br/ubasleste/</item>
-        <item>http://www.hu.usp.br/</item>
+        <item>nope</item>
         <item>http://www.cclq.usp.br/ubas/</item>
         <item>http://www.prefeiturarp.usp.br/page.asp?url=ubas</item>
         <item>http://www.puspfc.usp.br/?page_id=86</item>
         <item>http://www.ccb.usp.br/saude.php</item>
-        <item>http://www.hu.usp.br/</item>
-        <item>http://www.hu.usp.br/</item>
-        <item>http://www.hu.usp.br/</item>
+        <item>nope</item>
+        <item>nope</item>
+        <item>nope</item>
     </string-array>
 
     <string-array name="list_campus">

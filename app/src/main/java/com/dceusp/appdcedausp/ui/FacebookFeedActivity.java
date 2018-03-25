@@ -1,4 +1,4 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -15,14 +15,11 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
-import android.view.animation.DecelerateInterpolator;
-import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.utils.FbFeedFragment;
-import com.example.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.FbFeedFragment;
+import com.dceusp.appdcedausp.R;
 import com.facebook.AccessToken;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;

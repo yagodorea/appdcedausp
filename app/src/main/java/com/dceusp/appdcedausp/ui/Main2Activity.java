@@ -1,16 +1,12 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.animation.FastOutLinearInInterpolator;
-import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.Gravity;
@@ -21,27 +17,25 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.Constants;
-import com.example.appdcedausp.utils.FirebaseUtils;
-import com.example.appdcedausp.utils.GoogleUtils;
+import com.dceusp.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.Constants;
+import com.dceusp.appdcedausp.utils.FirebaseUtils;
+import com.dceusp.appdcedausp.utils.GoogleUtils;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
-import static com.example.appdcedausp.utils.Constants.SIGN_IN_REQUEST;
+import static com.dceusp.appdcedausp.utils.Constants.SIGN_IN_REQUEST;
 
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -276,7 +270,7 @@ public class Main2Activity extends AppCompatActivity
         builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
             @Override
             public void onCancel(DialogInterface dialogInterface) {
-                editor.putInt("Campus", 1); // default: butantã
+                editor.putInt("Campus", 1); // defaultmin: butantã
                 editor.apply();
                 fabCampus.setImageResource(R.drawable.txtbutanta);
             }
@@ -324,22 +318,22 @@ public class Main2Activity extends AppCompatActivity
                             }case 7: { // Bauru
                                 editor.putInt("Campus",i);
                                 editor.apply();
-                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtbauru
+                                fabCampus.setImageResource(R.drawable.txtbauru);
                                 break;
                             }case 8: { // Santos
                                 editor.putInt("Campus",i);
                                 editor.apply();
-                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtsantos
+                                fabCampus.setImageResource(R.drawable.txtsantos);
                                 break;
                             }case 9: { // Lorena
                                 editor.putInt("Campus",i);
                                 editor.apply();
-                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtlorena
+                                fabCampus.setImageResource(R.drawable.txtlorena);
                                 break;
                             } case 10: { // Quadrilátero
                                 editor.putInt("Campus",i);
                                 editor.apply();
-                                fabCampus.setImageResource(R.drawable.txtpirassununga); // todo fazer txtlorena
+                                fabCampus.setImageResource(R.drawable.txtsaude);
                                 break;
                             } default: break;
                         }
@@ -368,6 +362,7 @@ public class Main2Activity extends AppCompatActivity
             } else if (resultCode == RESULT_CANCELED) {
                 signInButton.setImageResource(R.drawable.googlesign_grena);
                 Log.d(TAG, "Shazam! ->onActivityResult: login cancelado");
+                Toast.makeText(this, "Problema no login", Toast.LENGTH_SHORT).show();
             }
         }
     }

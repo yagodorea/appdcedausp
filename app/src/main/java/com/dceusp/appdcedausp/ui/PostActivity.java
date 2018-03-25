@@ -1,4 +1,4 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -14,7 +14,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -22,10 +21,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.FirebaseUtils;
-import com.example.appdcedausp.utils.Post;
-import com.example.appdcedausp.utils.Resposta;
+import com.dceusp.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.FirebaseUtils;
+import com.dceusp.appdcedausp.utils.Post;
+import com.dceusp.appdcedausp.utils.Resposta;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -35,9 +34,7 @@ import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 
 public class PostActivity extends AppCompatActivity {
 

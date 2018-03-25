@@ -1,10 +1,13 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Handler;
+import android.os.Message;
 import android.provider.MediaStore;
 import android.support.v4.app.DialogFragment;
 import android.content.Intent;
@@ -18,7 +21,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -26,9 +28,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.FirebaseUtils;
-import com.example.appdcedausp.utils.Forum;
+import com.dceusp.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.FirebaseUtils;
+import com.dceusp.appdcedausp.utils.Forum;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -41,7 +43,7 @@ import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 
-import static com.example.appdcedausp.utils.Constants.*;
+import static com.dceusp.appdcedausp.utils.Constants.*;
 
 public class ForumActivity extends AppCompatActivity {
 
@@ -200,7 +202,14 @@ public class ForumActivity extends AppCompatActivity {
         };
 
         mForumList.setAdapter(firebaseRecyclerAdapter);
+        @SuppressLint("HandlerLeak") final Handler h = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                progressDialog.dismiss();
+            }
+        };
         progressDialog.show();
+        h.sendMessageDelayed(h.obtainMessage(),3000);
         mForumList.addOnChildAttachStateChangeListener(new RecyclerView.OnChildAttachStateChangeListener() {
             @Override
             public void onChildViewAttachedToWindow(View view) {

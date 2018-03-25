@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.appdcedausp"
+    package="com.dceusp.appdcedausp"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -28,10 +28,10 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
-        android:name="com.example.appdcedausp.permission.C2D_MESSAGE"
+        android:name="com.dceusp.appdcedausp.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.appdcedausp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.dceusp.appdcedausp.permission.C2D_MESSAGE" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
@@ -42,7 +42,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.android.google.gms.version"
@@ -55,43 +54,43 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="com.example.appdcedausp.ui.MapActivity"
+            android:name="com.dceusp.appdcedausp.ui.MapActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.FacebookFeedActivity"
+            android:name="com.dceusp.appdcedausp.ui.FacebookFeedActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.EventsActivity"
+            android:name="com.dceusp.appdcedausp.ui.EventsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.SimpleBlogActivity"
+            android:name="com.dceusp.appdcedausp.ui.SimpleBlogActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.MakePostActivity"
+            android:name="com.dceusp.appdcedausp.ui.MakePostActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.PostActivity"
+            android:name="com.dceusp.appdcedausp.ui.PostActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.ForumActivity"
+            android:name="com.dceusp.appdcedausp.ui.ForumActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.OnibusActivity"
+            android:name="com.dceusp.appdcedausp.ui.OnibusActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.MedicoActivity"
+            android:name="com.dceusp.appdcedausp.ui.MedicoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.example.appdcedausp.ui.Main2Activity"
+            android:name="com.dceusp.appdcedausp.ui.Main2Activity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar.Fullscreen" >
             <intent-filter>
@@ -159,7 +158,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.example.appdcedausp" />
+                <category android:name="com.dceusp.appdcedausp" />
             </intent-filter>
         </receiver>
         <!--
@@ -176,7 +175,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.appdcedausp.firebaseinitprovider"
+            android:authorities="com.dceusp.appdcedausp.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -205,7 +204,7 @@
         -->
         <provider
             android:name="com.facebook.internal.FacebookInitProvider"
-            android:authorities="com.example.appdcedausp.FacebookInitProvider"
+            android:authorities="com.dceusp.appdcedausp.FacebookInitProvider"
             android:exported="false" />
 
         <meta-data

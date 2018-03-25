@@ -1,4 +1,4 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
 import android.Manifest;
 import android.content.Intent;
@@ -34,8 +34,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.utils.DescriptionFragment;
-import com.example.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.DescriptionFragment;
+import com.dceusp.appdcedausp.R;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -301,11 +301,11 @@ public class MapActivity extends AppCompatActivity
         String[] titles,desc;
         switch(campus) {
             case 0: {
-                lats = res.obtainTypedArray(R.array.latSaoCarlos);
-                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
-                titles = res.getStringArray(R.array.titlesSaoCarlos);
-                desc = res.getStringArray(R.array.descSaoCarlos);
-                icons = res.obtainTypedArray(R.array.iconsSanca);
+                lats = res.obtainTypedArray(R.array.latButanta);
+                lons = res.obtainTypedArray(R.array.lonButanta);
+                titles = res.getStringArray(R.array.titlesButanta);
+                desc = res.getStringArray(R.array.descButanta);
+                icons = res.obtainTypedArray(R.array.iconsButanta);
                 break;
             }case 1: {
                 lats = res.obtainTypedArray(R.array.latSaoCarlos);
@@ -320,13 +320,14 @@ public class MapActivity extends AppCompatActivity
                 titles = res.getStringArray(R.array.titlesSaoCarlos);
                 desc = res.getStringArray(R.array.descSaoCarlos);
                 icons = res.obtainTypedArray(R.array.iconsSanca);
+                Toast.makeText(this, "Marcadores ainda não definidos, aguarde uma atualização", Toast.LENGTH_LONG).show();
                 break;
             }case 3: {
-                lats = res.obtainTypedArray(R.array.latSaoCarlos);
-                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
-                titles = res.getStringArray(R.array.titlesSaoCarlos);
-                desc = res.getStringArray(R.array.descSaoCarlos);
-                icons = res.obtainTypedArray(R.array.iconsSanca);
+                lats = res.obtainTypedArray(R.array.latSanfran);
+                lons = res.obtainTypedArray(R.array.lonSanfran);
+                titles = res.getStringArray(R.array.titlesSanfran);
+                desc = res.getStringArray(R.array.descSanfran);
+                icons = res.obtainTypedArray(R.array.iconsSanfran);
                 break;
             }case 4: {
                 lats = res.obtainTypedArray(R.array.latPiracicaba);
@@ -355,6 +356,7 @@ public class MapActivity extends AppCompatActivity
                 titles = res.getStringArray(R.array.titlesSaoCarlos);
                 desc = res.getStringArray(R.array.descSaoCarlos);
                 icons = res.obtainTypedArray(R.array.iconsSanca);
+                Toast.makeText(this, "Marcadores ainda não definidos, aguarde uma atualização", Toast.LENGTH_LONG).show();
                 break;
             }case 8: {
                 lats = res.obtainTypedArray(R.array.latSaoCarlos);
@@ -362,6 +364,7 @@ public class MapActivity extends AppCompatActivity
                 titles = res.getStringArray(R.array.titlesSaoCarlos);
                 desc = res.getStringArray(R.array.descSaoCarlos);
                 icons = res.obtainTypedArray(R.array.iconsSanca);
+                Toast.makeText(this, "Marcadores ainda não definidos, aguarde uma atualização", Toast.LENGTH_LONG).show();
                 break;
             }case 9: {
                 lats = res.obtainTypedArray(R.array.latSaoCarlos);
@@ -369,13 +372,14 @@ public class MapActivity extends AppCompatActivity
                 titles = res.getStringArray(R.array.titlesSaoCarlos);
                 desc = res.getStringArray(R.array.descSaoCarlos);
                 icons = res.obtainTypedArray(R.array.iconsSanca);
+                Toast.makeText(this, "Marcadores ainda não definidos, aguarde uma atualização", Toast.LENGTH_LONG).show();
                 break;
             }case 10: {
-                lats = res.obtainTypedArray(R.array.latSaoCarlos);
-                lons = res.obtainTypedArray(R.array.lonSaoCarlos);
-                titles = res.getStringArray(R.array.titlesSaoCarlos);
-                desc = res.getStringArray(R.array.descSaoCarlos);
-                icons = res.obtainTypedArray(R.array.iconsSanca);
+                lats = res.obtainTypedArray(R.array.latSaude);
+                lons = res.obtainTypedArray(R.array.lonSaude);
+                titles = res.getStringArray(R.array.titlesSaude);
+                desc = res.getStringArray(R.array.descSaude);
+                icons = res.obtainTypedArray(R.array.iconsSaude);
                 break;
             }
             default:
@@ -384,6 +388,7 @@ public class MapActivity extends AppCompatActivity
                 titles = res.getStringArray(R.array.titlesSaoCarlos);
                 desc = res.getStringArray(R.array.descSaoCarlos);
                 icons = res.obtainTypedArray(R.array.iconsSanca);
+                Toast.makeText(this, "Marcadores ainda não definidos, aguarde uma atualização", Toast.LENGTH_LONG).show();
                 break;
         }
 

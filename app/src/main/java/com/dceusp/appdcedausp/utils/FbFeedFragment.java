@@ -1,4 +1,4 @@
-package com.example.appdcedausp.utils;
+package com.dceusp.appdcedausp.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -20,7 +20,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.appdcedausp.R;
+import com.dceusp.appdcedausp.R;
 
 import java.io.InputStream;
 import java.net.URL;

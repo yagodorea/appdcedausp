@@ -1,4 +1,4 @@
-package com.example.appdcedausp.utils;
+package com.dceusp.appdcedausp.utils;
 
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.appdcedausp.R;
+import com.dceusp.appdcedausp.R;
 
 import java.util.Random;
 

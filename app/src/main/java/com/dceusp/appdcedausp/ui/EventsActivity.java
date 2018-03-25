@@ -1,4 +1,4 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -7,7 +7,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +18,10 @@ import android.widget.ScrollView;
 import android.widget.TabHost;
 import android.widget.Toast;
 
-import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.EventFragment;
-import com.example.appdcedausp.utils.FirebaseUtils;
-import com.example.appdcedausp.utils.GoogleUtils;
+import com.dceusp.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.EventFragment;
+import com.dceusp.appdcedausp.utils.FirebaseUtils;
+import com.dceusp.appdcedausp.utils.GoogleUtils;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GooglePlayServicesAvailabilityIOException;
 import com.google.api.client.googleapis.extensions.android.gms.auth.UserRecoverableAuthIOException;
@@ -34,15 +33,13 @@ import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.Events;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import static com.example.appdcedausp.utils.Constants.*;
+import static com.dceusp.appdcedausp.utils.Constants.*;
 
 
 public class EventsActivity extends AppCompatActivity {

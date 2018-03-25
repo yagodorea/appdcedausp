@@ -1,4 +1,4 @@
-package com.example.appdcedausp;
+package com.dceusp.appdcedausp;
 
 import org.junit.Test;
 

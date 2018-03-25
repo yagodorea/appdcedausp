@@ -1,4 +1,4 @@
-package com.example.appdcedausp.utils;
+package com.dceusp.appdcedausp.utils;
 
 import android.accounts.Account;
 import android.annotation.SuppressLint;
@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.appdcedausp.R;
+import com.dceusp.appdcedausp.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -29,8 +29,8 @@ import com.google.api.services.calendar.CalendarScopes;
 
 import java.util.Collections;
 
-import static com.example.appdcedausp.utils.Constants.ERROR_DIALOG_REQUEST;
-import static com.example.appdcedausp.utils.Constants.SIGN_IN_REQUEST;
+import static com.dceusp.appdcedausp.utils.Constants.ERROR_DIALOG_REQUEST;
+import static com.dceusp.appdcedausp.utils.Constants.SIGN_IN_REQUEST;
 
 public class GoogleUtils {
 

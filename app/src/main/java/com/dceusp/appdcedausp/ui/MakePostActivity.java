@@ -1,36 +1,31 @@
-package com.example.appdcedausp.ui;
+package com.dceusp.appdcedausp.ui;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.appdcedausp.R;
-import com.example.appdcedausp.utils.FirebaseUtils;
+import com.dceusp.appdcedausp.R;
+import com.dceusp.appdcedausp.utils.FirebaseUtils;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Random;
 
-import static com.example.appdcedausp.utils.Constants.*;
+import static com.dceusp.appdcedausp.utils.Constants.*;
 
 /**
  * Created by yago_ on 04/02/2018.
@@ -60,7 +55,7 @@ public class MakePostActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.appdcedausp.R.layout.makepost_activity);
+        setContentView(com.dceusp.appdcedausp.R.layout.makepost_activity);
 
         pref = getApplicationContext().getSharedPreferences("myConfig",0);
         forumId = getIntent().getLongExtra("forumId",-1);

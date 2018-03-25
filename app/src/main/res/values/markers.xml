@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer-array name="markerNumber">
-        <item>0</item>  <!-- Butantã -->
+        <item>11</item>  <!-- Butantã -->
         <item>57</item>  <!-- São Carlos -->
         <item>0</item>  <!-- EACH -->
-        <item>0</item>  <!-- Sanfran -->
-        <item>17</item>  <!-- Piracicaba -->
+        <item>8</item>  <!-- Sanfran -->
+        <item>18</item>  <!-- Piracicaba -->
         <item>41</item>  <!-- RP -->
         <item>20</item>  <!-- Pirassununga -->
         <item>0</item>  <!-- Bauru -->
         <item>0</item>  <!-- Santos -->
         <item>0</item>  <!-- Lorena -->
-        <item>0</item>  <!-- Saúde -->
+        <item>9</item>  <!-- Saúde -->
     </integer-array>
+
+    <!-- Butantã -->
+    <!-- títulos -->
+    <string-array name="titlesButanta">
+        <!-- Poli -->
+        <item>Lanchonete Minerva</item>
+        <item>Poliglota Idiomas</item>
+        <item>CAEP</item>
+        <item>PRO - Eng. de Produção</item>
+        <item>Restaurante Chinatown</item>
+        <item>Dentinhos - Restaurante da Elétrica</item>
+        <item>CEE</item>
+        <item>CEC</item>
+        <item>Seção de Alunos - POLI</item>
+        <item>Secretaria do Ciclo Básico</item>
+        <item>CMR</item>
+    </string-array>
+    <!-- descrições -->
+    <string-array name="descButanta">
+        <!-- Poli -->
+        <item>Lanchonete do biênio, conta com diversas opções de lanches e refeições</item>
+        <item>Oferece cursos de diversos idiomas, com preços abaixo do mercado</item>
+        <item>Centro Acadêmico de Engenharia de Produção, conta com a copiadora Polycopy e opções de bebidas e doces</item>
+        <item>Departamento de Engenharia de Produção, é onde fica a secretaria de graduação e as salas dos professores</item>
+        <item>Restaurante da Civil, conta com opções self-service e pratos feitos</item>
+        <item>Restaurante da Elétrica, para chegar suba as escadas</item>
+        <item>Centro Acadêmico de Engenharia Elétrica e Computação</item>
+        <item>Centro Acadêmico de Engenharia Civil</item>
+        <item>No prédio da administração, é onde o estudante pode resolver diversas questões burocráticas</item>
+        <item>Secretaria que atende questões das disciplinas do ciclo básico e do prédio do Biênio</item>
+        <item>Centro Moraes Rego, representa os alunos das Engenharias de Materiais, Metalúrgica e de Minas</item>
+    </string-array>
+    <!-- latitudes -->
+    <array name="latButanta">
+        <!-- Poli -->
+        <item>-23.556186</item> <!-- latitude do local 1 -->
+        <item>-23.556318</item> <!-- latitude do local 2 -->
+        <item>-23.556716</item> <!-- latitude do local 3 -->
+        <item>-23.556640</item>
+        <item>-23.555484</item>
+        <item>-23.556935</item>
+        <item>-23.557402</item>
+        <item>-23.555373</item>
+        <item>-23.554747</item>
+        <item>-23.556665</item>
+        <item>-23.552965</item>
+    </array>
+    <!-- longitudes -->
+    <array name="lonButanta">
+        <!-- Poli -->
+        <item>-46.733116</item> <!-- longitude do local 1 -->
+        <item>-46.732753</item> <!-- longitude do local 2 -->
+        <item>-46.732811</item> <!-- longitude do local 3 -->
+        <item>-46.733146</item>
+        <item>-46.732009</item>
+        <item>-46.730319</item>
+        <item>-46.729683</item>
+        <item>-46.732289</item>
+        <item>-46.729611</item>
+        <item>-46.732715</item>
+        <item>-46.731478</item>
+    </array>
+    <!-- ícones -->
+    <array name="iconsButanta">
+        <!-- Poli -->
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+    </array>
 
     <!-- São Carlos -->
     <!-- títulos -->
@@ -202,9 +279,9 @@
         <item>-22.00313</item>
         <item>-22.00446</item>
         <item>-22.00918</item>
-        <item>-22.0096444</item>
-        <item>-22.0066704</item>
-        <item>-22.0040494</item>
+        <item>-22.009668</item>
+        <item>-22.006732</item>
+        <item>-22.004048</item>
 
         <!--Esportes e Exercícios-->
         <item>-22.0063</item>
@@ -277,9 +354,9 @@
         <item>-47.8986</item>
         <item>-47.89853</item>
         <item>-47.89678</item>
-        <item>-47.9053428</item>
-        <item>-47.9048378</item>
-        <item>-47.9071628</item>
+        <item>-47.896618</item>
+        <item>-47.896082</item>
+        <item>-47.898409</item>
 
         <!--Esportes e Exercícios-->
         <item>-47.8984</item>
@@ -392,6 +469,63 @@
         <item>@drawable/ic_map_place</item>
     </integer-array>
 
+    <!-- Sanfran -->
+    <!-- títulos -->
+    <string-array name="titlesSanfran">
+        <item>Porão/CA XI de Agosto</item>
+        <item>Café Fazenda</item>
+        <item>Biblioteca Jurídica São Francisco</item>
+        <item>Papelaria e Acessórios Umabel</item>
+        <item>Princesinha</item>
+        <item>Café Cultura</item>
+        <item>Sebo Álvares Machado</item>
+        <item>Restaurante vegetariano</item>
+    </string-array>
+    <!-- descrições -->
+    <string-array name="descSanfran">
+        <item>Casa histórica do Centro Acadêmico XI de Agosto, palco de muitas festas e também do Xerox do XI, um bar e uma lanchonete.</item>
+        <item>Bolos muito gostosos, muito grandes, mas um pouco caros.</item>
+        <item>Aqui fica a biblioteca circulante onde se retira livros.</item>
+        <item>Papelaria que os alunos costumam usar.</item>
+        <item>Lanchonete com café e salgados baratos. </item>
+        <item>Prato feito, lanches, salgados e bebidas. \nOpções vegetarianas.</item>
+        <item>Livros jurídicos.</item>
+        <item>.</item>
+    </string-array>
+    <!-- latitudes -->
+    <array name="latSanfran">
+        <item>-23.550446</item> <!-- latitude do local 1 -->
+        <item>-23.549621</item> <!-- latitude do local 2 -->
+        <item>-23.550198</item> <!-- latitude do local 3 -->
+        <item>-23.550492</item>  <!-- latitude do local 4 -->
+        <item>-23.550650</item> <!-- latitude do local 5 -->
+        <item>-23.550757</item> <!-- latitude do local 6 -->
+        <item>-23.550809</item> <!-- latitude do local 7 -->
+        <item>-23.550877</item> <!-- latitude do local 8 -->
+    </array>
+    <!-- longitudes -->
+    <array name="lonSanfran">
+        <item>-46.637119</item> <!-- longitude do local 1 -->
+        <item>-46.636419</item> <!-- longitude do local 2 -->
+        <item>-46.636386</item> <!-- longitude do local 3 -->
+        <item>-46.636706</item> <!-- longitude do local 4 -->
+        <item>-46.636628</item> <!-- longitude do local 5 -->
+        <item>-46.636408</item> <!-- longitude do local 6 -->
+        <item>-46.636291</item> <!-- longitude do local 7 -->
+        <item>-46.636144</item> <!-- longitude do local 8 -->
+    </array>
+    <!-- ícones -->
+    <string-array name="iconsSanfran">
+        <item>@drawable/ic_map_flag</item>
+        <item>@drawable/ic_map_restaurant</item>
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_restaurant</item>
+        <item>@drawable/ic_map_restaurant</item>
+        <item>@drawable/ic_map_grad</item>
+        <item>@drawable/ic_map_restaurant</item>
+    </string-array>
+
     <!-- Piracicaba -->
     <!-- títulos -->
     <string-array name="titlesPiracicaba">
@@ -412,6 +546,7 @@
         <item>Atlética ESALQ</item>
         <item>Serviço de Graduação</item>
         <item>Serviço de Assistência Social</item>
+        <item>UPA 24h Unidade Piracicamirim</item>
     </string-array>
     <!-- descrições -->
     <string-array name="descPiracicaba">
@@ -432,6 +567,7 @@
         <item>A Atlética é o lugar que comporta as quadras e materiais esportivos para uso dos alunos. Há também os treinos periódicos de cada grupo esportivo que acontecem pela semana.</item>
         <item>O Serviço de Graduação atende às dúvidas dos estudantes, realiza cadastros e atua nos processos de graduação gerais que virão pelo período letivo.</item>
         <item>O DEVATCOM é reponsável pelo manejo de bolsas/auxílios para a permanência de estudantes de contexto econômico/social prejudicado.</item>
+        <item>As Unidades de Pronto Atendimento ou pronto-socorros, são específicas para atendimento de emergência ou urgência. Para facilitar o atendimento, não se esqueça de levar seu RG e cartão do SUS.</item>
     </string-array>
     <!-- latitudes -->
     <array name="latPiracicaba">
@@ -452,6 +588,7 @@
         <item>-22.71278223</item> <!-- latitude do local 15-->
         <item>-22.70747742</item> <!-- latitude do local 16 -->
         <item>-22.71058759</item> <!-- latitude do local 17-->
+        <item>-22.7394695</item>
     </array>
     <!-- longitudes -->
     <array name="lonPiracicaba">
@@ -472,9 +609,11 @@
         <item>-47.63456091</item> <!-- longitude do local 15 -->
         <item>-47.63243929</item> <!-- longitude do local 16 -->
         <item>-47.63582692</item> <!-- longitude do local 17 -->
+        <item>-47.627422</item>
     </array>
     <!-- ícones -->
     <string-array name="iconsPiracicaba">
+        <item>@drawable/ic_map_place</item>
         <item>@drawable/ic_map_place</item>
         <item>@drawable/ic_map_place</item>
         <item>@drawable/ic_map_place</item>
@@ -835,5 +974,71 @@
         <item>@drawable/ic_map_place</item>
     </array>
 
-    <!-- -->
+    <!-- Quadrilátero da Saúde -->
+    <!-- títulos -->
+    <string-array name="titlesSaude">
+        <!-- FSP -->
+        <item>Faculdade de Saúde Pública USP</item>
+        <item>Centro de Saúde Escola Geraldo de Paula Souza</item>
+        <item>Biblioteca da FSP-USP</item>
+        <item>Bandeijão da FSP-USP</item>
+        <item>Creche/Pré-Escola da FSP/USP</item>
+        <item>Serviço de Graduação</item>
+        <item>Tesouraria</item>
+        <item>Pró-aluno</item>
+        <item>Espaço Estudantil</item>
+    </string-array>
+    <!-- descrições -->
+    <string-array name="descSaude">
+        <!-- FSP -->
+        <item>Prédio principal da Faculdade de Saúde Pública: Instituo de Higiene. Local de graduação em nutrição, saúde pública, pesquisa e pós graduação.</item>
+        <item>Desde 2016, o CSEGPS é considerado uma UBS mista incorporando à Rede Pública Municipal de Saúde. Local de Ensino, Pesquisa e Assistência à Saúde, todos os alunos da FSP tem direito de usufruir de seus serviços: atenção primária, farmácia, URSI e diagnostico e tratamento de DSTs.</item>
+        <item>Biblioteca da FSP. Local com salas de estudo, computadores disponíveis e empréstimo de livros.</item>
+        <item>Restaurante universitário da FSP-USP.</item>
+        <item>Creche destinada a filhos de estudantes, funcionários e professores das unidades localizadas na região (Enfermagem, Saúde Pública e Medicina). Os estudantes da USP que tenham filhos podem participar da seleção socioeconômica para a ocupação de vagas das creches (ao todo três na capital). </item>
+        <item>Serviço de graduação da FSP; localizado no Instituo de Higiene no térreo, à esquerda do saguão de entrada.</item>
+        <item>Tesouraria da FSP; localizado no Instituo de Higiene no subsolo. Local onde se carrega o Cartão USP (bandeijão), de segunda das 11 às 13h e das 17 às 19h.</item>
+        <item>Sala de informática disponivel para os alunos da FSP; com cota de 8 reais por mês de impressão..</item>
+        <item>Espaço de convívio dos estudades; onde se localiza o Centro Acadêmico Emilio Ribas (CAER-FSP), a  Associação Atlética Acadêmica XXXI de Agosto e o Projeto Nutritiva, além de mural da Jornada Universitária da Saúde (JUS).</item>
+    </string-array>
+    <!-- latitudes -->
+    <array name="latSaude">
+        <!-- FSP -->
+        <item>-23.551120</item> <!-- latitude do local 1 -->
+        <item>-23.553221</item> <!-- latitude do local 2 -->
+        <item>-23.554135</item> <!-- latitude do local 3 -->
+        <item>-23.554563</item> <!-- latitude do local 4 -->
+        <item>-23.554532</item> <!-- latitude do local 5 -->
+        <item>-23.554109</item> <!-- latitude do local 6 -->
+        <item>-23.553476</item> <!-- latitude do local 7 -->
+        <item>-23.554245</item> <!-- latitude do local 8 -->
+        <item>-23.554428</item> <!-- latitude do local 9 -->
+    </array>
+    <!-- longitudes -->
+    <array name="lonSaude">
+        <!-- FSP -->
+        <item>-46.673263</item> <!-- longitude do local 1 -->
+        <item>-46.673527</item> <!-- longitude do local 2 -->
+        <item>-46.673501</item> <!-- longitude do local 3 -->
+        <item>-46.673575</item> <!-- longitude do local 4 -->
+        <item>-46.673231</item> <!-- longitude do local 5 -->
+        <item>-46.673209</item> <!-- longitude do local 6 -->
+        <item>-46.673252</item> <!-- longitude do local 7 -->
+        <item>-46.673233</item> <!-- longitude do local 8 -->
+        <item>-46.673466</item> <!-- longitude do local 9 -->
+    </array>
+    <!-- ícones -->
+    <array name="iconsSaude">
+        <!-- FSP -->
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+        <item>@drawable/ic_map_place</item>
+    </array>
+
 </resources>
