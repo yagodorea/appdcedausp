@@ -1,685 +1,685 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\e4b0602eaba5d5671f959db622949dd8\AndroidManifest.xml:2:1-6:12
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\1868e44f943e8c6d94424519332f3d87\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0ea4f49ed4528063e89a69801dfa5360\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:design:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-27.0.1.aar\e3f6d1741e6a206ca905f5bfc0c1877c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\896d753e8fc759c30d744eee35ea53bf\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\e1b4a20bc6746034c6bb2019a9820aeb\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.firebase:firebase-storage:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.8.0.aar\e6da351d277ad73e248ed81b9630c145\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:17:1-54:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\af572e2fe595e377ce8b80c33979221f\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\d8fd7de341a7d44cc6e3162e3e2fc547\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:17:1-59:12
-MERGED from [com.firebaseui:firebase-ui-database:0.4.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.4.1.aar\a25bf73075c65935c00291bd93e1feeb\AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.firebase:firebase-database:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-11.8.0.aar\b4c05b439b60bbee6e8ef3e54cf548c3\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\3d0c164f4e8723d192c9f42793241f60\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:2:1-15:12
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a654539eaa4d74be9b4a1324accb7201\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-storage-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.8.0.aar\c0bfd60895beb4e40dc6c697c11c09d6\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:17:1-28:12
-MERGED from [com.facebook.android:facebook-login:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-login-4.29.0.aar\4bfccfc56b2c1bdf413c28d6a155ce79\AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:21:1-36:12
-MERGED from [com.android.support:support-v4:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.1.aar\2191dd9608e0b8b8b20cf189a56e27d3\AndroidManifest.xml:17:1-22:12
-MERGED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:2:1-19:12
-MERGED from [com.android.support:appcompat-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.1.aar\8465268e287e5311fb53cae5e77de24d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.1.aar\9aa04db14413e2b37551e3152eb52761\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.1.aar\aa9dc6cce0a55fc5b70d3f2c58e8a9fb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.1.aar\fcb185052d191d03379613881454008a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-27.0.1.aar\8fb7abe75d7ff34a48baaa317295c971\AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:21:1-45:12
-MERGED from [com.android.support:support-fragment:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.1.aar\2a5a2bd939238a57ade5ed3328ba6f25\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.1.aar\757bdc2771abf6f528c5ea0fa8650b32\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customtabs:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.1.aar\814395b7197bff28f27ddfa043513aae\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.1.aar\0dad1541e58df9586b22ae7152407b78\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.1.aar\807eec019871e40948013d69027d135b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.1.aar\ee3bf6396b89ed9c6309d448bb38aecc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.1.aar\53abface0b5877462d492f664003e1eb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\9197983653a162ef3e21b57cbdb5eb6f\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\853e572f592c9651b7e95eb1c5d9f030\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\65c157e4a2cf72696afff6baa3bc9a2b\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-auth-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.8.0.aar\7810f2e8292272622bf600eb00510f23\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\3bf1d06551d3eae94a817865cb050193\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-storage-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\1c18b4956af5dffd857948baf6accd96\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.8.0.aar\94ba06accbfd95d587b57ece58cc6a5d\AndroidManifest.xml:2:1-6:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\09ecf8aabe39247b97f6e340d935fa3e\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\a4e2b37e91a8e944414e704d422246c9\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\ed4e8f414cc3aebfd542342575c4008c\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\12e37f38f61b39aa77c918c4f2336bab\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c1e30ad4ca53a159d17b384b2af30792\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\05da9e214ecea02afa87369cf232aff9\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\d8e310b445648e971a5d21b6d7ce229d\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\5166e24b6a5dd0235a9a834e905929c2\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\0e2ed893e371c5673a4112cffce5c538\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\87de9f82b872baee880452be52ea656f\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/41b7fea4ce18da05c0eae489a55ed9f5/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:multidex:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/6d16f7bdfb16e2c6f44956fe9e5722e7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5c8817dca0e1a39be00f8019872381b8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/design-27.0.1.aar/b9b5825201a7814c23ab9ff2f7d407c9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/50a0846365ade8fd9eea7240c5043fc8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.8.0.aar/efa33f7cdd98fac6b20d7cc61b9b42b9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.firebase:firebase-storage:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.8.0.aar/b9688b1e8c2699cb5357c74cb3ed3cda/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:17:1-54:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/0bcf9aacfee1aa4edea921cbf54ffdf3/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/bc105a9accc5ad93e5fa5006daf6e9df/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:17:1-59:12
+MERGED from [com.firebaseui:firebase-ui-database:0.4.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-0.4.1.aar/8b22fa9d1abd99b0e97a8ae2e7df0c8c/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-database:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-11.8.0.aar/f4a218dcda2fad159c37df434800ed7f/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database-connection:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-11.8.0.aar/017c45c14c8e04f41c971b6f1ff2a0ca/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/bd5f113b39a5bc38d43e95aa003eb9b8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-storage-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-11.8.0.aar/8d69e06263887dd3d516a69234092e5b/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:17:1-28:12
+MERGED from [com.facebook.android:facebook-login:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-login-4.29.0.aar/891523e55e8bf25dd6b267e8812e9da9/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:21:1-36:12
+MERGED from [com.android.support:support-v4:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.1.aar/a52f55d64616f86dc43436c6697e6b02/AndroidManifest.xml:17:1-22:12
+MERGED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support:appcompat-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/d3e7b123d244a44a59171848fe79dfce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.1.aar/31eeebe802d1a5d3f05afb969a606ed1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.1.aar/9682dc4ab1ec6c27f3504a70b4f30128/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.1.aar/b61fa0f7f9632440a4480eb7527685b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/transition-27.0.1.aar/63643961591ea9bb30df15d4d0b955ac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:21:1-45:12
+MERGED from [com.android.support:support-fragment:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.1.aar/54e4d7539d2bfa63f983f5ae77515929/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.1.aar/f72950f8b3a86e59f3c53cabe2c014d1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.1.aar/d2e004527416dfdbaad5b81240efba1f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.1.aar/db825731328dfee2eee1b2b97b701b7d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.1.aar/e62d954cc19e171713ea779e84b97811/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/1b0ffbb5a3a2ddf4e9bf334d6edacb29/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.1.aar/3aa47de1fcc523a6dcba88e53ef153d6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/ff22d8f1e56b6a924795e46c23e053f1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/a56026f1ac25a313e2ff7596346453e4/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.8.0.aar/5f52f147fff4dacc42f394aee6b09f61/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/2fc5a035b030b32d80ec2b92cb2be8ee/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-database-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-license-11.8.0.aar/183e9637852394436aec6ec072aa2a0f/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-storage-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-11.8.0.aar/d3fff5212f8b4ca02f9b29e45713a746/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/1c232e7b6edb9fe49b352c660265019b/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/713b38df482172739a1a3c33ee340412/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/830e6d3d34f22e0526d8d54c6be05ce7/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/fdae5afde8fada74e0443aff86fd7292/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/a12c1ace4b17b1f73c984fc7ab022c99/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1faf47d015bd0fdd920b89b5b5ec974/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/3682a9cfda861f3baebee789ec458e81/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-11.8.0.aar/d940be07552ad3a9b3dea1565ab22e84/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/e21588194eccb40d80ccf28338c40639/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/dd9e686114993dccf87efc7c452e4cb3/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-11.8.0.aar/b6c39cf08d28c2a7ae1864daa49ebaf1/AndroidManifest.xml:2:1-6:12
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
 	package
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:4:5-37
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:4:5-37
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:1-85:12
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:1-85:12
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:6:5-67
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:23:5-67
-MERGED from [com.firebaseui:firebase-ui-database:0.4.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.4.1.aar\a25bf73075c65935c00291bd93e1feeb\AndroidManifest.xml:11:5-67
-MERGED from [com.firebaseui:firebase-ui-database:0.4.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.4.1.aar\a25bf73075c65935c00291bd93e1feeb\AndroidManifest.xml:11:5-67
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:23:5-67
+MERGED from [com.firebaseui:firebase-ui-database:0.4.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-0.4.1.aar/8b22fa9d1abd99b0e97a8ae2e7df0c8c/AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:0.4.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-0.4.1.aar/8b22fa9d1abd99b0e97a8ae2e7df0c8c/AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.NETWORK
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:7:5-66
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:7:22-63
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:7:22-63
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:9:5-79
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:9:22-76
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:22:5-79
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:11:5-71
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:11:5-71
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:11:22-68
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:11:22-68
 uses-permission#android.permission.MANAGE_ACCOUNTS
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:12:5-74
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:12:22-71
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:12:22-71
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:13:5-74
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:13:5-74
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:13:22-71
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:13:22-71
 uses-permission#android.permission.READ_CALENDAR
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:14:5-72
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:14:5-72
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:14:22-69
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:14:22-69
 uses-permission#android.permission.WRITE_CALENDAR
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:15:5-73
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:15:5-73
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:15:22-70
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:15:22-70
 uses-permission#com.google.android.gm.permission.READ_GMAIL
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:16:5-83
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:16:5-83
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:16:22-80
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:16:22-80
 application
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:18:5-83:19
-MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\e4b0602eaba5d5671f959db622949dd8\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\e4b0602eaba5d5671f959db622949dd8\AndroidManifest.xml:5:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0ea4f49ed4528063e89a69801dfa5360\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0ea4f49ed4528063e89a69801dfa5360\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\896d753e8fc759c30d744eee35ea53bf\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\896d753e8fc759c30d744eee35ea53bf\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\e1b4a20bc6746034c6bb2019a9820aeb\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\e1b4a20bc6746034c6bb2019a9820aeb\AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:22:5-30:19
-MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:22:5-30:19
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:27:5-52:19
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:27:5-52:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:27:5-38:19
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:27:5-38:19
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:34:5-57:19
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:34:5-57:19
-MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:7:5-13:19
-MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:7:5-13:19
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a654539eaa4d74be9b4a1324accb7201\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a654539eaa4d74be9b4a1324accb7201\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.facebook.android:facebook-login:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-login-4.29.0.aar\4bfccfc56b2c1bdf413c28d6a155ce79\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-login-4.29.0.aar\4bfccfc56b2c1bdf413c28d6a155ce79\AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:28:5-34:19
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:28:5-34:19
-MERGED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:11:5-17:19
-MERGED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:11:5-17:19
-MERGED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:28:5-43:19
-MERGED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:28:5-43:19
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\9197983653a162ef3e21b57cbdb5eb6f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\9197983653a162ef3e21b57cbdb5eb6f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\853e572f592c9651b7e95eb1c5d9f030\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\853e572f592c9651b7e95eb1c5d9f030\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\65c157e4a2cf72696afff6baa3bc9a2b\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\65c157e4a2cf72696afff6baa3bc9a2b\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-auth-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.8.0.aar\7810f2e8292272622bf600eb00510f23\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-auth-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.8.0.aar\7810f2e8292272622bf600eb00510f23\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\3bf1d06551d3eae94a817865cb050193\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\3bf1d06551d3eae94a817865cb050193\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-storage-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\1c18b4956af5dffd857948baf6accd96\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-storage-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\1c18b4956af5dffd857948baf6accd96\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.8.0.aar\94ba06accbfd95d587b57ece58cc6a5d\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.8.0.aar\94ba06accbfd95d587b57ece58cc6a5d\AndroidManifest.xml:5:5-20
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\09ecf8aabe39247b97f6e340d935fa3e\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\09ecf8aabe39247b97f6e340d935fa3e\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\a4e2b37e91a8e944414e704d422246c9\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\a4e2b37e91a8e944414e704d422246c9\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\ed4e8f414cc3aebfd542342575c4008c\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\ed4e8f414cc3aebfd542342575c4008c\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\12e37f38f61b39aa77c918c4f2336bab\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\12e37f38f61b39aa77c918c4f2336bab\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c1e30ad4ca53a159d17b384b2af30792\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c1e30ad4ca53a159d17b384b2af30792\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\05da9e214ecea02afa87369cf232aff9\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\05da9e214ecea02afa87369cf232aff9\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\d8e310b445648e971a5d21b6d7ce229d\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\d8e310b445648e971a5d21b6d7ce229d\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\5166e24b6a5dd0235a9a834e905929c2\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\5166e24b6a5dd0235a9a834e905929c2\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\0e2ed893e371c5673a4112cffce5c538\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\0e2ed893e371c5673a4112cffce5c538\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\87de9f82b872baee880452be52ea656f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\87de9f82b872baee880452be52ea656f\AndroidManifest.xml:5:5-20
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:18:5-83:19
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/41b7fea4ce18da05c0eae489a55ed9f5/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/41b7fea4ce18da05c0eae489a55ed9f5/AndroidManifest.xml:5:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5c8817dca0e1a39be00f8019872381b8/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5c8817dca0e1a39be00f8019872381b8/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/50a0846365ade8fd9eea7240c5043fc8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/50a0846365ade8fd9eea7240c5043fc8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.8.0.aar/efa33f7cdd98fac6b20d7cc61b9b42b9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.8.0.aar/efa33f7cdd98fac6b20d7cc61b9b42b9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/bd5f113b39a5bc38d43e95aa003eb9b8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/bd5f113b39a5bc38d43e95aa003eb9b8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-login:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-login-4.29.0.aar/891523e55e8bf25dd6b267e8812e9da9/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-login-4.29.0.aar/891523e55e8bf25dd6b267e8812e9da9/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:28:5-34:19
+MERGED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:28:5-34:19
+MERGED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:11:5-17:19
+MERGED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:28:5-43:19
+MERGED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:28:5-43:19
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/ff22d8f1e56b6a924795e46c23e053f1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/ff22d8f1e56b6a924795e46c23e053f1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/a56026f1ac25a313e2ff7596346453e4/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/a56026f1ac25a313e2ff7596346453e4/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.8.0.aar/5f52f147fff4dacc42f394aee6b09f61/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.8.0.aar/5f52f147fff4dacc42f394aee6b09f61/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/2fc5a035b030b32d80ec2b92cb2be8ee/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/2fc5a035b030b32d80ec2b92cb2be8ee/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-license-11.8.0.aar/183e9637852394436aec6ec072aa2a0f/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-license-11.8.0.aar/183e9637852394436aec6ec072aa2a0f/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-11.8.0.aar/d3fff5212f8b4ca02f9b29e45713a746/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-11.8.0.aar/d3fff5212f8b4ca02f9b29e45713a746/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/1c232e7b6edb9fe49b352c660265019b/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/1c232e7b6edb9fe49b352c660265019b/AndroidManifest.xml:5:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/713b38df482172739a1a3c33ee340412/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/713b38df482172739a1a3c33ee340412/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/830e6d3d34f22e0526d8d54c6be05ce7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/830e6d3d34f22e0526d8d54c6be05ce7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/fdae5afde8fada74e0443aff86fd7292/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/fdae5afde8fada74e0443aff86fd7292/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/a12c1ace4b17b1f73c984fc7ab022c99/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/a12c1ace4b17b1f73c984fc7ab022c99/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1faf47d015bd0fdd920b89b5b5ec974/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1faf47d015bd0fdd920b89b5b5ec974/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/3682a9cfda861f3baebee789ec458e81/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/3682a9cfda861f3baebee789ec458e81/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-11.8.0.aar/d940be07552ad3a9b3dea1565ab22e84/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-11.8.0.aar/d940be07552ad3a9b3dea1565ab22e84/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/e21588194eccb40d80ccf28338c40639/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/e21588194eccb40d80ccf28338c40639/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/dd9e686114993dccf87efc7c452e4cb3/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/dd9e686114993dccf87efc7c452e4cb3/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-11.8.0.aar/b6c39cf08d28c2a7ae1864daa49ebaf1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-11.8.0.aar/b6c39cf08d28c2a7ae1864daa49ebaf1/AndroidManifest.xml:5:5-20
 	android:supportsRtl
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:22:9-41
 	android:roundIcon
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:23:9-54
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:23:9-54
 	android:icon
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:21:9-43
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:21:9-43
 	android:allowBackup
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:19:9-35
 	android:description
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:20:9-54
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:25:9-40
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:25:9-40
 meta-data#com.android.google.gms.version
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:26:9-28:69
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:26:9-28:69
 	android:value
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:28:13-66
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:28:13-66
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:27:13-58
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:27:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:29:9-31:71
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:29:9-31:71
 	android:value
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:31:13-68
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:31:13-68
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:30:13-58
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:30:13-58
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:32:9-34:55
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:32:9-34:55
 	android:value
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:34:13-52
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:34:13-52
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:33:13-58
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:33:13-58
 activity#com.dceusp.appdcedausp.ui.MapActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:36:9-39:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:36:9-39:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:38:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:39:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:39:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:37:13-43
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:37:13-43
 activity#com.dceusp.appdcedausp.ui.FacebookFeedActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:40:9-43:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:40:9-43:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:42:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:43:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:43:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:41:13-52
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:41:13-52
 activity#com.dceusp.appdcedausp.ui.EventsActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:44:9-47:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:44:9-47:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:46:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:46:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:47:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:47:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:45:13-46
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:45:13-46
 activity#com.dceusp.appdcedausp.ui.SimpleBlogActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:48:9-51:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:48:9-51:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:50:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:51:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:51:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:49:13-50
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:49:13-50
 activity#com.dceusp.appdcedausp.ui.MakePostActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:52:9-55:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:52:9-55:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:54:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:54:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:55:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:55:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:53:13-48
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:53:13-48
 activity#com.dceusp.appdcedausp.ui.PostActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:56:9-59:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:56:9-59:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:58:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:58:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:59:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:59:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:57:13-44
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:57:13-44
 activity#com.dceusp.appdcedausp.ui.ForumActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:60:9-63:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:60:9-63:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:62:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:62:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:63:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:63:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:61:13-45
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:61:13-45
 activity#com.dceusp.appdcedausp.ui.OnibusActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:64:9-67:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:64:9-67:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:66:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:66:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:67:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:67:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:65:13-46
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:65:13-46
 activity#com.dceusp.appdcedausp.ui.MedicoActivity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:68:9-71:70
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:68:9-71:70
 	android:screenOrientation
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:70:13-49
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:70:13-49
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:71:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:71:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:69:13-46
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:69:13-46
 activity#com.dceusp.appdcedausp.ui.Main2Activity
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:72:9-82:20
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:72:9-82:20
 	android:label
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:74:13-45
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:74:13-45
 	android:theme
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:75:13-67
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:75:13-67
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:73:13-45
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:73:13-45
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:77:13-81:29
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:77:13-81:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:78:17-69
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:78:17-69
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:78:25-66
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:78:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:80:17-77
+ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:80:17-77
 	android:name
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml:80:27-74
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml:80:27-74
 uses-sdk
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\e4b0602eaba5d5671f959db622949dd8\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\e4b0602eaba5d5671f959db622949dd8\AndroidManifest.xml:4:5-43
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\1868e44f943e8c6d94424519332f3d87\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\1868e44f943e8c6d94424519332f3d87\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0ea4f49ed4528063e89a69801dfa5360\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0ea4f49ed4528063e89a69801dfa5360\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-27.0.1.aar\e3f6d1741e6a206ca905f5bfc0c1877c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\design-27.0.1.aar\e3f6d1741e6a206ca905f5bfc0c1877c\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\896d753e8fc759c30d744eee35ea53bf\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\896d753e8fc759c30d744eee35ea53bf\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\e1b4a20bc6746034c6bb2019a9820aeb\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\e1b4a20bc6746034c6bb2019a9820aeb\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-storage:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.8.0.aar\e6da351d277ad73e248ed81b9630c145\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-storage:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.8.0.aar\e6da351d277ad73e248ed81b9630c145\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\af572e2fe595e377ce8b80c33979221f\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\af572e2fe595e377ce8b80c33979221f\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\d8fd7de341a7d44cc6e3162e3e2fc547\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\d8fd7de341a7d44cc6e3162e3e2fc547\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:20:5-44
-MERGED from [com.firebaseui:firebase-ui-database:0.4.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.4.1.aar\a25bf73075c65935c00291bd93e1feeb\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-database:0.4.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.4.1.aar\a25bf73075c65935c00291bd93e1feeb\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-database:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-11.8.0.aar\b4c05b439b60bbee6e8ef3e54cf548c3\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-11.8.0.aar\b4c05b439b60bbee6e8ef3e54cf548c3\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\3d0c164f4e8723d192c9f42793241f60\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\3d0c164f4e8723d192c9f42793241f60\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a654539eaa4d74be9b4a1324accb7201\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a654539eaa4d74be9b4a1324accb7201\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-storage-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.8.0.aar\c0bfd60895beb4e40dc6c697c11c09d6\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-storage-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.8.0.aar\c0bfd60895beb4e40dc6c697c11c09d6\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-login:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-login-4.29.0.aar\4bfccfc56b2c1bdf413c28d6a155ce79\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-login-4.29.0.aar\4bfccfc56b2c1bdf413c28d6a155ce79\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:support-v4:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.1.aar\2191dd9608e0b8b8b20cf189a56e27d3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.1.aar\2191dd9608e0b8b8b20cf189a56e27d3\AndroidManifest.xml:20:5-44
-MERGED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:7:5-9:41
-MERGED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.1.aar\8465268e287e5311fb53cae5e77de24d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.1.aar\8465268e287e5311fb53cae5e77de24d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.1.aar\9aa04db14413e2b37551e3152eb52761\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.1.aar\9aa04db14413e2b37551e3152eb52761\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.1.aar\aa9dc6cce0a55fc5b70d3f2c58e8a9fb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.1.aar\aa9dc6cce0a55fc5b70d3f2c58e8a9fb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.1.aar\fcb185052d191d03379613881454008a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.1.aar\fcb185052d191d03379613881454008a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-27.0.1.aar\8fb7abe75d7ff34a48baaa317295c971\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\transition-27.0.1.aar\8fb7abe75d7ff34a48baaa317295c971\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:support-fragment:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.1.aar\2a5a2bd939238a57ade5ed3328ba6f25\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.1.aar\2a5a2bd939238a57ade5ed3328ba6f25\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.1.aar\757bdc2771abf6f528c5ea0fa8650b32\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.1.aar\757bdc2771abf6f528c5ea0fa8650b32\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.1.aar\814395b7197bff28f27ddfa043513aae\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.1.aar\814395b7197bff28f27ddfa043513aae\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.1.aar\0dad1541e58df9586b22ae7152407b78\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.1.aar\0dad1541e58df9586b22ae7152407b78\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.1.aar\807eec019871e40948013d69027d135b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.1.aar\807eec019871e40948013d69027d135b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.1.aar\ee3bf6396b89ed9c6309d448bb38aecc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.1.aar\ee3bf6396b89ed9c6309d448bb38aecc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.1.aar\53abface0b5877462d492f664003e1eb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.1] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.1.aar\53abface0b5877462d492f664003e1eb\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\9197983653a162ef3e21b57cbdb5eb6f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\9197983653a162ef3e21b57cbdb5eb6f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\853e572f592c9651b7e95eb1c5d9f030\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\853e572f592c9651b7e95eb1c5d9f030\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\65c157e4a2cf72696afff6baa3bc9a2b\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\65c157e4a2cf72696afff6baa3bc9a2b\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-auth-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.8.0.aar\7810f2e8292272622bf600eb00510f23\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-auth-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.8.0.aar\7810f2e8292272622bf600eb00510f23\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\3bf1d06551d3eae94a817865cb050193\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\3bf1d06551d3eae94a817865cb050193\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-storage-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\1c18b4956af5dffd857948baf6accd96\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-storage-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\1c18b4956af5dffd857948baf6accd96\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.8.0.aar\94ba06accbfd95d587b57ece58cc6a5d\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.8.0.aar\94ba06accbfd95d587b57ece58cc6a5d\AndroidManifest.xml:4:5-43
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\09ecf8aabe39247b97f6e340d935fa3e\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\09ecf8aabe39247b97f6e340d935fa3e\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\a4e2b37e91a8e944414e704d422246c9\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\a4e2b37e91a8e944414e704d422246c9\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\ed4e8f414cc3aebfd542342575c4008c\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\ed4e8f414cc3aebfd542342575c4008c\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\12e37f38f61b39aa77c918c4f2336bab\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\12e37f38f61b39aa77c918c4f2336bab\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c1e30ad4ca53a159d17b384b2af30792\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\c1e30ad4ca53a159d17b384b2af30792\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\05da9e214ecea02afa87369cf232aff9\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\05da9e214ecea02afa87369cf232aff9\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\d8e310b445648e971a5d21b6d7ce229d\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\d8e310b445648e971a5d21b6d7ce229d\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\5166e24b6a5dd0235a9a834e905929c2\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\5166e24b6a5dd0235a9a834e905929c2\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\0e2ed893e371c5673a4112cffce5c538\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\0e2ed893e371c5673a4112cffce5c538\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\87de9f82b872baee880452be52ea656f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\87de9f82b872baee880452be52ea656f\AndroidManifest.xml:4:5-43
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/41b7fea4ce18da05c0eae489a55ed9f5/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/41b7fea4ce18da05c0eae489a55ed9f5/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:multidex:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/6d16f7bdfb16e2c6f44956fe9e5722e7/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/6d16f7bdfb16e2c6f44956fe9e5722e7/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5c8817dca0e1a39be00f8019872381b8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/yagod/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5c8817dca0e1a39be00f8019872381b8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/design-27.0.1.aar/b9b5825201a7814c23ab9ff2f7d407c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/design-27.0.1.aar/b9b5825201a7814c23ab9ff2f7d407c9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/50a0846365ade8fd9eea7240c5043fc8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/50a0846365ade8fd9eea7240c5043fc8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.8.0.aar/efa33f7cdd98fac6b20d7cc61b9b42b9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.8.0.aar/efa33f7cdd98fac6b20d7cc61b9b42b9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.8.0.aar/b9688b1e8c2699cb5357c74cb3ed3cda/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.8.0.aar/b9688b1e8c2699cb5357c74cb3ed3cda/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/0bcf9aacfee1aa4edea921cbf54ffdf3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/0bcf9aacfee1aa4edea921cbf54ffdf3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/bc105a9accc5ad93e5fa5006daf6e9df/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/bc105a9accc5ad93e5fa5006daf6e9df/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-database:0.4.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-0.4.1.aar/8b22fa9d1abd99b0e97a8ae2e7df0c8c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:0.4.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-0.4.1.aar/8b22fa9d1abd99b0e97a8ae2e7df0c8c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-database:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-11.8.0.aar/f4a218dcda2fad159c37df434800ed7f/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-11.8.0.aar/f4a218dcda2fad159c37df434800ed7f/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-11.8.0.aar/017c45c14c8e04f41c971b6f1ff2a0ca/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-11.8.0.aar/017c45c14c8e04f41c971b6f1ff2a0ca/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/bd5f113b39a5bc38d43e95aa003eb9b8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/bd5f113b39a5bc38d43e95aa003eb9b8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-11.8.0.aar/8d69e06263887dd3d516a69234092e5b/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-11.8.0.aar/8d69e06263887dd3d516a69234092e5b/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-login:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-login-4.29.0.aar/891523e55e8bf25dd6b267e8812e9da9/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-login-4.29.0.aar/891523e55e8bf25dd6b267e8812e9da9/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-v4:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.1.aar/a52f55d64616f86dc43436c6697e6b02/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.1.aar/a52f55d64616f86dc43436c6697e6b02/AndroidManifest.xml:20:5-44
+MERGED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/d3e7b123d244a44a59171848fe79dfce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/d3e7b123d244a44a59171848fe79dfce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.1.aar/31eeebe802d1a5d3f05afb969a606ed1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.1.aar/31eeebe802d1a5d3f05afb969a606ed1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.1.aar/9682dc4ab1ec6c27f3504a70b4f30128/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.1.aar/9682dc4ab1ec6c27f3504a70b4f30128/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.1.aar/b61fa0f7f9632440a4480eb7527685b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.1.aar/b61fa0f7f9632440a4480eb7527685b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/transition-27.0.1.aar/63643961591ea9bb30df15d4d0b955ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/transition-27.0.1.aar/63643961591ea9bb30df15d4d0b955ac/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-fragment:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.1.aar/54e4d7539d2bfa63f983f5ae77515929/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.1.aar/54e4d7539d2bfa63f983f5ae77515929/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.1.aar/f72950f8b3a86e59f3c53cabe2c014d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.1.aar/f72950f8b3a86e59f3c53cabe2c014d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.1.aar/d2e004527416dfdbaad5b81240efba1f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.1.aar/d2e004527416dfdbaad5b81240efba1f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.1.aar/db825731328dfee2eee1b2b97b701b7d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.1.aar/db825731328dfee2eee1b2b97b701b7d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.1.aar/e62d954cc19e171713ea779e84b97811/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.1.aar/e62d954cc19e171713ea779e84b97811/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/1b0ffbb5a3a2ddf4e9bf334d6edacb29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/1b0ffbb5a3a2ddf4e9bf334d6edacb29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.1.aar/3aa47de1fcc523a6dcba88e53ef153d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.1] /home/yagod/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.1.aar/3aa47de1fcc523a6dcba88e53ef153d6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/ff22d8f1e56b6a924795e46c23e053f1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/ff22d8f1e56b6a924795e46c23e053f1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/a56026f1ac25a313e2ff7596346453e4/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/a56026f1ac25a313e2ff7596346453e4/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.8.0.aar/5f52f147fff4dacc42f394aee6b09f61/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.8.0.aar/5f52f147fff4dacc42f394aee6b09f61/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/2fc5a035b030b32d80ec2b92cb2be8ee/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/2fc5a035b030b32d80ec2b92cb2be8ee/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-license-11.8.0.aar/183e9637852394436aec6ec072aa2a0f/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-license-11.8.0.aar/183e9637852394436aec6ec072aa2a0f/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-11.8.0.aar/d3fff5212f8b4ca02f9b29e45713a746/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-11.8.0.aar/d3fff5212f8b4ca02f9b29e45713a746/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/1c232e7b6edb9fe49b352c660265019b/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/1c232e7b6edb9fe49b352c660265019b/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/713b38df482172739a1a3c33ee340412/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/713b38df482172739a1a3c33ee340412/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/830e6d3d34f22e0526d8d54c6be05ce7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/830e6d3d34f22e0526d8d54c6be05ce7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/fdae5afde8fada74e0443aff86fd7292/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/fdae5afde8fada74e0443aff86fd7292/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/a12c1ace4b17b1f73c984fc7ab022c99/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/a12c1ace4b17b1f73c984fc7ab022c99/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1faf47d015bd0fdd920b89b5b5ec974/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1faf47d015bd0fdd920b89b5b5ec974/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/3682a9cfda861f3baebee789ec458e81/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/3682a9cfda861f3baebee789ec458e81/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-11.8.0.aar/d940be07552ad3a9b3dea1565ab22e84/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-11.8.0.aar/d940be07552ad3a9b3dea1565ab22e84/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/e21588194eccb40d80ccf28338c40639/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/e21588194eccb40d80ccf28338c40639/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/dd9e686114993dccf87efc7c452e4cb3/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/dd9e686114993dccf87efc7c452e4cb3/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-11.8.0.aar/b6c39cf08d28c2a7ae1864daa49ebaf1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-11.8.0.aar/b6c39cf08d28c2a7ae1864daa49ebaf1/AndroidManifest.xml:4:5-43
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\yago_\Documents\AppDCEdaUSP\app\src\main\AndroidManifest.xml
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+		ADDED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/yagod/Android/appdcedausp/app/src/main/AndroidManifest.xml
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\82be21a40c739dbfd73f74c18982fc7f\AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/b6bee5c184a59e1ddc293f0610085d74/AndroidManifest.xml:28:9-32
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:23:9-27:75
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:25:13-46
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:27:13-72
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:24:13-93
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:24:13-93
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:33:9-36:110
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:33:9-36:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:35:13-36
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:35:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:36:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\25c2800012159256c3dd7e558440ab88\AndroidManifest.xml:34:13-89
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/0dd69cf9b67a7f73c2bd0a5c488fc8e8/AndroidManifest.xml:34:13-89
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
-ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:23:9-29:75
+ADDED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:23:9-29:75
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:25:13-46
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:25:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:27:13-48
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:27:13-48
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:26:13-36
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:26:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:28:13-102
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:28:13-102
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:29:13-72
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:29:13-72
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\a4aed3691f7d151fae8426fc354fa04c\AndroidManifest.xml:24:13-85
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/2062fad8ced82d80b617d4a39bb2be88/AndroidManifest.xml:24:13-85
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:24:5-68
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:25:22-65
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:25:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:28:9-32:20
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:28:9-32:20
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:28:9-32:20
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:28:9-32:20
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:30:13-35
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:30:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:31:13-37
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:29:13-85
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:29:13-85
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:33:9-41:20
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:33:9-41:20
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:35:13-35
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:35:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:36:13-36
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:36:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:37:13-69
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:37:13-69
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:34:13-100
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:34:13-100
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:38:13-40:29
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:38:13-40:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:39:17-79
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:39:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:39:25-76
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:39:25-76
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:43:9-46:40
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:34:9-37:40
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\7c203009e0bc744eba2d775792155713\AndroidManifest.xml:34:9-37:40
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:43:9-46:40
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:34:9-37:40
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/515c0a7b95565599192a1a372f5c4f51/AndroidManifest.xml:34:9-37:40
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:45:13-35
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:45:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:46:13-37
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:44:13-84
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:44:13-84
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:47:9-51:72
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:47:9-51:72
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:49:13-35
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:49:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:50:13-37
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:50:13-37
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:51:13-69
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:51:13-69
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6bd921a056c5ea5285b0140c968d5fe5\AndroidManifest.xml:48:13-87
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/6dc23788742ef0401295134b67b0f214/AndroidManifest.xml:48:13-87
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\189bcd1213fe921aff3524f94d25da2c\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c1720a05d522ddbba0911bd8fac237ab/AndroidManifest.xml:24:13-79
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:26:5-82
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:26:5-82
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:26:22-79
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:26:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:28:5-30:47
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:30:9-44
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:30:9-44
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:29:9-63
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:29:9-63
 permission#com.dceusp.appdcedausp.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:28:5-30:47
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:30:9-44
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:30:9-44
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:29:9-63
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:29:9-63
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:32:5-79
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:32:22-76
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:32:22-76
 uses-permission#com.dceusp.appdcedausp.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:32:5-79
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:32:22-76
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:32:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:35:9-44:20
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:35:9-44:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:37:13-36
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:37:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:38:13-73
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:38:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:36:13-78
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:36:13-78
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:39:13-43:29
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:39:13-43:29
 intent-filter#com.dceusp.appdcedausp+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:39:13-43:29
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:39:13-43:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:40:17-81
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:40:17-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:40:25-78
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:40:25-78
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:42:17-61
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:42:17-61
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:42:27-58
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:42:27-58
 category#com.dceusp.appdcedausp
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:42:17-61
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:42:17-61
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:42:27-58
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:42:27-58
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:50:9-56:19
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:50:9-56:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:52:13-36
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:52:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:51:13-77
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:51:13-77
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:53:13-55:29
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:53:13-55:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:53:28-51
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:53:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:54:17-80
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:54:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\d128a42b29ecf176189ad3b50f387819\AndroidManifest.xml:54:25-77
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/d797e0004e7c88edcbddd45b0d631ce2/AndroidManifest.xml:54:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:8:9-12:39
+ADDED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:8:9-12:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:10:13-72
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:11:13-37
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:11:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:12:13-36
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:12:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\e4d4c54b2e245cb385c76b56ce29d3d5\AndroidManifest.xml:9:13-77
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/65ad00ab0bfaf93d4d98a505bfec38fe/AndroidManifest.xml:9:13-77
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\db53dbb5a7596c0a6c5b53eb33b278d1\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/82a7ee6057f769e81c29123c30cbfb28/AndroidManifest.xml:24:13-58
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:29:9-32:66
+ADDED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:29:9-32:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:31:13-96
+		ADDED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:31:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:30:13-57
+		ADDED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:30:13-57
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-common-4.29.0.aar\66c435bb83255d73ca2c8fc5cb83c572\AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-common-4.29.0.aar/bd4d18e3c866664d0d5137a98ec09cbc/AndroidManifest.xml:33:19-68
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
-ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:12:9-16:66
+ADDED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:12:9-16:66
 	android:label
-		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:15:13-29
+		ADDED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:15:13-29
 	android:exported
-		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:14:13-37
+		ADDED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:14:13-37
 	android:theme
-		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:16:13-63
+		ADDED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:16:13-63
 	android:name
-		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\easypermissions-0.3.0.aar\4bd2f9482a7ea3c808da840d42a7470e\AndroidManifest.xml:13:13-86
+		ADDED from [pub.devrel:easypermissions:0.3.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/easypermissions-0.3.0.aar/3c830d93919f2890674b56c2983d3921/AndroidManifest.xml:13:13-86
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.29.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\facebook-core-4.29.0.aar\b131ad83d194e74585bc56b10f3934e3\AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.29.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/facebook-core-4.29.0.aar/0ae50379313ce7fd251d99213f0674cf/AndroidManifest.xml:40:13-70
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\yago_\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\7452e03cdcc26b96bc484365f6187a2e\AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/yagod/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/60b8790ba5c08c32422fec52f8e93de4/AndroidManifest.xml:26:13-58
